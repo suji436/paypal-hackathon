@@ -1,0 +1,6 @@
+{
+  "name": "VeriGrocery AI - Local Grocery Intelligence & Verification",
+  "description": "AI-powered local grocery price tracking, multi-store price comparison, GS1 batch verification ledger, district demand pooling, wholesale procurement, and merchant command center.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

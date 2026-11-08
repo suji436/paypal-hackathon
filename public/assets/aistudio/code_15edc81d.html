@@ -1,0 +1,648 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","tertiary-fixed-dim":"#f0bf60","background":"#f8f9ff","secondary-fixed":"#dae2fd","secondary":"#565e74","primary-container":"#123d2b","surface-dim":"#cbdbf5","surface-container-highest":"#d3e4fe","on-surface":"#0b1c30","surface-variant":"#d3e4fe","surface":"#f8f9ff","on-tertiary-container":"#c4983d","primary-fixed":"#bfedd3","on-primary":"#ffffff","on-error":"#ffffff","surface-tint":"#3d6752","inverse-on-surface":"#eaf1ff","on-secondary":"#ffffff","on-tertiary":"#ffffff","tertiary-fixed":"#ffdea5","on-primary-fixed-variant":"#254f3b","surface-container-high":"#dce9ff","outline":"#717973","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","secondary-container":"#dae2fd","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#bec6e0","on-background":"#0b1c30","inverse-primary":"#a4d1b7","error":"#ba1a1a","inverse-surface":"#213145","on-primary-fixed":"#002114","primary":"#002618","tertiary-container":"#483200","tertiary":"#2d1e00","on-tertiary-fixed-variant":"#5d4200","on-secondary-fixed-variant":"#3f465c","on-tertiary-fixed":"#271900","on-error-container":"#93000a","on-surface-variant":"#414943","on-secondary-fixed":"#131b2e","primary-fixed-dim":"#a4d1b7","surface-container":"#e5eeff","on-primary-container":"#7da890","on-secondary-container":"#5c647a","outline-variant":"#c1c8c2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin":"2rem"},"fontFamily":{"label-sm":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-6 py-5 bg-surface-container-lowest flex flex-col gap-2"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">VeriGrocery<span class="text-tertiary-fixed-dim ml-1">AI</span></span><div class="flex items-center gap-1.5 mt-0.5"><span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase font-semibold">Enterprise Control</span></div></div></div></div><div class="px-4 py-2"><div class="px-3 py-1.5 rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">SYSTEM V5.0 ACTIVE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-1.5 py-0.5 rounded">PROD-MIRROR</span></div></div><nav class="flex-1 overflow-y-auto px-3 py-3 space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">grid_view</span><span class="">Overview</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="user-management" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">manage_accounts</span><span class="">User Management</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="verification-and-fraud" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">gshield</span><span class="flex-1">Verification &amp; Fraud</span><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">14</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all" data-path="ai-intelligence" href="#"><span class="material-symbols-outlined text-[20px] text-on-primary">psychology</span><span class="">AI Intelligence</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="revenue-and-commission" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">account_balance_wallet</span><span class="">Revenue &amp; Commission</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="complaints-and-support" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">support_agent</span><span class="flex-1">Complaints &amp; Support</span><span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">8</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings-and-audit-logs" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">policy</span><span class="">Settings &amp; Audit Logs</span></a></nav></div><div class="p-4 bg-surface-container-low mx-3 mb-4 rounded-xl flex flex-col gap-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">admin_panel_settings</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">K. Rajasekaran</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Chief Platform Admin</span></div></div><div class="flex items-center justify-between pt-2"><div class="flex items-center gap-1.5"><span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">SANDBOX V5.0</span></div><button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded transition-colors flex items-center justify-center" title="Sign out simulated session" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-4 flex-1 max-w-2xl"><div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant shrink-0"><span class="font-semibold text-on-surface">VeriGrocery Admin</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-on-surface-variant">Enterprise Control</span></div><div class="relative flex-1 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-low rounded-lg pl-9 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search users, stores, products, GTIN, tickets, audit hash..." type="text"></div></div><div class="flex items-center gap-3"><div class="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span><span class="font-semibold">All Delta Regions</span><span class="text-on-surface-variant">•</span><span class="text-on-surface-variant">6 Districts</span></div><div class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-container text-tertiary-fixed-dim font-label-sm text-label-sm tracking-wide"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span><span class="">SIMULATED DATA</span></div><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors relative" title="System Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" title="Documentation &amp; Support" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface flex-1 w-full px-gutter py-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive Active Sidebar Highlighter Script -->
+<script>
+    (function highlightActiveNav() {
+      const activePath = "ai-intelligence";
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === activePath) {
+          link.className = "flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all";
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = "material-symbols-outlined text-[20px] text-on-primary";
+        }
+      });
+    })();
+  </script>
+<!-- Top Sandbox Banner & Context Bar -->
+<div class="w-full bg-tertiary-container text-tertiary-fixed px-space-lg py-2 rounded-xl flex flex-wrap items-center justify-between gap-3 shadow-sm mb-space-md">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wider uppercase font-bold text-tertiary-fixed">
+        VERIGROCERY AI ENTERPRISE ADMIN SANDBOX – ALL DATA IS SIMULATED DEMO DATA.
+      </span>
+</div>
+<div class="flex items-center gap-4 text-on-tertiary-container">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+<span class="text-tertiary-fixed">Model Node: Delta-Neuron v4.8-Sim</span>
+</div>
+<span class="text-tertiary-fixed-dim text-[11px] font-label-sm">Inference Latency: 142ms</span>
+</div>
+</div>
+<!-- Breadcrumb & Control Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-space-lg">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-1">
+<span class="">VeriGrocery Admin</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">AI Intelligence &amp; Demand Forecasting</span>
+</div>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight font-bold">
+          Predictive Agro-Demand &amp; Replenishment Engine
+        </h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px] text-primary">psychology</span> XAI Active
+        </span>
+</div>
+</div>
+<!-- Quick Sourcing Actions -->
+<div class="flex items-center gap-2.5 shrink-0"><button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container-high shadow-xs border border-outline-variant/40 flex items-center gap-2 font-label-md text-label-md transition-all group" type="button" title="Export Elasticity Co-efficients"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim group-hover:text-tertiary-container transition-colors">download</span><span class="">Export Price Elasticity Matrix</span></button><button class="px-3.5 py-2 rounded-lg bg-primary-container text-tertiary-fixed hover:bg-primary shadow-sm border border-tertiary-fixed-dim/30 flex items-center gap-2 font-label-md text-label-md transition-all" type="button"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">model_training</span><span class="">Train Cluster Forecast</span></button><button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:bg-primary shadow-md border border-tertiary-fixed/40 flex items-center gap-2 font-label-md text-label-md transition-all group" type="button"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed animate-pulse">neurology</span><span class="font-bold tracking-tight">Run Regional Neural Demand Model</span><span class="w-2 h-2 rounded-full bg-emerald-400 ml-0.5"></span></button></div>
+</div>
+<!-- Section 1: AI Intelligence Overview Deck (6 Bento Metric Tiles) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-space-sm mb-space-lg">
+<!-- Tile 1: Accuracy Benchmark -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden group">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Forecast Accuracy</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">model_training</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">94.2%</span>
+<span class="font-label-sm text-label-sm text-emerald-700 font-bold">MAP</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Simulated Model Benchmark</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-container-low px-2 py-1 rounded flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">Residual Error</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">±5.8% Delta</span>
+</div>
+</div>
+<!-- Tile 2: 30-Day Demand -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">30D Platform Demand</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">184</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-secondary">MT</span>
+</div>
+<p class="font-body-sm text-body-sm text-emerald-700 font-semibold mt-1 flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +16.8% MoM Surge
+        </p>
+</div>
+<div class="mt-3 pt-2 bg-surface-container-low px-2 py-1 rounded flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">Primary Volume</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Grains &amp; Pulses</span>
+</div>
+</div>
+<!-- Tile 3: Autonomous Prescriptions -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">High-Confidence Recs</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[16px]">auto_awesome</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">18</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">ACTIVE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Autonomous Prescriptions</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-container-low px-2 py-1 rounded flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">Readiness</span>
+<span class="font-label-sm text-label-sm font-semibold text-emerald-700">100% Policy Clean</span>
+</div>
+</div>
+<!-- Tile 4: Stockout Risk Nodes -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Stockout Risk Nodes</span>
+<div class="w-7 h-7 rounded-lg bg-error-container/60 flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-[16px]">report_problem</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-error">4</span>
+<span class="font-label-sm text-label-sm text-on-error-container font-semibold">Corridors</span>
+</div>
+<p class="font-body-sm text-body-sm text-error font-medium mt-1">Imminent Stockout Risk</p>
+</div>
+<div class="mt-3 pt-2 bg-error-container/30 px-2 py-1 rounded flex items-center justify-between text-on-error-container">
+<span class="font-label-sm text-label-sm">Runway</span>
+<span class="font-label-sm text-label-sm font-bold">&lt; 2.5 Days Left</span>
+</div>
+</div>
+<!-- Tile 5: Overstock Depots -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Capital Lock Warning</span>
+<div class="w-7 h-7 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[16px]">warehouse</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">2</span>
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Depots</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Overstock &amp; Holding Drag</p>
+</div>
+<div class="mt-3 pt-2 bg-surface-container-low px-2 py-1 rounded flex items-center justify-between text-secondary">
+<span class="font-label-sm text-label-sm">Locked Capital</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">₹4.10 Lakh</span>
+</div>
+</div>
+<!-- Tile 6: Arbitrage Alpha -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Price Arbitrage</span>
+<div class="w-7 h-7 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary-container">
+<span class="material-symbols-outlined text-[16px]">savings</span>
+</div>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">₹1.45L</span>
+</div>
+<p class="font-body-sm text-body-sm text-tertiary font-bold mt-1">Realizable Alpha via Sourcing</p>
+</div>
+<div class="mt-3 pt-2 bg-tertiary-fixed/30 px-2 py-1 rounded flex items-center justify-between text-on-tertiary-fixed-variant">
+<span class="font-label-sm text-label-sm">Procurement Window</span>
+<span class="font-label-sm text-label-sm font-bold">4 Days Active</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Horizon Toggles & Regional Corridor Matrix Selectors -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm mb-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-4">
+<!-- Horizon Segments -->
+<div class="flex flex-col sm:flex-row sm:items-center gap-3">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary">Forecast Horizon:</span>
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg gap-1">
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" type="button">
+          Next 7 Days <span class="text-secondary font-normal">(Tactical Dispatch)</span>
+</button>
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md bg-primary-container text-on-primary font-bold shadow-sm transition-all flex items-center gap-1.5" type="button">
+<span class="">Next 30 Days</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+<span class="text-on-primary-container font-normal">(Regional Replenishment)</span>
+</button>
+<button class="px-3 py-1.5 rounded-md font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-all" type="button">
+          Next 90 Days <span class="text-secondary font-normal">(Seasonal Harvest)</span>
+</button>
+</div>
+</div>
+<!-- Corridor Filter Chips -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider text-secondary mr-1">Corridors:</span>
+<button class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm" type="button">
+        All 6 Corridors
+      </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors" type="button">
+        Nagapattinam
+      </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors" type="button">
+        Thanjavur
+      </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors" type="button">
+        Tiruvarur
+      </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors" type="button">
+        Mayiladuthurai
+      </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors" type="button">
+        Karaikal
+      </button>
+<button class="px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface-variant hover:bg-surface-container-high font-label-sm text-label-sm transition-colors" type="button">
+        Kumbakonam
+      </button>
+</div>
+</div>
+<!-- Section 3 & 4 Split: Core Forecasting Engine Chart + Regional Gap Heatmap -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left Column (8 cols): Core Visual Demand Forecasting Engine -->
+<div class="lg:col-span-8 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-space-md"><div><div class="flex flex-wrap items-center gap-2"><h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">Core Demand Forecasting Engine</h2><span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold border border-primary-fixed-dim/50 flex items-center gap-1"><span class="material-symbols-outlined text-[13px] text-primary">verified</span> 94.6% Confidence (CI)</span><span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/40 text-on-tertiary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1 border border-tertiary-fixed-dim/40"><span class="material-symbols-outlined text-[13px] text-tertiary-container">cyclone</span> Weather Correlation: 0.88</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-1">14-Day Multi-Commodity Projection: Historical Consumption vs Algorithmic Neural Forecast with Festival Surge Triggers.</p></div><div class="flex flex-wrap items-center gap-3 text-body-sm font-body-sm bg-surface-container-low px-3 py-1.5 rounded-lg border border-outline-variant/30"><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-secondary"></span><span class="text-on-surface-variant text-[11px]">Historical</span></div><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-primary"></span><span class="text-on-surface text-[11px] font-bold">AI Projected</span></div><div class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-sm bg-primary-fixed-dim"></span><span class="text-secondary text-[11px]">94.6% CI Band</span></div><div class="flex items-center gap-1.5 pl-1"><span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span><span class="text-on-tertiary-fixed font-semibold text-[11px]">Festival Spike</span></div></div></div>
+<!-- Forecast Multi-Commodity Data Matrix & Visual Progress Bands -->
+<div class="space-y-4 my-2"><!-- Item 1: Ponni Boiled Rice -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all border border-outline-variant/20 shadow-xs">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-emerald-600"></span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Ponni Boiled Rice (A-Grade)</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">celebration</span> +18.4% Pongal/Wedding Surge
+</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">thermostat</span> Monsoon Pre-buy
+</span>
+</div>
+<div class="flex items-center gap-3 text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Jan Actual: <strong class="text-on-surface">82 MT</strong></span>
+<span class="text-primary font-bold">14D Forecast: 97.2 MT</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-emerald-800 font-semibold shadow-xs border border-emerald-100">
+CI: 96.2%
+</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="relative w-full h-4 bg-surface-container-highest rounded-full overflow-hidden flex items-center">
+<div class="h-full bg-secondary" style="width: 64%;"></div>
+<div class="h-full bg-primary" style="width: 14%;"></div>
+<div class="h-full bg-primary-fixed-dim" style="width: 7%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-secondary px-1">
+<span class="">Historical Base: 82 MT (APMC Thanjavur Baseline)</span>
+<span class="text-primary font-semibold">Lower CI: 94.6 MT | AI Peak: 97.2 MT | Upper CI: 100.8 MT</span>
+</div>
+</div>
+</div>
+<!-- Item 2: Guntur Chilli (High Cap) -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all border border-outline-variant/20 shadow-xs">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-error"></span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Guntur Stemless Red Chilli</span>
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">trending_up</span> +28.6% Corridor Spike
+</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary-container font-label-sm text-label-sm font-semibold flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[12px]">local_fire_department</span> Supply Deficit Alert
+</span>
+</div>
+<div class="flex items-center gap-3 text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Jan Actual: <strong class="text-on-surface">6.4 MT</strong></span>
+<span class="text-error font-bold">14D Forecast: 8.3 MT</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-emerald-800 font-semibold shadow-xs border border-emerald-100">
+CI: 94.6%
+</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="relative w-full h-4 bg-surface-container-highest rounded-full overflow-hidden flex items-center">
+<div class="h-full bg-secondary" style="width: 52%;"></div>
+<div class="h-full bg-primary" style="width: 20%;"></div>
+<div class="h-full bg-primary-fixed-dim" style="width: 8%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-secondary px-1">
+<span class="">Historical Base: 6.4 MT (Mayiladuthurai &amp; Nagapattinam Clusters)</span>
+<span class="text-primary font-semibold">Lower CI: 7.9 MT | AI Peak: 8.3 MT | Upper CI: 8.7 MT</span>
+</div>
+</div>
+</div>
+<!-- Item 3: Wood-Pressed Gingelly Oil -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all border border-outline-variant/20 shadow-xs">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Wood-Pressed Gingelly Oil (Cold Extraction)</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">percent</span> +23.3% MoM Spike
+</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold">
+Temple Festival Demand
+</span>
+</div>
+<div class="flex items-center gap-3 text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Jan Actual: <strong class="text-on-surface">12,000 L</strong></span>
+<span class="text-primary font-bold">14D Forecast: 14,800 L</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-emerald-800 font-semibold shadow-xs border border-emerald-100">
+CI: 93.8%
+</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="relative w-full h-4 bg-surface-container-highest rounded-full overflow-hidden flex items-center">
+<div class="h-full bg-secondary" style="width: 60%;"></div>
+<div class="h-full bg-primary" style="width: 15%;"></div>
+<div class="h-full bg-primary-fixed-dim" style="width: 8%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-secondary px-1">
+<span class="">Historical Base: 12,000 L (Steady delta corridor baseline)</span>
+<span class="text-primary font-semibold">Lower CI: 14,100 L | AI Peak: 14,800 L | Upper CI: 15,400 L</span>
+</div>
+</div>
+</div>
+<!-- Item 4: Salem Single-Polish Turmeric -->
+<div class="p-3.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-all border border-outline-variant/20 shadow-xs">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-2">
+<div class="flex items-center gap-2.5">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Salem Single-Polish Turmeric (High Curcumin)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">
++8.2% Organic Stabilized
+</span>
+</div>
+<div class="flex items-center gap-3 text-label-sm font-label-sm">
+<span class="text-on-surface-variant">Jan Actual: <strong class="text-on-surface">8.5 MT</strong></span>
+<span class="text-primary font-bold">14D Forecast: 9.2 MT</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-lowest text-emerald-800 font-semibold shadow-xs border border-emerald-100">
+CI: 95.1%
+</span>
+</div>
+</div>
+<div class="space-y-1">
+<div class="relative w-full h-4 bg-surface-container-highest rounded-full overflow-hidden flex items-center">
+<div class="h-full bg-secondary" style="width: 70%;"></div>
+<div class="h-full bg-primary" style="width: 6%;"></div>
+<div class="h-full bg-primary-fixed-dim" style="width: 4%;"></div>
+</div>
+<div class="flex justify-between text-[11px] font-label-sm text-secondary px-1">
+<span class="">Historical Base: 8.5 MT (APMC Mandi steady flow)</span>
+<span class="text-primary font-semibold">Lower CI: 8.9 MT | AI Peak: 9.2 MT | Upper CI: 9.4 MT</span>
+</div>
+</div>
+</div></div>
+<!-- Historical Context Footnote -->
+<div class="mt-3 pt-3 bg-surface-container-low rounded-lg px-3 py-2 flex flex-wrap items-center justify-between text-secondary font-label-sm text-label-sm">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-primary">analytics</span>
+          Weights: POS Scan Frequency (40%), Community Cart Ingestion (35%), Mandi Arrivals (25%)
+        </span>
+<span class="text-on-surface font-semibold">Simulated Backtest Accuracy: 98.4% on 2024 Season</span>
+</div>
+</div>
+<!-- Right Column (4 cols): Regional Supply-Demand Gap Heatmap -->
+<div class="lg:col-span-4 bg-surface-container-lowest p-space-lg rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[22px]">map</span>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface">
+              Supply-Demand Gap
+            </h2>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+            Delta Grid
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">
+          Autonomous regional balancing index for aggregated grocery nodes.
+        </p>
+<!-- Corridor Nodes List -->
+<div class="space-y-3">
+<!-- Corridor 1: Thanjavur Hub -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Thanjavur Regional Depot</span>
+<span class="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-label-sm text-label-sm font-bold">
+                Surplus +14 MT
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="">Demand: <strong class="text-on-surface">58 MT</strong></span>
+<span class="">Supply: <strong class="text-on-surface">72 MT</strong></span>
+</div>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-sm">
+<span class="text-secondary">Recommendation:</span>
+<span class="text-primary font-bold">Backhaul Redistribution → Nagapattinam</span>
+</div>
+</div>
+<!-- Corridor 2: Nagapattinam Corridor -->
+<div class="p-3 rounded-lg bg-error-container/20 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Nagapattinam Retail Corridor</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                Deficit Alert -8 MT
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="">Demand: <strong class="text-on-surface">46 MT</strong></span>
+<span class="">Supply: <strong class="text-error font-bold">38 MT</strong></span>
+</div>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-sm">
+<span class="text-on-error-container">Urgent Trigger:</span>
+<span class="text-error font-bold">Auto-Trigger Wholesale Aggregation PR</span>
+</div>
+</div>
+<!-- Corridor 3: Mayiladuthurai Hub -->
+<div class="p-3 rounded-lg bg-error-container/20 flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Mayiladuthurai Hub</span>
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+                Deficit Alert -8 MT
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="">Demand: <strong class="text-on-surface">32 MT</strong></span>
+<span class="">Supply: <strong class="text-error font-bold">24 MT</strong></span>
+</div>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-sm">
+<span class="text-on-error-container">Action:</span>
+<span class="text-error font-bold">Priority Sourcing RFQ to FPO Network</span>
+</div>
+</div>
+<!-- Corridor 4: Tiruvarur Agro -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Tiruvarur Agro Cluster</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold">
+                Balanced +2 MT
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="">Demand: <strong class="text-on-surface">28 MT</strong></span>
+<span class="">Supply: <strong class="text-on-surface">30 MT</strong></span>
+</div>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-sm">
+<span class="text-secondary">Status:</span>
+<span class="text-secondary font-semibold">Standard Automated Routing Active</span>
+</div>
+</div>
+<!-- Corridor 5: Kumbakonam Cluster -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg font-bold text-on-surface">Kumbakonam Urban Node</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-highest text-secondary font-label-sm text-label-sm font-bold">
+                Optimal Equilibrium 0 MT
+              </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm text-secondary">
+<span class="">Demand: <strong class="text-on-surface">20 MT</strong></span>
+<span class="">Supply: <strong class="text-on-surface">20 MT</strong></span>
+</div>
+<div class="flex items-center justify-between pt-1 text-[11px] font-label-sm">
+<span class="text-secondary">Health:</span>
+<span class="text-emerald-700 font-bold">Self-Regulating Fleet Buffer</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Heatmap Summary Button -->
+<button class="w-full mt-4 py-2.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-md text-label-md font-semibold flex items-center justify-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">sync_alt</span>
+<span class="">Simulate Cross-Corridor Fleet Rebalancing</span>
+</button>
+</div>
+</div>
+<!-- Section 5: Autonomous Prescriptions & Explainable AI (XAI) Cards -->
+<div class="mb-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[24px]">psychology_alt</span>
+          Autonomous Prescriptions &amp; Explainable AI (XAI)
+        </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Auditable rationales, constraint evaluations, and single-click administrative interventions.
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary">Sort by:</span>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold" type="button">
+          Confidence Score ↓
+        </button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md"><!-- XAI Card 1: Bulk Aggregation for Rice -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between gap-2 mb-3">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed text-tertiary-container font-label-sm text-label-sm font-bold flex items-center gap-1 border border-tertiary-fixed-dim/40">
+<span class="material-symbols-outlined text-[12px]">verified</span> PRESCRIPTION #AX-402
+</span>
+<div class="flex items-center gap-1 text-emerald-700 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 96.4% Conf.
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+Pre-Harvest Bulk Aggregation for Cauvery Ponni Rice
+</h3>
+<div class="space-y-2.5 my-3 text-body-sm font-body-sm">
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase block mb-1">Why Predicted</span>
+<p class="text-on-surface">
+Retail POS consumption rate accelerated <strong>2.4x</strong> across 48 Nagapattinam stores. Mandi spot price scheduled for statutory revision in 12 days.
+</p>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase block mb-1">Supporting Data</span>
+<p class="text-on-surface-variant">
+48 verified retail PR triggers cross-matched with historical APMC Thanjavur seasonal price indexes.
+</p>
+</div>
+<div class="flex items-center justify-between text-secondary text-[11px] font-label-sm pt-1">
+<span class="">Uncertainty Buffer: <strong class="text-on-surface">±3.2 MT</strong></span>
+<span class="text-error font-medium">Limitation: Excludes unseasonal rain</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex flex-col gap-2">
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm border border-tertiary-fixed/30 transition-all group" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed group-hover:scale-110 transition-transform">flash_on</span>
+<span class="">1-Click Batch Order Execution (18.4 MT)</span>
+</button>
+<button class="w-full py-1.5 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">receipt_long</span>
+<span class="">Preview Sourcing RFQ &amp; Supplier Allocation</span>
+</button>
+</div>
+</div>
+
+<!-- XAI Card 2: Stockout Mitigation Gingelly Oil -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between gap-2 mb-3">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold flex items-center gap-1 border border-error/20">
+<span class="material-symbols-outlined text-[12px]">warning</span> URGENT ACTION #ST-109
+</span>
+<div class="flex items-center gap-1 text-emerald-700 font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> 98.1% Conf.
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+Stockout Mitigation: Cold-Pressed Gingelly Oil
+</h3>
+<div class="space-y-2.5 my-3 text-body-sm font-body-sm">
+<div class="p-2.5 bg-error-container/20 rounded-lg border border-error-container">
+<span class="font-label-sm text-label-sm font-bold text-on-error-container uppercase block mb-1">Critical Bottleneck</span>
+<p class="text-on-surface">
+Current buffer stock at Nagapattinam Central is <strong>1.8 days of runway</strong>; verified regional supplier dispatch SLA requires <strong>3 days transit</strong>.
+</p>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase block mb-1">Supporting Data</span>
+<p class="text-on-surface-variant">
+Real-time stock velocity: 420 L/day versus 800 L total remaining in wholesale bay #4.
+</p>
+</div>
+<div class="flex items-center justify-between text-secondary text-[11px] font-label-sm pt-1">
+<span class="">Depot Target: <strong class="text-on-surface">Nagapattinam Central</strong></span>
+<span class="text-emerald-700 font-bold">Transit Delta: 4.5 hrs</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex flex-col gap-2">
+<button class="w-full py-2.5 px-3 rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm border border-tertiary-fixed/30 transition-all group" type="button">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed group-hover:scale-110 transition-transform">bolt</span>
+<span class="">1-Click Batch Order Execution (1,200 L)</span>
+</button>
+<button class="w-full py-1.5 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1.5 transition-colors" type="button">
+<span class="material-symbols-outlined text-[15px]">local_shipping</span>
+<span class="">Execute Re-route from Thanjavur Fleet</span>
+</button>
+</div>
+</div>
+
+<!-- XAI Card 3: Non-Sales Rule & Safety Guardrails -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between relative group hover:shadow-md transition-shadow">
+<div>
+<div class="flex items-start justify-between gap-2 mb-3">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold flex items-center gap-1 border border-outline-variant/30">
+<span class="material-symbols-outlined text-[12px]">security</span> SYSTEM POLICY #XAI-SAFE
+</span>
+<div class="flex items-center gap-1 text-secondary font-label-sm text-label-sm font-bold">
+Deterministic Rule
+</div>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mb-2">
+Inventory Safety Quarantine Check (Non-Sales Rule)
+</h3>
+<div class="space-y-2.5 my-3 text-body-sm font-body-sm">
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase block mb-1">Safety Guardrail Enforced</span>
+<p class="text-on-surface">
+<strong>42 Expired batches</strong> detected platform-wide permanently excluded from demand models. Expired stock cannot be forecasted for replenishment or retail allocation.
+</p>
+</div>
+<div class="p-2.5 bg-surface-container-low rounded-lg border border-outline-variant/20">
+<span class="font-label-sm text-label-sm font-bold text-secondary uppercase block mb-1">Audit Trail Reference</span>
+<p class="text-on-surface-variant font-mono text-[11px]">
+HASH: 8F49-C10A-EXP-VERIFIED • FSSAI Rule 18(b) Autonomous Exclusion
+</p>
+</div>
+<div class="flex items-center justify-between text-secondary text-[11px] font-label-sm pt-1">
+<span class="">Status: <strong class="text-emerald-700">Strict Isolation</strong></span>
+<span class="text-secondary font-medium">Auto-Destruction Log #91</span>
+</div>
+</div>
+</div>
+<div class="pt-3 flex flex-col gap-2">
+<button class="w-full py-2.5 px-3 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high font-label-md text-label-md font-semibold flex items-center justify-center gap-2 border border-outline-variant/30 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px] text-primary">verified</span>
+<span class="">View Safety Quarantine Audit Manifest</span>
+</button>
+<div class="text-center text-[11px] font-label-sm text-secondary py-1">
+<span class="">Autonomous compliance guarantee enforced</span>
+</div>
+</div>
+</div></div>
+</div>
+<!-- Section 6: Persistent AI Explainability Disclaimer Notice -->
+<div class="w-full bg-surface-container-low rounded-xl p-space-md flex items-start gap-3.5 shadow-xs">
+<span class="material-symbols-outlined text-primary text-[22px] shrink-0 mt-0.5">policy</span>
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm font-bold tracking-wider uppercase text-on-surface">
+        VERIGROCERY AI EXPLAINABILITY NOTICE
+      </span>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+        ALL FORECASTS, SUPPLY GAPS, AND RECOMMENDATIONS ARE SYNTHETIC SIMULATIONS FOR PROTOTYPING. NO PRODUCTION LLM/PREDICTIVE MODEL IS CONNECTED. All autonomous dispatch triggers, volume estimates, and confidence intervals are computed using simulated algorithmic seeds in the VeriGrocery Phase 5 Sandbox environment.
+      </p>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-4 px-gutter shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">info</span><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">VERIGROCERY AI ENTERPRISE ADMIN SANDBOX – ALL USERS, STORES, SUPPLIERS, PRODUCTS, FINANCIAL DATA, VERIFICATION RESULTS AND AI INSIGHTS ARE SIMULATED DEMO RECORDS.</p></div><div class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Phase 5 Build 5.4.11-rc</div></div></footer></div>
+
+</body></html>

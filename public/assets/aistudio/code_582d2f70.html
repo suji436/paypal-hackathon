@@ -1,0 +1,776 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed":"#bfedd3","outline-variant":"#c1c8c2","on-primary":"#ffffff","tertiary-fixed-dim":"#f0bf60","secondary-fixed-dim":"#bec6e0","on-surface":"#0b1c30","tertiary-container":"#483200","error":"#ba1a1a","on-primary-fixed-variant":"#254f3b","on-primary-fixed":"#002114","on-secondary-fixed":"#131b2e","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","on-error-container":"#93000a","on-secondary-container":"#5c647a","on-tertiary":"#ffffff","on-primary-container":"#7da890","surface-dim":"#cbdbf5","on-tertiary-container":"#c4983d","on-tertiary-fixed-variant":"#5d4200","surface":"#f8f9ff","secondary-container":"#dae2fd","primary":"#002618","on-secondary":"#ffffff","primary-fixed-dim":"#a4d1b7","outline":"#717973","surface-variant":"#d3e4fe","primary-container":"#123d2b","background":"#f8f9ff","on-secondary-fixed-variant":"#3f465c","surface-container":"#e5eeff","on-error":"#ffffff","on-background":"#0b1c30","surface-bright":"#f8f9ff","secondary":"#565e74","inverse-on-surface":"#eaf1ff","surface-container-lowest":"#ffffff","surface-tint":"#3d6752","inverse-primary":"#a4d1b7","inverse-surface":"#213145","surface-container-highest":"#d3e4fe","on-surface-variant":"#414943","tertiary-fixed":"#ffdea5","on-tertiary-fixed":"#271900","error-container":"#ffdad6","secondary-fixed":"#dae2fd","tertiary":"#2d1e00"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2.5rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px] text-primary-fixed">agriculture</span></div><div><span class="block font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">VeriGrocery</span><span class="block font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container mt-space-xs">Supplier Gateway</span></div></div><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">B2B</span></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-surface-tint">verified</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Verified Mill &amp; Producer Node</span></div><p class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">FSSAI • APMC Registered • TN Mandi</p></div><nav class="flex-1 px-space-sm py-space-md space-y-space-md overflow-y-auto max-h-[calc(100vh-210px)]" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Supplier Operations</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="">Overview</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="merchant-rfqs-and-quotations" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">request_quote</span><span class="">RFQs &amp; Quotations</span></span><span class="px-1.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">14 Live</span></a><a aria-current="page" class="flex items-center gap-space-sm px-space-sm py-2 transition-colors bg-primary-container text-on-primary font-bold rounded-lg shadow-sm" data-path="bulk-product-catalogue" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="">Bulk Catalogue (SKUs)</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="purchase-orders" href="#"><span class="material-symbols-outlined text-[20px]">orders</span><span class="">Purchase Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="supply-and-dispatch-fleet" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="">Dispatch &amp; POD Fleet</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Commercial Network</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="nagapattinam-store-tenders" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="">Nagapattinam Tenders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="wholesale-price-radar" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="">Wholesale Price Radar</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Credentials &amp; Compliance</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="mill-fssai-and-quality-lab" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="">FSSAI &amp; Quality Lab</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="gst-and-escrow-payouts" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="">GST &amp; Escrow Direct</span></a></div></div></nav></div><div class="p-space-sm bg-surface-container-lowest shadow-[0_-1px_6px_rgba(0,0,0,0.03)]"><a class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface transition-all" href="#"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-surface-tint">store</span><span class="font-label-md text-label-md font-bold">Switch to Retail Hub</span></span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_forward</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md w-full max-w-lg"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-secondary text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Search bulk SKUs, RFQs, store purchase orders (Ctrl+K)" type="text"></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[18px] text-surface-tint">lock</span><div><span class="block font-label-sm text-label-sm uppercase text-secondary leading-none">Direct Escrow Locked</span><span class="block font-label-md text-label-md text-on-surface font-bold leading-tight">₹18,45,200</span></div></div><button class="flex items-center gap-1.5 h-10 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add_circle</span><span class="">+ List Bulk Lot</span></button><button class="relative w-10 h-10 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary-container"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden md:block"><span class="block font-label-md text-label-md font-bold text-on-surface leading-tight">Kumbakonam Agro Mills</span><span class="block font-label-sm text-label-sm text-secondary">GST: 33AAACK1234F1Z8</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Banner & Header Action Bar -->
+<section class="relative px-margin py-space-xl overflow-hidden bg-surface-container-lowest shadow-sm">
+<div class="absolute -right-20 -top-24 w-96 h-96 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/3 -bottom-16 w-80 h-80 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg">
+<div class="max-w-3xl space-y-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-primary-container text-primary-fixed font-label-sm text-label-sm uppercase tracking-wider font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified_user</span> APMC Mandi Node • NABL Accredited
+          </span>
+<span class="text-secondary font-label-sm text-label-sm">• Kumbakonam Silo Cluster • Live Rate Slabs</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">Bulk Product Catalogue &amp; Lot Inventory</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+          Manage certified mill production lots, bulk packaging sizes, wholesale rate slabs, MOQ thresholds, and regional delivery coverage across the Cauvery delta retail network.
+        </p>
+</div>
+<!-- Action Strip -->
+<div class="flex flex-wrap items-center gap-space-sm"><button class="flex items-center gap-2 h-11 px-space-md rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md shadow-xs"><span class="material-symbols-outlined text-[18px] text-on-tertiary-container">price_change</span><span class="">Publish Revised Mandi Price</span></button><button class="flex items-center gap-2 h-11 px-space-md rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md shadow-xs"><span class="material-symbols-outlined text-[18px] text-surface-tint">verified</span><span class="">Generate Verified Batch COA</span></button><button class="flex items-center gap-2 h-11 px-space-md rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-all font-label-md text-label-md shadow-xs"><span class="material-symbols-outlined text-[18px] text-surface-tint">table_chart</span><span class="">Bulk Discount Matrix</span></button><button class="flex items-center gap-2 h-11 px-space-lg rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-all shadow-md hover:shadow-lg" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[20px] text-tertiary-fixed">add_circle</span><span class="font-bold">+ Add New Bulk Commodity</span></button></div>
+</div>
+<!-- Summary Metric Strip -->
+<div class="mt-space-xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Active Wholesale Lots</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-surface-tint shadow-xs">
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">64</span>
+<span class="font-label-sm text-label-sm text-on-primary-fixed-variant font-medium">Lots Active</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary-container">south_east</span>
+<span class="">All linked to retail RFQ queue</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Total Warehoused Volume</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-surface-tint shadow-xs">
+<span class="material-symbols-outlined text-[18px]">warehouse</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">142</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Metric Tons</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1.5 w-full">
+<div class="w-full bg-surface-container-highest rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-1.5 rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">78%</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Catalogue Valuation</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-surface-tint shadow-xs">
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-on-surface">₹58.4</span>
+<span class="font-headline-sm text-headline-sm text-secondary">Lakhs</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-body-sm text-body-sm text-on-primary-fixed-variant">
+<span class="material-symbols-outlined text-[14px]">lock_open</span>
+<span class="">₹18.45L covered in locked escrow</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low shadow-sm transition-all hover:bg-surface-container">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">NABL Lab Validated Lots</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-lowest flex items-center justify-center text-surface-tint shadow-xs">
+<span class="material-symbols-outlined text-[18px]">biotech</span>
+</span>
+</div>
+<div class="mt-space-sm flex items-baseline gap-2">
+<span class="font-headline-lg text-headline-lg text-primary-container">100%</span>
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Zero Rejection</span>
+</div>
+<div class="mt-space-xs flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-surface-tint">verified</span>
+<span class="">Cryptographic QR on all sacks/tins</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter & Navigation Toolbar -->
+<section class="px-margin py-space-md bg-surface space-y-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<!-- Search with unit & lot filters -->
+<div class="relative flex-1 max-w-2xl">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-secondary text-[20px]">search</span>
+<input class="w-full h-11 pl-11 pr-32 rounded-lg bg-surface-container-lowest shadow-sm text-on-surface placeholder:text-on-surface-variant font-body-md text-body-md focus:outline-none focus:bg-surface-container transition-all" placeholder="Search by Bulk Lot ID, Crop Variant, Mill Code, Grade..." type="text">
+<div class="absolute right-2 top-1/2 -translate-y-1/2 flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-secondary text-label-sm font-label-sm hover:text-on-surface">Press /</button>
+</div>
+</div>
+<!-- Quick status filters -->
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 lg:pb-0">
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="">In Stock / Ready Dispatch (52)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md shadow-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">warning</span>
+<span class="">Low Bulk Lot (8)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-space-sm py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container transition-colors font-label-md text-label-md shadow-xs whitespace-nowrap">
+<span class="material-symbols-outlined text-[16px] text-secondary">hourglass_top</span>
+<span class="">Harvest In-Process (4)</span>
+</button>
+</div>
+</div>
+<!-- Category Pills & View Controls -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex items-center gap-space-xs overflow-x-auto py-1">
+<button class="px-space-md py-1.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold shadow-xs whitespace-nowrap">
+          All Lots (64)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-all whitespace-nowrap shadow-xs">
+          Edible Oils &amp; Chekku (18)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-all whitespace-nowrap shadow-xs">
+          Millets &amp; Heritage Grains (22)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-all whitespace-nowrap shadow-xs">
+          Native Pulses &amp; Dals (14)
+        </button>
+<button class="px-space-md py-1.5 rounded-full bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-all whitespace-nowrap shadow-xs">
+          Organic Spices (10)
+        </button>
+</div>
+<div class="flex items-center gap-space-sm text-secondary font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">tune</span> Sort: 
+          <strong class="text-on-surface font-semibold">Volume (High to Low)</strong>
+</span>
+<span class="">•</span>
+<span class="">Showing 6 of 64 SKUs</span>
+</div>
+</div>
+</section>
+<!-- Master Bulk Catalogue Table -->
+<main class="px-margin pb-space-xl">
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-low text-secondary font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3.5 px-4 font-bold">Product Variant &amp; Lot ID</th>
+<th class="py-3.5 px-4 font-bold">Packaging &amp; Unit</th>
+<th class="py-3.5 px-4 font-bold">Wholesale Pricing &amp; Tiers</th>
+<th class="py-3.5 px-4 font-bold">Available Stock</th>
+<th class="py-3.5 px-4 font-bold">Mfg &amp; Shelf Life</th>
+<th class="py-3.5 px-4 font-bold">Quality &amp; Lab Seal</th>
+<th class="py-3.5 px-4 font-bold">Delivery Coverage</th>
+<th class="py-3.5 px-4 font-bold text-right">Lot Operations</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Row 1: Wood-Pressed Gingelly Oil -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center text-surface-tint overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Traditional wood-pressed golden amber sesame gingelly oil in transparent glass vial against rustic Tamil Nadu agro milling backdrop, soft natural daylight, deep emerald tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTkIVtHhDaIhdjeraEAr6qWLecZpTge6h_Kef5T4TFXlaYbrpqdprK-Nr9rcRkWwa1jAaE55FnnWLrKp_3pG_Dsd_iCkQOJ4W3tgQVsEPy2RqtP6jbAg4aQBoBhZsTaOnds7DUUq18KIPDqVL1Knk50MDZ1JTaWybhOaan8_BPmtCgZTig4hP90nh3OIVYWDEPxFWjTz4En4VBRqn6AbgKQiApQyBs-RTjfKYa6mk">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Wood-Pressed Gingelly (Sesame) Oil</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Grade A Chekku</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="font-mono text-on-surface font-semibold">#LOT-OIL-2025-09</span>
+<span class="">•</span>
+<span class="">Harvest: Thanjavur Basin</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-surface-tint font-medium">
+<span class="material-symbols-outlined text-[13px]">eco</span> Cold Pressed • Zero Additives
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<span class="inline-block px-2 py-1 rounded bg-surface-container font-label-md text-label-md font-bold text-on-surface">15L Food-Grade Tin</span>
+<p class="font-label-sm text-label-sm text-secondary">Also: 5L Canister • 1L Glass (12x)</p>
+<span class="text-[11px] text-outline font-medium">Tare Wt: 820g / Tin</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top"><div class="space-y-1.5 min-w-[210px]"><div class="flex items-baseline justify-between"><div class="flex items-baseline gap-1"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹185.00</span><span class="font-label-sm text-label-sm text-secondary">/ L</span></div><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Tier 1 Base</span></div><div class="p-1.5 rounded-lg bg-surface-container-low space-y-1 border-0"><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T1 (50-200L):</span><span class="font-mono font-bold text-on-surface">₹185.00/L</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T2 (200L-1KL):</span><span class="font-mono font-bold text-on-tertiary-container">₹175.00/L</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T3 (&gt;1KL Tanker):</span><span class="font-mono font-bold text-surface-tint">₹168.00/L</span></div></div><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">trending_down</span> 24.5% Retailer Margin</div></div></td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">2,400 Litres</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">(160 Sealed Tins)</p>
+<span class="font-label-sm text-label-sm text-surface-tint font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">home_pin</span> Kumbakonam Silo #04
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-0.5 font-label-sm text-label-sm text-secondary">
+<div class="text-on-surface">Mfg: <strong class="font-semibold">15 Jan 2025</strong></div>
+<div class="">Expiry: <strong class="text-on-surface font-semibold">Jan 2026</strong></div>
+<span class="text-[11px] text-surface-tint">340 Days Shelf-life</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> NABL Certified
+                  </span>
+<p class="font-label-sm text-label-sm text-secondary font-mono">0% Azo / Mineral</p>
+<p class="font-label-sm text-label-sm text-secondary">FSSAI #12418008000451</p>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1 max-w-[180px]">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Nagapattinam, Thiruvarur, Mayiladuthurai</span>
+<div class="flex items-center gap-1 text-[11px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Same-Day / T+24h
+                  </div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap"><div class="flex flex-col items-end gap-1.5"><button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span><span class="">Edit Tier Matrix</span></button><div class="flex items-center gap-1"><button class="px-2 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs" title="Download NABL Lab Assay Report"><span class="material-symbols-outlined text-[15px] text-surface-tint">description</span><span class="">COA</span></button><button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface" title="Pause Sourcing / Hold Allocation"><span class="material-symbols-outlined text-[16px]">pause_circle</span></button></div></div></td>
+</tr>
+<!-- Row 2: Traditional Ponni Boiled Rice -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group bg-surface-container-lowest">
+<td class="py-4 px-4 align-top">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Traditional South Indian Ponni boiled rice grains neatly piled inside natural handwoven jute fiber packaging, warm organic ambient tone" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSgGdDQabLFYjVYrGvv1tZ6LGGRvacZMtQYz1QuYblxP-j_CGEuk7ul3bxVCf_TqN35dXGWofBscF2CSVoluJuopDs4zXxq-NdCHm3QYci_KHXnREdw-JhpkRc55h0ApM-6rX0Dcnvw9WsZB6CjxSovZ2WVNbajm77isgMm_3koOkOz-DNg5gMsJMDL_QxBD2880b2pJGF8WjkNcuWCsPtbqH7LKom_IYleybBj08">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Traditional Ponni Boiled Rice</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold">12-Mo Aged</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="font-mono text-on-surface font-semibold">#LOT-RCE-2025-11</span>
+<span class="">•</span>
+<span class="">Mill: Thirunageswaram</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-surface-tint font-medium">
+<span class="material-symbols-outlined text-[13px]">check</span> Sortex Cleaned • Zero Chalky Grains
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<span class="inline-block px-2 py-1 rounded bg-surface-container font-label-md text-label-md font-bold text-on-surface">50kg Heavy Jute Sack</span>
+<p class="font-label-sm text-label-sm text-secondary">Also: 25kg Poly-Woven Bag</p>
+<span class="text-[11px] text-outline font-medium">Moisture: &lt;11.5%</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top"><div class="space-y-1.5 min-w-[210px]"><div class="flex items-baseline justify-between"><div class="flex items-baseline gap-1"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹52.00</span><span class="font-label-sm text-label-sm text-secondary">/ kg</span></div><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Tier 1 Base</span></div><div class="p-1.5 rounded-lg bg-surface-container-low space-y-1 border-0"><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T1 (500kg-2T):</span><span class="font-mono font-bold text-on-surface">₹52.00/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T2 (2T-10T):</span><span class="font-mono font-bold text-on-tertiary-container">₹48.50/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T3 (&gt;10T Lorry):</span><span class="font-mono font-bold text-surface-tint">₹46.20/kg</span></div></div><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">trending_down</span> 21.0% Retailer Margin</div></div></td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">48.5 Tons</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">(970 Jute Sacks)</p>
+<span class="font-label-sm text-label-sm text-surface-tint font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">home_pin</span> Godown Alpha #01
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-0.5 font-label-sm text-label-sm text-secondary">
+<div class="text-on-surface">Mfg: <strong class="font-semibold">04 Feb 2025</strong></div>
+<div class="">Expiry: <strong class="text-on-surface font-semibold">Aug 2026</strong></div>
+<span class="text-[11px] text-surface-tint">540 Days Shelf-life</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> Agmark Grade I
+                  </span>
+<p class="font-label-sm text-label-sm text-secondary font-mono">Pesticide Residue ND</p>
+<p class="font-label-sm text-label-sm text-secondary">FSSAI #12418008000451</p>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1 max-w-[180px]">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">All Delta Districts + Trichy Mandi</span>
+<div class="flex items-center gap-1 text-[11px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> 24h Heavy Freight
+                  </div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap"><div class="flex flex-col items-end gap-1.5"><button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span><span class="">Edit Tier Matrix</span></button><div class="flex items-center gap-1"><button class="px-2 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs" title="Download NABL Lab Assay Report"><span class="material-symbols-outlined text-[15px] text-surface-tint">description</span><span class="">COA</span></button><button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface" title="Pause Sourcing / Hold Allocation"><span class="material-symbols-outlined text-[16px]">pause_circle</span></button></div></div></td>
+</tr>
+<!-- Row 3: Organic Ivory Quinoa Grains -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="High quality raw ivory quinoa seeds in clean ceramic bowl, macro detailed grains with authentic organic texture, studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAh_jQXgDF9sYE_8oXuy641BOT4_Gbk49Y6lJBMcnjxabBF539MBDKEvC5zgcES4DNzNvK18KOiy1jfgZWShWPW6aQjKu2ASASy60ryQGQl97a0_HOM_ascXuJ1QwLf1B7c6Kwn64F71ktI8pb3V-wuh9SUdg4VJneL314FDI9ei8ZxtVp7Sx_DaUD_voxznC5BW--b7JGDK8CK6JXQRdKXcWaCnqR4jquWH0vtxss">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Organic Ivory Quinoa Grains</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Export Premium</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="font-mono text-on-surface font-semibold">#LOT-QNA-2025-03</span>
+<span class="">•</span>
+<span class="">Origin: Ooty Agro Farm</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-surface-tint font-medium">
+<span class="material-symbols-outlined text-[13px]">verified</span> 100% Saponin Washed
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<span class="inline-block px-2 py-1 rounded bg-surface-container font-label-md text-label-md font-bold text-on-surface">25kg Multi-Wall Paper Sack</span>
+<p class="font-label-sm text-label-sm text-secondary">Inner Foil Barrier Liner</p>
+<span class="text-[11px] text-outline font-medium">Gluten Free Assured</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top"><div class="space-y-1.5 min-w-[210px]"><div class="flex items-baseline justify-between"><div class="flex items-baseline gap-1"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹142.00</span><span class="font-label-sm text-label-sm text-secondary">/ kg</span></div><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Tier 1 Base</span></div><div class="p-1.5 rounded-lg bg-surface-container-low space-y-1 border-0"><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T1 (100-500kg):</span><span class="font-mono font-bold text-on-surface">₹142.00/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T2 (500kg-2T):</span><span class="font-mono font-bold text-on-tertiary-container">₹131.00/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T3 (&gt;2T Bulk):</span><span class="font-mono font-bold text-surface-tint">₹124.00/kg</span></div></div><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">trending_down</span> 28.0% Retailer Margin</div></div></td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">3,200 kg</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">(128 Sacks)</p>
+<span class="font-label-sm text-label-sm text-surface-tint font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">home_pin</span> Silo Beta #02 (Dehum.)
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-0.5 font-label-sm text-label-sm text-secondary">
+<div class="text-on-surface">Mfg: <strong class="font-semibold">20 Jan 2025</strong></div>
+<div class="">Expiry: <strong class="text-on-surface font-semibold">Jan 2027</strong></div>
+<span class="text-[11px] text-surface-tint">720 Days Shelf-life</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> Jaivik Bharat Organic
+                  </span>
+<p class="font-label-sm text-label-sm text-secondary font-mono">NPOP/NAB/0012</p>
+<p class="font-label-sm text-label-sm text-secondary">FSSAI #12418008000451</p>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1 max-w-[180px]">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Chennai, Coimbatore, Nagapattinam</span>
+<div class="flex items-center gap-1 text-[11px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Express T+48h
+                  </div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap"><div class="flex flex-col items-end gap-1.5"><button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span><span class="">Edit Tier Matrix</span></button><div class="flex items-center gap-1"><button class="px-2 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs" title="Download NABL Lab Assay Report"><span class="material-symbols-outlined text-[15px] text-surface-tint">description</span><span class="">COA</span></button><button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface" title="Pause Sourcing / Hold Allocation"><span class="material-symbols-outlined text-[16px]">pause_circle</span></button></div></div></td>
+</tr>
+<!-- Row 4: Unpolished Toor Dal -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Raw natural unpolished split yellow pigeon peas toor dal, rich golden yellow texture on rustic table, clean commercial product view" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZLqvXCgsGHT_NuyVryoz8k1H-rQrEBDmbokCu__yiyUKbb7NrYegOzw0N7ms6l7s7JLfF7GHauFtHCi6paaYBLjXm7Ou80tc7BjCf4v35avYUpWYNbIjVCGk7fbdDsZ2AhUKrbDabD6q5QpBFa9m8HWoETm72mo1M54jJNCGtKpHdj0p77V45wsjdyNcv7jBdbGonZ0e-rm-Lsb13Ay3nr3czxOfZCZAnr8KlT4A">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Unpolished Toor Dal</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm font-bold">Erode Milling</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="font-mono text-on-surface font-semibold">#LOT-DAL-2025-18</span>
+<span class="">•</span>
+<span class="">No Leather Polishing</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-surface-tint font-medium">
+<span class="material-symbols-outlined text-[13px]">water_drop</span> Zero Oil Adulteration
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<span class="inline-block px-2 py-1 rounded bg-surface-container font-label-md text-label-md font-bold text-on-surface">30kg Poly-Woven Bag</span>
+<p class="font-label-sm text-label-sm text-secondary">Retail Master Pouch Pack</p>
+<span class="text-[11px] text-outline font-medium">Protein: 22.4g / 100g</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top"><div class="space-y-1.5 min-w-[210px]"><div class="flex items-baseline justify-between"><div class="flex items-baseline gap-1"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹138.00</span><span class="font-label-sm text-label-sm text-secondary">/ kg</span></div><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Tier 1 Base</span></div><div class="p-1.5 rounded-lg bg-surface-container-low space-y-1 border-0"><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T1 (300kg-1.5T):</span><span class="font-mono font-bold text-on-surface">₹138.00/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T2 (1.5T-5T):</span><span class="font-mono font-bold text-on-tertiary-container">₹129.50/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T3 (&gt;5T Truck):</span><span class="font-mono font-bold text-surface-tint">₹122.00/kg</span></div></div><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">trending_down</span> 19.5% Retailer Margin</div></div></td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">18.6 Tons</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">(620 Bags)</p>
+<span class="font-label-sm text-label-sm text-surface-tint font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">home_pin</span> Godown Beta #03
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-0.5 font-label-sm text-label-sm text-secondary">
+<div class="text-on-surface">Mfg: <strong class="font-semibold">01 Feb 2025</strong></div>
+<div class="">Expiry: <strong class="text-on-surface font-semibold">Jan 2026</strong></div>
+<span class="text-[11px] text-surface-tint">330 Days Shelf-life</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> NABL Zero Tartrazine
+                  </span>
+<p class="font-label-sm text-label-sm text-secondary font-mono">Moisture 9.8% Pass</p>
+<p class="font-label-sm text-label-sm text-secondary">FSSAI #12418008000451</p>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1 max-w-[180px]">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Nagapattinam, Karaikal, Tiruvarur</span>
+<div class="flex items-center gap-1 text-[11px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Daily APMC Shuttle
+                  </div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap"><div class="flex flex-col items-end gap-1.5"><button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span><span class="">Edit Tier Matrix</span></button><div class="flex items-center gap-1"><button class="px-2 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs" title="Download NABL Lab Assay Report"><span class="material-symbols-outlined text-[15px] text-surface-tint">description</span><span class="">COA</span></button><button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface" title="Pause Sourcing / Hold Allocation"><span class="material-symbols-outlined text-[16px]">pause_circle</span></button></div></div></td>
+</tr>
+<!-- Row 5: Kattuyanam Heritage Red Rice -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Traditional dark reddish brown deep pigmented Kattuyanam unpolished heritage rice grains, rustic wooden spoon on woven fabric, editorial South Indian agricultural capture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdLwrnKpJ-Dqzgd9fcJJEtbEnbHx1LUO89pFJeSGXkVwo_8WXWsn21FaCGui5WHiUoa-CUjE2dVCPJLmCpEmye4hBMfiGniUqP6V3WuHfofZjmPA1ZOjKySWoyh9epBhQdwYmyJDoQ2D-onVZ9C4A4tgWVUq9ZlbyqXniC8nCJDIPswsr3OQeRXa1U0qBo11qHV0dmQKVhhl0wSkH0WDiSWcVDwdqznZCuinSrX3A">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Kattuyanam Heritage Red Rice</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Diabetic Grade</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="font-mono text-on-surface font-semibold">#LOT-RCE-2025-27</span>
+<span class="">•</span>
+<span class="">GI Tag Registered</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-surface-tint font-medium">
+<span class="material-symbols-outlined text-[13px]">insights</span> Low Glycemic Index &lt;52
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<span class="inline-block px-2 py-1 rounded bg-surface-container font-label-md text-label-md font-bold text-on-surface">25kg Breathable Linen Sack</span>
+<p class="font-label-sm text-label-sm text-secondary">10kg Carton Packs Available</p>
+<span class="text-[11px] text-outline font-medium">Unpolished Bran Intact</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top"><div class="space-y-1.5 min-w-[210px]"><div class="flex items-baseline justify-between"><div class="flex items-baseline gap-1"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹94.00</span><span class="font-label-sm text-label-sm text-secondary">/ kg</span></div><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Tier 1 Base</span></div><div class="p-1.5 rounded-lg bg-surface-container-low space-y-1 border-0"><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T1 (250kg-1T):</span><span class="font-mono font-bold text-on-surface">₹94.00/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T2 (1T-5T):</span><span class="font-mono font-bold text-on-tertiary-container">₹88.00/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T3 (&gt;5T Truckload):</span><span class="font-mono font-bold text-surface-tint">₹82.50/kg</span></div></div><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">trending_down</span> 22.8% Retailer Margin</div></div></td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">9,500 kg</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">(380 Sacks)</p>
+<span class="font-label-sm text-label-sm text-surface-tint font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">home_pin</span> Heritage Silo #08
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-0.5 font-label-sm text-label-sm text-secondary">
+<div class="text-on-surface">Mfg: <strong class="font-semibold">28 Jan 2025</strong></div>
+<div class="">Expiry: <strong class="text-on-surface font-semibold">Jul 2026</strong></div>
+<span class="text-[11px] text-surface-tint">510 Days Shelf-life</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> GI Certified Lot
+                  </span>
+<p class="font-label-sm text-label-sm text-secondary font-mono">Anthocyanin High</p>
+<p class="font-label-sm text-label-sm text-secondary">FSSAI #12418008000451</p>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1 max-w-[180px]">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Nagapattinam, Thanjavur, Pudukkottai</span>
+<div class="flex items-center gap-1 text-[11px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Same-Day / T+24h
+                  </div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap"><div class="flex flex-col items-end gap-1.5"><button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span><span class="">Edit Tier Matrix</span></button><div class="flex items-center gap-1"><button class="px-2 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs" title="Download NABL Lab Assay Report"><span class="material-symbols-outlined text-[15px] text-surface-tint">description</span><span class="">COA</span></button><button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface" title="Pause Sourcing / Hold Allocation"><span class="material-symbols-outlined text-[16px]">pause_circle</span></button></div></div></td>
+</tr>
+<!-- Row 6: Single-Estate Ceylon Cinnamon Quills -->
+<tr class="hover:bg-surface-container-low/60 transition-colors group">
+<td class="py-4 px-4 align-top">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex-shrink-0 flex items-center justify-center overflow-hidden shadow-xs">
+<img class="w-full h-full object-cover" data-alt="High grade thin layered Ceylon true cinnamon quills tied in organic twine, warm aromatic spices presentation, professional B2B grocery catalog photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbPFVUAxrAIiz_MJZSGSiyJW_3VwPiHDQ7O89aEbzRCRWb61YcHVXdFzww1mMpfPUQXtGHBIylVcshkOV3oOB42f0npAza1gs26-OF_4euegH0Jdhot134ebnkj3dJfLGaW1LJ0pW2GyG-m0wu1OQlTZTp1t7c49rrcExxY02WOmTHDu-OTSODUy7Qm_7aSYrtBzMiDhWLwj_SX90NMfcrg4zOeH8KHyHtF65f4Xo">
+</div>
+<div class="space-y-0.5">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold leading-tight">Ceylon Cinnamon Quills</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">C5 Special Grade</span>
+</div>
+<div class="flex items-center gap-2 font-label-sm text-label-sm text-secondary">
+<span class="font-mono text-on-surface font-semibold">#LOT-SPX-2025-05</span>
+<span class="">•</span>
+<span class="">True Alba Diameter</span>
+</div>
+<span class="inline-flex items-center gap-1 text-[11px] text-surface-tint font-medium">
+<span class="material-symbols-outlined text-[13px]">shield</span> Zero Cassia • Coumarin &lt;0.004%
+                    </span>
+</div>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<span class="inline-block px-2 py-1 rounded bg-surface-container font-label-md text-label-md font-bold text-on-surface">10kg Master Carton</span>
+<p class="font-label-sm text-label-sm text-secondary">10x 1kg Vacuum Pouches</p>
+<span class="text-[11px] text-outline font-medium">Moisture: &lt;9.0%</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top"><div class="space-y-1.5 min-w-[210px]"><div class="flex items-baseline justify-between"><div class="flex items-baseline gap-1"><span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹1,850.00</span><span class="font-label-sm text-label-sm text-secondary">/ kg</span></div><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Tier 1 Base</span></div><div class="p-1.5 rounded-lg bg-surface-container-low space-y-1 border-0"><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T1 (10kg-50kg):</span><span class="font-mono font-bold text-on-surface">₹1,850/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T2 (50kg-200kg):</span><span class="font-mono font-bold text-on-tertiary-container">₹1,720/kg</span></div><div class="flex items-center justify-between text-[11px]"><span class="text-secondary font-medium">T3 (&gt;200kg Master):</span><span class="font-mono font-bold text-surface-tint">₹1,640/kg</span></div></div><div class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">trending_down</span> 32.0% Retailer Margin</div></div></td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-1">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-on-tertiary-container"></span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">420 kg</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary">(42 Master Cartons)</p>
+<span class="font-label-sm text-label-sm text-surface-tint font-medium flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">home_pin</span> Spice Vault C-01
+                  </span>
+</div>
+</td>
+<td class="py-4 px-4 align-top whitespace-nowrap">
+<div class="space-y-0.5 font-label-sm text-label-sm text-secondary">
+<div class="text-on-surface">Mfg: <strong class="font-semibold">10 Jan 2025</strong></div>
+<div class="">Expiry: <strong class="text-on-surface font-semibold">Jan 2027</strong></div>
+<span class="text-[11px] text-surface-tint">730 Days Shelf-life</span>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span> Spices Board India
+                  </span>
+<p class="font-label-sm text-label-sm text-secondary font-mono">Volatile Oil 2.8%</p>
+<p class="font-label-sm text-label-sm text-secondary">FSSAI #12418008000451</p>
+</div>
+</td>
+<td class="py-4 px-4 align-top">
+<div class="space-y-1 max-w-[180px]">
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">All Tamil Nadu &amp; South India Mandis</span>
+<div class="flex items-center gap-1 text-[11px] text-primary-container font-bold">
+<span class="material-symbols-outlined text-[13px]">local_shipping</span> Insured Cargo T+24h
+                  </div>
+</div>
+</td>
+<td class="py-4 px-4 align-top text-right whitespace-nowrap"><div class="flex flex-col items-end gap-1.5"><button class="px-2.5 py-1.5 rounded-lg bg-surface-container text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1" onclick="toggleQuickDrawer()"><span class="material-symbols-outlined text-[15px] text-on-tertiary-container">tune</span><span class="">Edit Tier Matrix</span></button><div class="flex items-center gap-1"><button class="px-2 py-1 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface font-label-sm text-label-sm font-medium flex items-center gap-1 shadow-xs" title="Download NABL Lab Assay Report"><span class="material-symbols-outlined text-[15px] text-surface-tint">description</span><span class="">COA</span></button><button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-secondary hover:text-on-surface" title="Pause Sourcing / Hold Allocation"><span class="material-symbols-outlined text-[16px]">pause_circle</span></button></div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Pagination & Bottom Bulk Action Banner -->
+<div class="p-space-md bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm text-secondary font-label-sm text-label-sm">
+<span class="">Selected 0 of 64 wholesale lots</span>
+<span class="">•</span>
+<button class="text-on-surface font-bold hover:underline">Select All Ready Lots</button>
+<span class="">•</span>
+<button class="text-on-surface font-bold hover:underline">Batch Generate GST E-Way Bills</button>
+</div>
+<div class="flex items-center gap-1">
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center hover:bg-surface-container disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-bold flex items-center justify-center shadow-xs">
+            1
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center hover:bg-surface-container">
+            2
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center hover:bg-surface-container">
+            3
+          </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-secondary flex items-center justify-center hover:bg-surface-container">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Slide-out Quick Inspection Drawer (Modal State) -->
+<div class="fixed inset-y-0 right-0 z-50 w-full max-w-xl bg-surface-container-lowest shadow-2xl transition-transform duration-300 ease-in-out translate-x-full overflow-y-auto" id="quickInspectionDrawer">
+<!-- Drawer Header -->
+<div class="sticky top-0 z-20 px-space-lg py-space-md bg-surface-container-lowest/90 backdrop-blur-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed shadow-xs">
+<span class="material-symbols-outlined text-[22px]">biotech</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Lot Quality &amp; Margin Dossier</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">#LOT-OIL-2025-09</h2>
+</div>
+</div>
+<button class="w-9 h-9 rounded-lg bg-surface-container-low hover:bg-surface-container flex items-center justify-center text-on-surface-variant transition-colors" onclick="toggleQuickDrawer()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-space-lg space-y-space-lg">
+<!-- Commodity Summary Card -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Wood-Pressed Gingelly Oil</span>
+<span class="font-label-sm text-label-sm text-secondary">Chekku Method</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+          Cold extraction from Thanjavur white sesame. 100% natural precipitation settling without chemical bleaching or high-heat deacidification.
+        </p>
+<div class="pt-2 flex items-center justify-between font-label-sm text-label-sm text-on-surface">
+<span class="">Available: <strong class="font-bold">2,400 Litres (160 Tins)</strong></span>
+<span class="">Base Wholesale: <strong class="font-bold text-primary-container">₹185.00/L</strong></span>
+</div>
+</div>
+<!-- Section 1: Lab Analysis Breakdown -->
+<div class="space-y-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-surface-tint">verified</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">NABL Lab Analysis Breakdown</h3>
+</div>
+<span class="font-label-sm text-label-sm text-primary-container font-bold">Certificate #NAB-TN-8829</span>
+</div>
+<div class="grid grid-cols-3 gap-space-sm">
+<div class="p-space-sm rounded-lg bg-surface-container space-y-1">
+<span class="block font-label-sm text-label-sm text-secondary">Free Fatty Acid (Acid Value)</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">0.4%</span>
+<span class="font-label-sm text-label-sm text-surface-tint font-bold">Pass (&lt;1.5%)</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1">
+<div class="bg-primary-container h-1 rounded-full" style="width: 27%"></div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container space-y-1">
+<span class="block font-label-sm text-label-sm text-secondary">Iodine Value (Wijs)</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">108</span>
+<span class="font-label-sm text-label-sm text-surface-tint font-bold">Optimal</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1">
+<div class="bg-primary-container h-1 rounded-full" style="width: 72%"></div>
+</div>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container space-y-1">
+<span class="block font-label-sm text-label-sm text-secondary">Saponification Value</span>
+<div class="flex items-baseline gap-1">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">190</span>
+<span class="font-label-sm text-label-sm text-surface-tint font-bold">Standard</span>
+</div>
+<div class="w-full bg-surface-container-highest rounded-full h-1">
+<div class="bg-primary-container h-1 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+</div>
+<!-- Forensic Traceability details -->
+<div class="p-space-md rounded-lg bg-surface-container space-y-2">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary">Pesticide Residue Screen (64 Analyte GC-MS):</span>
+<span class="font-bold text-on-surface">Not Detected (ND)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary">Aflatoxin (B1, B2, G1, G2):</span>
+<span class="font-bold text-on-surface">&lt;0.5 ppb (Govt Norm &lt;15 ppb)</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary">Mineral Oil / Argemone Test:</span>
+<span class="font-bold text-primary-container">Strictly Negative (Pure Plant Lipid)</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Store Buyer Margin Simulator -->
+<div class="p-space-md rounded-xl bg-surface-container-low space-y-space-md"><div class="flex items-center justify-between"><div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Wholesale Volume Tier Matrix</h3><p class="font-label-sm text-label-sm text-secondary">Live slab rates for Cauvery Delta &amp; South India Mandi buyers</p></div><span class="px-2 py-1 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">verified</span> Assay Stamp: 99.8% Pure</span></div><div class="grid grid-cols-3 gap-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-lowest border-0 shadow-xs space-y-1.5"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-bold text-secondary uppercase">Tier 1: 50-200L</span><span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-bold text-on-surface">Standard</span></div><div class="flex items-baseline gap-1"><span class="font-headline-md text-headline-md text-on-surface font-bold">₹185.00</span><span class="text-[11px] text-secondary">/L</span></div><span class="inline-block px-1.5 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm font-semibold">Margin: 24.5%</span><div class="pt-1"><div class="flex justify-between text-[10px] text-secondary mb-0.5"><span class="">Stock Allocated</span><span class="">100%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-primary-container h-1 rounded-full" style="width: 100%"></div></div></div></div><div class="p-space-sm rounded-xl bg-surface-container-lowest border-0 shadow-xs space-y-1.5"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-bold text-on-tertiary-container uppercase">Tier 2: 200L-1KL</span><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">5.4% Off</span></div><div class="flex items-baseline gap-1"><span class="font-headline-md text-headline-md text-on-surface font-bold">₹175.00</span><span class="text-[11px] text-secondary">/L</span></div><span class="inline-block px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Margin: 28.5%</span><div class="pt-1"><div class="flex justify-between text-[10px] text-secondary mb-0.5"><span class="">Live Capacity</span><span class="">74%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-on-tertiary-container h-1 rounded-full" style="width: 74%"></div></div></div></div><div class="p-space-sm rounded-xl bg-surface-container-lowest border-0 shadow-xs space-y-1.5"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm font-bold text-primary-container uppercase">Tier 3: &gt;1KL Tank</span><span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">9.2% Off</span></div><div class="flex items-baseline gap-1"><span class="font-headline-md text-headline-md text-on-surface font-bold">₹168.00</span><span class="text-[11px] text-secondary">/L</span></div><span class="inline-block px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">Margin: 31.4%</span><div class="pt-1"><div class="flex justify-between text-[10px] text-secondary mb-0.5"><span class="">Tanker Bay</span><span class="">48%</span></div><div class="w-full bg-surface-container-highest rounded-full h-1"><div class="bg-primary-container h-1 rounded-full" style="width: 48%"></div></div></div></div></div><div class="p-space-sm rounded-lg bg-surface-container-lowest flex items-center justify-between shadow-xs"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[20px] text-surface-tint">science</span><div><span class="block font-label-sm text-label-sm font-bold text-on-surface">Assay &amp; Moisture Stamp Verified</span><span class="block font-body-sm text-body-sm text-secondary">Moisture: &lt;0.08% • Acid Value: 0.4% • Zero Hexane Residue</span></div></div><span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">Certified APMC Lot</span></div></div>
+<!-- Section 3: Batch QR Cryptographic Hologram Generator -->
+<div class="space-y-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Batch QR Cryptographic Seal</h3>
+<p class="font-label-sm text-label-sm text-secondary">Generates Tamper-Proof Holographic Barcodes for 15L Tins &amp; Canister Outer Packaging.</p>
+<div class="p-space-md rounded-xl bg-surface-container flex items-center gap-space-md">
+<!-- Inline Cryptographic QR Matrix representation -->
+<div class="w-24 h-24 rounded-lg bg-surface-container-lowest p-1.5 shadow-sm flex items-center justify-center flex-shrink-0">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewBox="0 0 100 100">
+<path d="M0 0h30v30H0zm4 4h22v22H4zm4 4h14v14H8zM70 0h30v30H70zm4 4h22v22H74zm4 4h14v14H78zM0 70h30v30H0zm4 4h22v22H4zm4 4h14v14H8zM40 10h10v10H40zm15 0h10v10H55zm-15 15h10v10H40zm15 15h10v10H55zm-30 0h10v10H25zm50 0h10v10H75zm-10 15h10v10H65zm15 15h10v10H80zm-40 0h10v10H40zm-15 15h10v10H25zm15 15h10v10H40zm25 0h10v10H65zm15-15h10v10H80z"></path>
+</svg>
+</div>
+<div class="space-y-1.5 flex-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-mono text-label-sm font-bold text-on-surface truncate">SHA256: 9b2d...4ef8</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">VeriGrocery Node</span>
+</div>
+<p class="font-label-sm text-label-sm text-secondary leading-snug">
+              Encodes APMC arrival date, NABL batch serial, mill press temperature (&lt;42°C), and FSSAI permit.
+            </p>
+<div class="pt-1 flex items-center gap-2">
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px]">print</span>
+<span class="">Print 160 Adhesive Tins</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest text-on-surface hover:bg-surface-container-high transition-colors font-label-sm text-label-sm font-semibold flex items-center gap-1 shadow-xs">
+<span class="material-symbols-outlined text-[14px]">share</span>
+<span class="">Audit Link</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Drawer Footer Actions -->
+<div class="sticky bottom-0 z-20 px-space-lg py-space-md bg-surface-container-lowest shadow-md flex items-center justify-between gap-space-sm">
+<button class="h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" onclick="toggleQuickDrawer()">
+        Dismiss
+      </button>
+<div class="flex items-center gap-space-sm">
+<button class="h-11 px-space-md rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">lock_clock</span>
+<span class="">Escrow Lock</span>
+</button>
+<button class="h-11 px-space-lg rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary-fixed">send_and_archive</span>
+<span class="">Push to 14 Live RFQs</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Overlay Backdrop for Modal Drawer -->
+<div class="fixed inset-0 bg-on-surface/30 backdrop-blur-xs z-40 transition-opacity duration-300 opacity-0 pointer-events-none" id="drawerBackdrop" onclick="toggleQuickDrawer()"></div>
+<!-- Inline Micro-interaction Controller -->
+<script>
+    function toggleQuickDrawer() {
+      const drawer = document.getElementById('quickInspectionDrawer');
+      const backdrop = document.getElementById('drawerBackdrop');
+      
+      const isOpen = !drawer.classList.contains('translate-x-full');
+      if (isOpen) {
+        drawer.classList.add('translate-x-full');
+        backdrop.classList.add('opacity-0', 'pointer-events-none');
+        backdrop.classList.remove('opacity-100', 'pointer-events-auto');
+      } else {
+        drawer.classList.remove('translate-x-full');
+        backdrop.classList.remove('opacity-0', 'pointer-events-none');
+        backdrop.classList.add('opacity-100', 'pointer-events-auto');
+      }
+    }
+  </script>
+</div></main></div>
+
+</body></html>

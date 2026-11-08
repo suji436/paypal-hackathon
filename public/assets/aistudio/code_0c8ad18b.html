@@ -1,0 +1,1238 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#271900","primary-fixed":"#bfedd3","background":"#f8f9ff","surface-variant":"#d3e4fe","surface-container":"#e5eeff","outline":"#717973","primary-fixed-dim":"#a4d1b7","on-primary-container":"#7da890","on-tertiary-container":"#c4983d","error":"#ba1a1a","on-primary":"#ffffff","on-secondary-container":"#5c647a","on-secondary-fixed-variant":"#3f465c","secondary-fixed-dim":"#bec6e0","secondary":"#565e74","on-error-container":"#93000a","inverse-primary":"#a4d1b7","surface-container-lowest":"#ffffff","primary":"#002618","surface":"#f8f9ff","surface-container-high":"#dce9ff","on-error":"#ffffff","on-primary-fixed-variant":"#254f3b","outline-variant":"#c1c8c2","tertiary-fixed":"#ffdea5","error-container":"#ffdad6","secondary-container":"#dae2fd","surface-bright":"#f8f9ff","on-surface-variant":"#414943","surface-tint":"#3d6752","on-background":"#0b1c30","tertiary-container":"#483200","primary-container":"#123d2b","surface-dim":"#cbdbf5","secondary-fixed":"#dae2fd","on-surface":"#0b1c30","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5d4200","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","tertiary":"#2d1e00","inverse-surface":"#213145","on-tertiary":"#ffffff","tertiary-fixed-dim":"#f0bf60","on-secondary-fixed":"#131b2e","on-primary-fixed":"#002114"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","gutter":"1.5rem","gutter-mobile":"1rem","margin-mobile":"1rem"},"fontFamily":{"label-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">VeriGrocery</span><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase px-1.5 py-0.5 rounded bg-tertiary-fixed/30 font-bold leading-none">AI</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Procurement Command</span></div></div><div class="h-6 w-[1px] bg-outline-variant/40 hidden xl:block"></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">location_on</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase leading-none">Regional Hub</span><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Cauvery Delta Hub • Nagapattinam Corridor</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Search PR #, PO #, Supplier, Commodity, GTIN..." type="text"><kbd class="absolute right-3 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase font-mono">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/20"><span class="material-symbols-outlined text-on-tertiary-container text-[14px]">bolt</span><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wider font-bold">APMC Sandbox Simulated • v4.8</span></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[9px] flex items-center justify-center font-bold">9</span></div><div class="h-6 w-[1px] bg-outline-variant/40"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><div class="flex items-center gap-1.5 justify-end"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">S. Ramanathan</span><span class="w-2 h-2 rounded-full bg-primary-container"></span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Procurement Officer (CPO)</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs mb-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold">Operations Matrix</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#">Overview</a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="purchase-requests" href="#"><span class="text-left">Purchase Requests</span><span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold">14</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="supplier-marketplace" href="#"><span class="text-left">Supplier Marketplace</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="quotation-comparison" href="#"><span class="text-left">Quotation Comparison</span><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed/40 font-label-sm text-label-sm text-on-tertiary-fixed-variant font-bold">AI</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="purchase-orders" href="#"><span class="text-left">Purchase Orders</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="goods-receipt" href="#"><span class="text-left">Goods Receipt</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="contracts" href="#"><span class="text-left">Contracts</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="analytics" href="#"><span class="text-left">Analytics</span></a></nav></div><div class="px-space-sm flex flex-col gap-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Forensic Node</span><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span></div><p class="font-body-sm text-body-sm text-on-surface leading-tight mb-2">Agro-ledger integrity: 99.98% valid</p><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 96%"></div></div></div><div class="flex items-center justify-between px-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase">VeriProtocol v4.8.1</span><span class="material-symbols-outlined text-[16px]">lock</span></div></div></aside><div class="pl-64"><main class="w-full pt-16 bg-background px-gutter min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- Top Context Breadcrumb & Live Hub Status Bar -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm mb-space-md">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md">
+<span class="">B2B Procurement</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Quotation Comparison &amp; Evaluation Matrix</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-tertiary-container font-semibold">Cauvery Delta Corridor</span>
+</div>
+<div class="flex items-center gap-space-sm mt-1">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Quotation Evaluation Engine</h1>
+<span class="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed animate-ping"></span>
+          REAL-TIME L1/L2 ARBITRAGE
+        </span>
+</div>
+</div>
+<!-- Right Quick Controls -->
+<div class="flex items-center gap-space-sm">
+<div class="flex items-center bg-surface-container-low px-space-sm py-1.5 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-on-surface-variant text-[18px] mr-2">database</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">Node: TN-DELTA-09</span>
+</div>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface hover:bg-surface-container font-label-md text-label-md transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">download</span>
+        Export Comparative Dossier (.PDF)
+      </button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">rule_settings</span>
+        Calibrate Weights
+      </button>
+</div>
+</div>
+<!-- KPI Metrics Deck (6 Pillars) -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm mb-space-lg">
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Active RFQs</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">receipt_long</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">18 RFQs</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">₹41.20L staged volume</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Received Quotations</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]">dynamic_feed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">64 Bids</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Avg. 3.5 quotes / RFQ</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Awaiting Quotes</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">pending_actions</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">12 Suppliers</span>
+<span class="font-body-sm text-body-sm text-error font-semibold">4 Expiring &lt;6 hrs</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Under Evaluation</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">flaky</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-surface">8 RFQs</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Algorithmic scoring active</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Award Recommendations</span>
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-tertiary-container font-bold">5 High Alpha</span>
+<span class="font-body-sm text-body-sm text-secondary font-medium">Ready for PO Release</span>
+</div>
+</div>
+<div class="p-space-md rounded-xl bg-primary-container text-on-primary shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase font-semibold">Est. Sourcing Value</span>
+<span class="material-symbols-outlined text-primary-fixed text-[18px]">savings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-md text-headline-md text-on-primary font-bold">₹32.80L</span>
+<span class="font-body-sm text-body-sm text-primary-fixed font-semibold">Est. Savings: ₹2.44L</span>
+</div>
+</div>
+</div>
+<!-- Sub-Navigation Workflow Tabs -->
+<div class="flex items-center justify-between bg-surface-container-lowest rounded-xl p-1.5 shadow-sm mb-space-md">
+<div class="flex items-center gap-1">
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-bold shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">table_chart_view</span>
+<span class="">Live Evaluation Matrix</span>
+<span class="w-2 h-2 rounded-full bg-primary-fixed"></span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+<span class="">Active RFQ Dossiers</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm font-semibold">18</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+<span class="">Algorithmic Scoring Engine</span>
+</button>
+<button class="flex items-center gap-2 px-space-md py-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low font-label-md text-label-md transition-all">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span class="">Bid Clarification Vault</span>
+<span class="px-1.5 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">3 Unread</span>
+</button>
+</div>
+<div class="hidden lg:flex items-center gap-2 px-space-sm text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">tune</span>
+<span class="">Scoring Mode: <strong>Forensic Agro-Assay Weighted</strong></span>
+</div>
+</div>
+<!-- Current RFQ Focus Banner -->
+<div class="p-space-md bg-surface-container-lowest rounded-xl shadow-sm mb-space-md">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[28px]">grain</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2 flex-wrap">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">RFQ-2026-0104</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">Linked PR: #PR-2026-0089</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">Velan Supermarket Network</span>
+</div>
+<div class="flex items-center gap-space-md mt-1 text-on-surface-variant font-body-sm text-body-sm flex-wrap">
+<span class=""><strong>Commodity:</strong> Grade-A Ponni Boiled Rice (Lot 2026)</span>
+<span class="">•</span>
+<span class=""><strong>Order Volume:</strong> 40 MT (800 Bags × 50kg)</span>
+<span class="">•</span>
+<span class=""><strong>Fulfillment Depot:</strong> Nagapattinam Central Depot (Dock 03)</span>
+<span class="">•</span>
+<span class=""><strong>Target SLA:</strong> Feb 28, 2026</span>
+</div>
+</div>
+</div>
+<!-- Quick Selector / Stepper -->
+<div class="flex items-center gap-space-sm self-end lg:self-center">
+<div class="text-right mr-2 hidden sm:block">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold block">4 Bids Received</span>
+<span class="font-body-sm text-body-sm text-primary font-bold">100% Corridor Coverage</span>
+</div>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Previous RFQ">
+<span class="material-symbols-outlined text-[20px]">chevron_left</span>
+</button>
+<button class="p-2 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-colors" title="Next RFQ">
+<span class="material-symbols-outlined text-[20px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Algorithmic Weights Distribution Strip -->
+<div class="p-space-sm bg-surface-container-low rounded-xl shadow-sm mb-space-md cursor-pointer">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-xs px-space-xs pb-1.5">
+<div class="flex items-center gap-1.5 font-label-sm text-label-sm text-on-surface uppercase font-bold">
+<span class="material-symbols-outlined text-primary-container text-[16px]">balance</span>
+        Active Multi-Factor Weights Matrix
+      </div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Calibrated against Tamil Nadu APMC Fair Price Standards</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-5 gap-2 pt-1 font-label-sm text-label-sm">
+<div class="p-2 rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="text-on-surface-variant">Commercial Landed Cost</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-bold text-on-surface">40% Weight</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 40%"></div>
+</div>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="text-on-surface-variant">Assay &amp; NABL Quality</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-bold text-on-surface">25% Weight</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 25%"></div>
+</div>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="text-on-surface-variant">Corridor SLA &amp; Fleet</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-bold text-on-surface">15% Weight</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 15%"></div>
+</div>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="text-on-surface-variant">Vendor Escrow Track</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-bold text-on-surface">10% Weight</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 10%"></div>
+</div>
+</div>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-lowest flex flex-col">
+<span class="text-on-surface-variant">Terms &amp; Credit Window</span>
+<div class="flex items-center justify-between mt-1">
+<span class="font-bold text-on-surface">10% Weight</span>
+<div class="w-12 h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 10%"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Side-by-Side 4-Vendor Comparison Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md mb-space-md">
+<!-- Vendor 1: Thanjavur Agro & Grain Hub (L1 RECOMMENDED WINNER) -->
+<div class="relative bg-surface-container-lowest rounded-xl shadow-md p-space-md flex flex-col justify-between transition-all hover:shadow-lg">
+<!-- High Alpha AI Winner Ribbon -->
+<div class="absolute -top-3 left-4 right-4 flex items-center justify-between px-3 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm shadow-sm font-bold">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-tertiary-fixed text-[14px]">stars</span>
+<span class="">AI RECOMMENDED L1 AWARD</span>
+</div>
+<span class="px-1.5 py-0.2 rounded bg-tertiary-fixed text-on-tertiary-fixed font-mono text-[9px]">BEST VALUE</span>
+</div>
+<div class="pt-3">
+<!-- Vendor Identification -->
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Thanjavur Agro Hub</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]" title="NABL Agro-Verified Tier-1">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Node: WH-TNJ-01 • Thanjavur Silos</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-primary font-extrabold">94.2</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ 100 PTS</span>
+</div>
+</div>
+<!-- Price Breakdown Stack -->
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-sm space-y-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quoted Unit Price</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹52.40</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Base Cost (40 MT)</span>
+<span class="font-mono text-on-surface">₹20,96,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Freight (Dedicated Eicher 6W)</span>
+<span class="font-mono text-on-surface">₹34,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">APMC Mandi Cess &amp; GST (5%)</span>
+<span class="font-mono text-on-surface">₹1,06,500</span>
+</div>
+<div class="pt-1.5 flex justify-between items-baseline font-semibold">
+<span class="font-label-md text-label-md text-primary font-bold">Total Landed Cost</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold font-mono">₹22,36,500</span>
+</div>
+</div>
+<!-- Key Operating Assays -->
+<div class="space-y-2 mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Lead Time SLA</span>
+<span class="font-bold text-on-surface inline-flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+              3 Days (Silo Bay 04)
+            </span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Quality Spec Match</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-primary">99.4% Match</span>
+<span class="material-symbols-outlined text-[14px] text-primary-container">check_circle</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container text-on-surface font-label-sm text-label-sm space-y-0.5">
+<div class="flex justify-between">
+<span class="">NABL Moisture Assay:</span>
+<strong class="font-mono">9.1% (Optimum &lt;10%)</strong>
+</div>
+<div class="flex justify-between">
+<span class="">Broken Grain Ratio:</span>
+<strong class="font-mono">&lt; 1.8% (Target &lt;2%)</strong>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Settlement Terms</span>
+<span class="font-medium text-on-surface text-right">15-Day Escrow Net</span>
+</div>
+</div>
+</div>
+<!-- Footer Action & Selection Trigger -->
+<div class="pt-2">
+<div class="p-2 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm mb-2 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-on-tertiary-container text-[16px]">trending_up</span>
+<span class="">Alpha vs Mandi Spot: <strong>+₹1,63,500 (+6.8%)</strong></span>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm transition-all">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+          Accept &amp; Direct PO Draft
+        </button>
+</div>
+</div>
+<!-- Vendor 2: Velan Wholesale Distribution (RANK #2 - Lowest Gross Base) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">RANK #2 • LOWEST BASE</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">BID-9842</span>
+</div>
+<!-- Vendor Header -->
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Velan Wholesale</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Node: WH-NGP-04 • Nagapattinam Local</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">89.6</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ 100 PTS</span>
+</div>
+</div>
+<!-- Price Breakdown Stack -->
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-sm space-y-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quoted Unit Price</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹51.80</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Base Cost (40 MT)</span>
+<span class="font-mono text-on-surface">₹20,72,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Freight (Third-Party Contract)</span>
+<span class="font-mono text-error font-medium">₹48,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">APMC Mandi Cess &amp; GST (5%)</span>
+<span class="font-mono text-on-surface">₹1,06,000</span>
+</div>
+<div class="pt-1.5 flex justify-between items-baseline font-semibold">
+<span class="font-label-md text-label-md text-on-surface font-bold">Total Landed Cost</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold font-mono">₹22,26,000</span>
+</div>
+</div>
+<!-- Key Operating Assays -->
+<div class="space-y-2 mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Lead Time SLA</span>
+<span class="font-medium text-on-surface">4 Days (Multi-hub transship)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Quality Spec Match</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-on-surface">94.8% Match</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm space-y-0.5">
+<div class="flex justify-between">
+<span class="">NABL Moisture Assay:</span>
+<strong class="font-mono text-secondary">9.8% (Near Limit 10%)</strong>
+</div>
+<div class="flex justify-between">
+<span class="">Broken Grain Ratio:</span>
+<strong class="font-mono text-error">2.2% (Exceeds Target 2%)</strong>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Settlement Terms</span>
+<span class="font-medium text-on-surface text-right">Immediate Weighbridge</span>
+</div>
+</div>
+</div>
+<!-- Action -->
+<div class="pt-2">
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2 flex items-center justify-between">
+<span class="">Gross difference vs L1:</span>
+<span class="font-mono font-bold text-primary">-₹10,500 landed</span>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all">
+          Secondary Counter-Offer
+        </button>
+</div>
+</div>
+<!-- Vendor 3: Cauvery Organic Traders (RANK #3) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">RANK #3 • CERTIFIED ORGANIC</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">BID-9844</span>
+</div>
+<!-- Vendor Header -->
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Cauvery Organic</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Node: WH-MYL-02 • Mayiladuthurai</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">85.1</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ 100 PTS</span>
+</div>
+</div>
+<!-- Price Breakdown Stack -->
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-sm space-y-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quoted Unit Price</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹54.00</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Base Cost (40 MT)</span>
+<span class="font-mono text-on-surface">₹21,60,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Freight &amp; Cold Logistics</span>
+<span class="font-mono text-on-surface">₹42,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">APMC Mandi Cess &amp; GST (5%)</span>
+<span class="font-mono text-on-surface">₹1,08,000</span>
+</div>
+<div class="pt-1.5 flex justify-between items-baseline font-semibold">
+<span class="font-label-md text-label-md text-on-surface font-bold">Total Landed Cost</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold font-mono">₹23,10,000</span>
+</div>
+</div>
+<!-- Key Operating Assays -->
+<div class="space-y-2 mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Lead Time SLA</span>
+<span class="font-medium text-on-surface">5 Days (Farm Batch Assay)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Quality Spec Match</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-on-surface">98.2% (Jaivik Bharat)</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm space-y-0.5">
+<div class="flex justify-between">
+<span class="">NABL Moisture Assay:</span>
+<strong class="font-mono">8.9% (Superior Dryness)</strong>
+</div>
+<div class="flex justify-between">
+<span class="">Broken Grain Ratio:</span>
+<strong class="font-mono">&lt; 1.4% (Export Grade)</strong>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Settlement Terms</span>
+<span class="font-medium text-on-surface text-right">30-Day APMC Credit</span>
+</div>
+</div>
+</div>
+<!-- Action -->
+<div class="pt-2">
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2 flex items-center justify-between">
+<span class="">Premium over benchmark:</span>
+<span class="font-mono font-bold text-secondary">+₹73,500 total</span>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all">
+          Request Clarification
+        </button>
+</div>
+</div>
+<!-- Vendor 4: Delta Fresh Commodities (RANK #4) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md flex flex-col justify-between transition-all hover:shadow-md">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-bold">RANK #4</span>
+<span class="font-label-sm text-label-sm text-secondary font-mono">BID-9845</span>
+</div>
+<!-- Vendor Header -->
+<div class="flex items-start justify-between mb-space-sm">
+<div>
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Delta Fresh Comm.</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Node: WH-TIR-03 • Tiruvarur Hub</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">81.4</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant">/ 100 PTS</span>
+</div>
+</div>
+<!-- Price Breakdown Stack -->
+<div class="p-space-sm rounded-lg bg-surface-container-low mb-space-sm space-y-1.5">
+<div class="flex items-baseline justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Quoted Unit Price</span>
+<div class="text-right">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">₹53.20</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">/ kg</span>
+</div>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Base Cost (40 MT)</span>
+<span class="font-mono text-on-surface">₹21,28,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">Freight (Open Body Lorry)</span>
+<span class="font-mono text-on-surface">₹50,000</span>
+</div>
+<div class="flex justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="">APMC Mandi Cess &amp; GST (5%)</span>
+<span class="font-mono text-on-surface">₹1,06,400</span>
+</div>
+<div class="pt-1.5 flex justify-between items-baseline font-semibold">
+<span class="font-label-md text-label-md text-on-surface font-bold">Total Landed Cost</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold font-mono">₹22,84,400</span>
+</div>
+</div>
+<!-- Key Operating Assays -->
+<div class="space-y-2 mb-space-md">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Lead Time SLA</span>
+<span class="font-medium text-on-surface">4 Days (Tiruvarur Cor.)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Quality Spec Match</span>
+<div class="flex items-center gap-1.5">
+<span class="font-bold text-on-surface">92.5% Match</span>
+</div>
+</div>
+<div class="p-2 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm space-y-0.5">
+<div class="flex justify-between">
+<span class="">NABL Moisture Assay:</span>
+<strong class="font-mono">10.4% (At upper boundary)</strong>
+</div>
+<div class="flex justify-between">
+<span class="">Broken Grain Ratio:</span>
+<strong class="font-mono">2.6% (Requires grading)</strong>
+</div>
+</div>
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Settlement Terms</span>
+<span class="font-medium text-on-surface text-right">50% Advance / Net 7</span>
+</div>
+</div>
+</div>
+<!-- Action -->
+<div class="pt-2">
+<div class="p-2 rounded bg-surface-container text-on-surface-variant font-label-sm text-label-sm mb-2 flex items-center justify-between">
+<span class="">Delivery Risk Factor:</span>
+<span class="font-mono font-bold text-error">Elevated (Open bed)</span>
+</div>
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface-variant font-label-md text-label-md font-semibold transition-all">
+          Disqualify Quote
+        </button>
+</div>
+</div>
+</div>
+<!-- Executive Decision Panel & Sourcing Intelligence Split -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-md mb-space-md">
+<!-- AI Sourcing Intelligence Dossier (8 Cols) -->
+<div class="lg:col-span-8 bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-md pb-space-sm border-b border-surface-container">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed/30 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">psychology</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Algorithmic Recommendation &amp; Sourcing Rationale</h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cauvery Delta Agri-Procurement Engine v4.8</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-surface-container-high text-on-surface font-mono font-bold text-label-sm">
+            CONFIDENCE: 98.4%
+          </span>
+</div>
+<!-- Rationale Text Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low mb-space-md">
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+<strong>Thanjavur Agro &amp; Grain Hub</strong> offers the optimal convergence of forensic quality assurance (<strong>9.1% moisture assay</strong>, broken grains restricted to <strong>&lt;1.8%</strong> against the 2.0% threshold) and lowest corridor logistics risk with a dedicated closed Eicher 6W fleet. Although Velan Wholesale presents a ₹10,500 lower nominal landed ticket, their 2.2% broken grain index would cause an estimated ₹34,200 downstream grading loss. 
+          </p>
+<div class="mt-space-sm pt-space-xs flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md flex-wrap">
+<span class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_down</span>
+              Total Savings vs Mandi Benchmark: ₹1,63,500 (6.8% Alpha)
+            </span>
+<span class="">•</span>
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px]">local_shipping</span>
+              Fleet Corridor Transit: 4.2 Hours Direct
+            </span>
+<span class="">•</span>
+<span class="flex items-center gap-1 text-on-surface">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+              Pre-authorized Mandi Settlement Escrow
+            </span>
+</div>
+</div>
+<!-- Interactive Spec Comparison Mini-Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase bg-surface-container-low">
+<th class="py-2 px-3 rounded-l">Evaluation Vector</th>
+<th class="py-2 px-3 text-primary font-bold">Thanjavur Agro (L1)</th>
+<th class="py-2 px-3">Velan Wholesale (L2)</th>
+<th class="py-2 px-3">Cauvery Organic</th>
+<th class="py-2 px-3 rounded-r">Mandatory Threshold</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<tr>
+<td class="py-2 px-3 font-medium text-on-surface">Landed Cost / kg</td>
+<td class="py-2 px-3 font-mono font-bold text-primary">₹55.91</td>
+<td class="py-2 px-3 font-mono">₹55.65</td>
+<td class="py-2 px-3 font-mono">₹57.75</td>
+<td class="py-2 px-3 font-mono text-on-surface-variant">≤ ₹58.00</td>
+</tr>
+<tr>
+<td class="py-2 px-3 font-medium text-on-surface">Corridor Transit Time</td>
+<td class="py-2 px-3 font-bold text-primary">3 Days (Direct)</td>
+<td class="py-2 px-3">4 Days</td>
+<td class="py-2 px-3">5 Days</td>
+<td class="py-2 px-3 text-on-surface-variant">≤ 5 Days</td>
+</tr>
+<tr>
+<td class="py-2 px-3 font-medium text-on-surface">Lab Moisture Assay</td>
+<td class="py-2 px-3 font-bold text-primary">9.1% (NABL)</td>
+<td class="py-2 px-3 text-secondary">9.8%</td>
+<td class="py-2 px-3">8.9%</td>
+<td class="py-2 px-3 text-on-surface-variant">≤ 10.0%</td>
+</tr>
+<tr>
+<td class="py-2 px-3 font-medium text-on-surface">Payment / Clearing</td>
+<td class="py-2 px-3 font-bold text-primary">15d Escrow Net</td>
+<td class="py-2 px-3">Immediate Weighbridge</td>
+<td class="py-2 px-3">30d APMC Credit</td>
+<td class="py-2 px-3 text-on-surface-variant">Min. 7d Settlement</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Action Panel Buttons -->
+<div class="mt-space-md pt-space-sm flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-1.5 w-full sm:w-auto">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+            Request Bid Clarification
+          </button>
+<button class="px-space-md py-2.5 rounded-lg bg-surface-container-high hover:bg-surface-container text-error font-label-md text-label-md font-semibold transition-all flex items-center justify-center gap-1.5 w-full sm:w-auto">
+<span class="material-symbols-outlined text-[18px]">close</span>
+            Reject Non-Compliant
+          </button>
+</div>
+<button class="px-space-lg py-2.5 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm transition-all w-full sm:w-auto">
+<span class="material-symbols-outlined text-[18px]">description</span>
+          Approve &amp; Issue PO Draft (L1)
+        </button>
+</div>
+</div>
+<!-- Active Corridor Logistics & Lab Radar (4 Cols) -->
+<div class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- Geographic Corridor Node Map Preview -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Transit Nodes</span>
+<span class="font-label-sm text-label-sm text-primary font-bold">4.2h Distance</span>
+</div>
+<div class="w-full h-36 rounded-lg bg-surface-container-high flex items-center justify-center relative overflow-hidden mb-space-sm" data-location="Thanjavur, Tamil Nadu" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBl2w1HTEEqaWXeC5kDJjvCezY6ko6jj0ImJ5eVydoifQP0a5LsElfH5DGuEd25rvJNVpjdwA99UC8YVVnyP8nGnsTLhmh0sKOtAd0GomQV7anErUDi7qHjdTzBGnW6-jdKFTfwIhYx08iLc20y99ng_-D-PyavakbgwxMUQQFsW5mlK5YKkxg_m06mBxqnWUiiKpg8f7MhTbneT9ptVyHVSDpeu6bjTuEtoBoUiB8')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px]"></div>
+<div class="relative z-10 flex flex-col items-center text-center p-2 bg-surface-container-lowest/90 rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-primary-container text-[20px]">local_shipping</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">Thanjavur Silos → Nagapattinam</span>
+<span class="font-body-sm text-[11px] text-secondary">Route NH-83 • 92.4 KM Transship</span>
+</div>
+</div>
+<div class="space-y-1.5 font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex justify-between">
+<span class="">Primary Fleet:</span>
+<strong class="text-on-surface">3x Eicher Pro 3019 (GPS Live)</strong>
+</div>
+<div class="flex justify-between">
+<span class="">Toll &amp; Mandi Clearance:</span>
+<strong class="text-primary">Fastag E-Way Automated</strong>
+</div>
+</div>
+</div>
+<!-- Lab Assay Integrity Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">NABL Assay Integrity</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">biotech</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Samples certified by Central Rice Research Station, Aduthurai (Batch #CRR-2026-881).
+          </p>
+<!-- Moisture & Density Progress Rings/Bars -->
+<div class="space-y-2 font-label-sm text-label-sm">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-on-surface-variant">Moisture Index (9.1%)</span>
+<span class="font-bold text-primary">Optimal Safe Zone</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 72%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-on-surface-variant">Foreign Matter (0.12%)</span>
+<span class="font-bold text-primary">Grade-A Clean</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 14%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pt-space-sm mt-space-sm flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span class="">Digital Seal: <strong>SHA-256 Validated</strong></span>
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+</div>
+</div>
+</div>
+</div><!-- Interactive Modals Container --><div id="award-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-primary/40 backdrop-blur-sm p-4"><div class="bg-surface-container-lowest rounded-xl max-w-xl w-full shadow-md border border-surface-container overflow-hidden"><div class="p-space-md border-b border-surface-container flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[24px]">assignment_turned_in</span><div><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Automated Smart Contract &amp; PO Dispatch Sequence</h3><span class="font-label-sm text-label-sm text-on-surface-variant font-mono" id="modal-vendor-subtitle">Target Vendor: Thanjavur Agro Hub • ₹22,36,500</span></div></div><button id="close-award-modal" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-space-md space-y-4"><div class="space-y-3"><div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-surface-container"><span class="material-symbols-outlined text-primary text-[22px]">lock_clock</span><div class="flex-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-bold">Step 1: Mandi Escrow Smart Vault</span><span class="px-2 py-0.5 rounded bg-primary-fixed/20 text-primary font-label-sm font-bold">Automated</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Locks <strong class="font-mono" id="modal-escrow-amount">₹22,36,500</strong> under Tamil Nadu APMC Settlement Rules. 15-day conditional payout.</p></div></div><div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-surface-container"><span class="material-symbols-outlined text-on-tertiary-container text-[22px]">verified</span><div class="flex-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-bold">Step 2: Digital PO Generation (SHA-256)</span><span class="px-2 py-0.5 rounded bg-tertiary-fixed/30 text-on-tertiary-container font-label-sm font-bold">Live Encrypted</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Generates PO-2026-0891 with tamper-evident digital seal &amp; NABL moisture covenant clauses.</p></div></div><div class="flex items-start gap-3 p-3 rounded-lg bg-surface-container-low border border-surface-container"><span class="material-symbols-outlined text-secondary text-[22px]">local_shipping</span><div class="flex-1"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface font-bold">Step 3: Telematics Fleet Corridor Dispatch</span><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm font-bold">Corridor Bay 04</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Syncs GPS tracking route with Dedicated Eicher 6W Fleet (NH-83 Fastag Clearance).</p></div></div></div><div class="p-3 rounded-lg bg-primary-container text-on-primary flex items-center justify-between"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-tertiary-fixed text-[20px]">verified_user</span><span class="font-label-sm text-label-sm">CPO Authorization: Verified S. Ramanathan</span></div><span class="font-mono font-bold text-label-sm text-primary-fixed">STATUS: READY</span></div></div><div class="p-space-md border-t border-surface-container flex items-center justify-end gap-2 bg-surface-container-low"><button id="cancel-award-btn" class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all">Cancel</button><button id="confirm-award-btn" class="px-space-lg py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-md"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">bolt</span><span class="">Confirm &amp; Execute Escrow</span></button></div></div></div><!-- Counter Offer Modal --><div id="counter-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-primary/40 backdrop-blur-sm p-4"><div class="bg-surface-container-lowest rounded-xl max-w-lg w-full shadow-md border border-surface-container overflow-hidden"><div class="p-space-md border-b border-surface-container flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-on-tertiary-container text-[24px]">edit_note</span><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Initiate Dynamic Counter-Offer</h3></div><button id="close-counter-modal" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-space-md space-y-3"><p class="font-body-sm text-body-sm text-on-surface-variant">Targeting supplier: <strong class="text-on-surface" id="counter-vendor-name">Velan Wholesale Distribution</strong> (Current bid: ₹51.80/kg landed)</p><div><label class="font-label-sm text-label-sm text-on-surface-variant block mb-1 uppercase font-bold">Target Landed Unit Price (₹ / kg)</label><div class="relative flex items-center"><input id="counter-price-input" type="number" step="0.1" value="50.50" class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-mono font-bold border border-surface-container focus:outline-none focus:bg-surface-container"><span class="absolute right-3 text-on-surface-variant font-label-sm font-bold">₹/kg</span></div></div><div><label class="font-label-sm text-label-sm text-on-surface-variant block mb-1 uppercase font-bold">Compensating Term Revision</label><select id="counter-terms-select" class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm border border-surface-container focus:outline-none"><option value="advance">50% Advance Mandi Escrow Lock</option><option value="transit">Corridor Transit SLA reduced to 3 Days</option><option value="tolerance">Broken Grain Strict Capping &lt; 1.9%</option></select></div><div class="p-2.5 rounded bg-surface-container-low border border-surface-container text-on-surface-variant font-label-sm text-label-sm"><span class="block font-bold text-on-surface mb-0.5">Algorithmic Win Probability</span><span class="">Estimated acceptance rate at ₹50.50/kg: <strong class="text-primary font-bold">78.4% (Favorable)</strong></span></div></div><div class="p-space-md border-t border-surface-container flex items-center justify-end gap-2 bg-surface-container-low"><button id="cancel-counter-btn" class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all">Cancel</button><button id="submit-counter-btn" class="px-space-lg py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-md"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">send</span><span class="">Dispatch Counter-Offer</span></button></div></div></div><!-- Clarification Modal --><div id="clarify-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-primary/40 backdrop-blur-sm p-4"><div class="bg-surface-container-lowest rounded-xl max-w-lg w-full shadow-md border border-surface-container overflow-hidden"><div class="p-space-md border-b border-surface-container flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-primary-container text-[24px]">chat_bubble_outline</span><h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Request Assay / SLA Clarification</h3></div><button id="close-clarify-modal" class="w-8 h-8 rounded-lg flex items-center justify-center hover:bg-surface-container text-on-surface-variant"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="p-space-md space-y-3"><p class="font-body-sm text-body-sm text-on-surface-variant">Vendor: <strong class="text-on-surface" id="clarify-vendor-name">Cauvery Organic Traders</strong> (BID-9844)</p><div><label class="font-label-sm text-label-sm text-on-surface-variant block mb-1 uppercase font-bold">Clarification Category</label><select id="clarify-topic" class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm border border-surface-container focus:outline-none"><option value="assay">Jaivik Bharat Organic Certificate &amp; Moisture Assay (&lt;9.0%)</option><option value="sla">Lead Time Compression (5 Days to 3 Days)</option><option value="freight">Freight &amp; Cold Logistics Subsidized Re-quote</option></select></div><div><label class="font-label-sm text-label-sm text-on-surface-variant block mb-1 uppercase font-bold">Detailed Query / Mandate Note</label><textarea id="clarify-note" rows="3" class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface font-body-sm border border-surface-container focus:outline-none" placeholder="Specify query or protocol deviation notice...">Please upload Central Rice Research Station re-assay certificate for Batch CRR-2026-881 to substantiate 8.9% moisture claim.</textarea></div></div><div class="p-space-md border-t border-surface-container flex items-center justify-end gap-2 bg-surface-container-low"><button id="cancel-clarify-btn" class="px-space-md py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-all">Cancel</button><button id="submit-clarify-btn" class="px-space-lg py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold flex items-center gap-1.5 shadow-md"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">forward_to_inbox</span><span class="">Transmit Query</span></button></div></div></div><!-- Toast Notification Banner --><div id="toast-notification" class="fixed bottom-6 right-6 z-50 hidden transition-all duration-300 transform translate-y-2"><div class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary text-on-primary shadow-lg border border-primary-fixed/20"><span id="toast-icon" class="material-symbols-outlined text-[24px] text-tertiary-fixed">check_circle</span><div><div id="toast-title" class="font-label-md text-label-md font-bold text-on-primary">Action Successful</div><div id="toast-desc" class="font-body-sm text-body-sm text-primary-fixed">Transaction executed on blockchain corridor.</div></div><button id="close-toast" class="ml-2 text-on-primary/70 hover:text-on-primary"><span class="material-symbols-outlined text-[18px]">close</span></button></div></div>
+<!-- Multi-RFQ Active Pipeline Table -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Corridor RFQ Pipeline Under Matrix Evaluation</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Batch cycle closing in next 24 business hours</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+          Filter: Cauvery Hubs
+        </button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+          Sort: Value High-Low
+        </button>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead>
+<tr class="text-on-surface-variant font-label-sm text-label-sm uppercase bg-surface-container-low">
+<th class="py-2.5 px-4 rounded-l">RFQ Dossier</th>
+<th class="py-2.5 px-4">Commodity &amp; Volume</th>
+<th class="py-2.5 px-4">Bids Received</th>
+<th class="py-2.5 px-4">Benchmark Est.</th>
+<th class="py-2.5 px-4">Leading Bidder</th>
+<th class="py-2.5 px-4">Evaluation Stage</th>
+<th class="py-2.5 px-4 rounded-r text-right">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- Row 1: Quinoa Seeds -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-mono font-bold text-on-surface">RFQ-2026-0105</td>
+<td class="py-3 px-4">
+<span class="font-medium text-on-surface block">Organic White Quinoa Seeds</span>
+<span class="font-label-sm text-label-sm text-secondary">2 Metric Tonnes (40 Bags)</span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">3 Bids</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant block">1 Awaiting Assay</span>
+</td>
+<td class="py-3 px-4 font-mono text-on-surface">₹3,40,000</td>
+<td class="py-3 px-4">
+<span class="font-medium text-on-surface">Madurai Spice &amp; Grain</span>
+<span class="font-label-sm text-label-sm text-primary block">Score: 88.5</span>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+                Assay Testing
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+                Open Matrix
+              </button>
+</td>
+</tr>
+<!-- Row 2: Gingelly Oil -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-mono font-bold text-on-surface">RFQ-2026-0106</td>
+<td class="py-3 px-4">
+<span class="font-medium text-on-surface block">Wood-Pressed Gingelly (Sesame) Oil</span>
+<span class="font-label-sm text-label-sm text-secondary">1,500 Litres (100 Tins x 15L)</span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">4 Bids</span>
+<span class="font-label-sm text-label-sm text-primary block">All Qualified</span>
+</td>
+<td class="py-3 px-4 font-mono text-on-surface">₹4,85,000</td>
+<td class="py-3 px-4">
+<span class="font-medium text-on-surface">Vaitheeswaran Oil Mill</span>
+<span class="font-label-sm text-label-sm text-primary block">Score: 92.1 (L1)</span>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">
+                L1 Ready for PO
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary hover:opacity-95 font-label-sm text-label-sm font-semibold transition-colors">
+                Review &amp; Award
+              </button>
+</td>
+</tr>
+<!-- Row 3: Salem Turmeric Finger -->
+<tr class="hover:bg-surface-container-low/50 transition-colors">
+<td class="py-3 px-4 font-mono font-bold text-on-surface">RFQ-2026-0107</td>
+<td class="py-3 px-4">
+<span class="font-medium text-on-surface block">Salem Double Polished Turmeric</span>
+<span class="font-label-sm text-label-sm text-secondary">5 Metric Tonnes (Bulk lot)</span>
+</td>
+<td class="py-3 px-4">
+<span class="font-semibold text-on-surface">2 Bids</span>
+<span class="font-label-sm text-label-sm text-error block">1 Bid Pending</span>
+</td>
+<td class="py-3 px-4 font-mono text-on-surface">₹6,20,000</td>
+<td class="py-3 px-4">
+<span class="font-medium text-on-surface">Erode Mandi Consortium</span>
+<span class="font-label-sm text-label-sm text-secondary block">Pending evaluation</span>
+</td>
+<td class="py-3 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-semibold">
+                Awaiting Tender Close
+              </span>
+</td>
+<td class="py-3 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface font-label-sm text-label-sm font-semibold transition-colors">
+                Track Quotes
+              </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Statutory Sandbox / Simulation Disclaimer Banner -->
+<div class="p-space-sm rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-xs text-center sm:text-left">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-tertiary-container text-[18px]">verified_user</span>
+<span class="font-label-sm text-label-sm text-on-surface uppercase tracking-wider font-bold">
+        SIMULATED DEMO DATA • ALGORITHMIC EVALUATION ENGINE • NOT AN OFFICIAL TENDER OR BINDING QUOTATION
+      </span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">
+      APMC Benchmark API Node: TAMIL_NADU_AGRI_CORRIDOR_V4
+    </span>
+</div>
+</div>
+<!-- Inline Micro-Interactions Script -->
+<script>
+  (function() {
+    // Basic client side micro interaction to toggle / focus active cards
+    const vendorCards = document.querySelectorAll('.bg-surface-container-lowest.rounded-xl.shadow-sm, .bg-surface-container-lowest.rounded-xl.shadow-md');
+    vendorCards.forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        card.classList.add('scale-[1.005]');
+      });
+      card.addEventListener('mouseleave', () => {
+        card.classList.remove('scale-[1.005]');
+      });
+    });
+  })();
+</script></main></div>
+
+<!-- Modals & Interactive Overlays -->
+<div id="toast-container" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
+
+<!-- Award PO Modal -->
+<div id="award-modal" class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-lg w-full p-space-md border border-surface-container relative animate-in fade-in zoom-in-95 duration-200">
+    <div class="flex items-center justify-between pb-3 border-b border-surface-container">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-primary-container text-[24px]">verified</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Confirm PO &amp; Mandi Escrow</h3>
+      </div>
+      <button type="button" class="modal-close text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="py-4 space-y-3 font-body-sm text-body-sm">
+      <div class="p-3 rounded-lg bg-surface-container-low space-y-2">
+        <div class="flex justify-between font-label-md text-label-md">
+          <span class="text-on-surface-variant">Selected Vendor:</span>
+          <span id="award-modal-vendor" class="font-bold text-on-surface">Thanjavur Agro &amp; Grain Hub</span>
+        </div>
+        <div class="flex justify-between font-label-md text-label-md">
+          <span class="text-on-surface-variant">Total Landed Escrow:</span>
+          <span id="award-modal-amount" class="font-bold font-mono text-primary">₹22,36,500</span>
+        </div>
+        <div class="flex justify-between font-label-sm text-label-sm text-on-surface-variant">
+          <span class="">Smart Contract Hash:</span>
+          <span class="font-mono">0x8f2a...91b4 (SHA-256 Validated)</span>
+        </div>
+      </div>
+      <p class="text-on-surface-variant leading-relaxed text-[13px]">
+        Authorizing this contract locks the funds in the APMC Mandi Escrow account. Automated PO-2026-0891 will be dispatched immediately via the agro-ledger network.
+      </p>
+    </div>
+    <div class="flex items-center justify-end gap-2 pt-2 border-t border-surface-container">
+      <button type="button" class="modal-close px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors">
+        Cancel
+      </button>
+      <button type="button" id="confirm-escrow-btn" class="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
+        <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">lock</span>
+        <span class="">Confirm &amp; Execute Escrow</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Counter Offer Modal -->
+<div id="counter-modal" class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-lg w-full p-space-md border border-surface-container relative animate-in fade-in zoom-in-95 duration-200">
+    <div class="flex items-center justify-between pb-3 border-b border-surface-container">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-on-tertiary-container text-[24px]">edit_note</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Counter-Offer: Velan Wholesale</h3>
+      </div>
+      <button type="button" class="modal-close text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="py-4 space-y-3 font-body-sm text-body-sm">
+      <p class="text-on-surface-variant text-[13px]">Transmit an adjusted target landed unit price and settlement escrow clause directly to Velan Wholesale node WH-NGP-04.</p>
+      <div class="space-y-1.5">
+        <label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold block">Target Unit Price (₹ / kg)</label>
+        <input id="counter-price-input" type="text" value="₹50.50" class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-mono font-bold focus:outline-none focus:bg-surface-container border border-surface-container">
+      </div>
+      <div class="space-y-1.5">
+        <label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold block">Escrow Settlement Term</label>
+        <input type="text" value="50% Mandi Escrow / Net 15 Weighbridge" class="w-full h-10 px-3 rounded-lg bg-surface-container-low text-on-surface font-medium focus:outline-none focus:bg-surface-container border border-surface-container">
+      </div>
+    </div>
+    <div class="flex items-center justify-end gap-2 pt-2 border-t border-surface-container">
+      <button type="button" class="modal-close px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors">
+        Cancel
+      </button>
+      <button type="button" id="submit-counter-btn" class="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
+        <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">send</span>
+        <span class="">Transmit Counter-Offer</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Clarification Modal -->
+<div id="clarify-modal" class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm hidden items-center justify-center p-4">
+  <div class="bg-surface-container-lowest rounded-xl shadow-xl max-w-lg w-full p-space-md border border-surface-container relative animate-in fade-in zoom-in-95 duration-200">
+    <div class="flex items-center justify-between pb-3 border-b border-surface-container">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary text-[24px]">help_outline</span>
+        <h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Request Assay Clarification</h3>
+      </div>
+      <button type="button" class="modal-close text-on-surface-variant hover:text-on-surface p-1 rounded-lg hover:bg-surface-container-low transition-colors">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+    <div class="py-4 space-y-3 font-body-sm text-body-sm">
+      <p class="text-on-surface-variant text-[13px]">Send technical inquiry to Cauvery Organic regarding Jaivik Bharat lab certificate and moisture batch test.</p>
+      <div class="space-y-1.5">
+        <label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold block">Query Note</label>
+        <textarea rows="3" class="w-full p-2.5 rounded-lg bg-surface-container-low text-on-surface text-body-sm focus:outline-none focus:bg-surface-container border border-surface-container">Require verification of 8.9% moisture assay from Central Rice Research Station before PO issuance.</textarea>
+      </div>
+    </div>
+    <div class="flex items-center justify-end gap-2 pt-2 border-t border-surface-container">
+      <button type="button" class="modal-close px-4 py-2 rounded-lg bg-surface-container-high hover:bg-surface-container text-on-surface font-label-md text-label-md font-semibold transition-colors">
+        Cancel
+      </button>
+      <button type="button" id="submit-clarify-btn" class="px-4 py-2 rounded-lg bg-primary-container text-on-primary hover:opacity-95 font-label-md text-label-md font-bold shadow-md transition-all flex items-center gap-1.5 cursor-pointer">
+        <span class="material-symbols-outlined text-[18px] text-tertiary-fixed">send</span>
+        <span class="">Dispatch Assay Query</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    // Toast utility
+    function showToast(message, type = 'success') {
+      const container = document.getElementById('toast-container');
+      if (!container) return;
+      const toast = document.createElement('div');
+      toast.className = 'pointer-events-auto flex items-center gap-2 px-4 py-3 rounded-xl shadow-lg border border-surface-container bg-surface-container-lowest text-on-surface text-body-sm font-medium transition-all duration-300 transform translate-y-2 opacity-0 max-w-md';
+      
+      let icon = 'check_circle';
+      let iconClass = 'text-primary';
+      if (type === 'info') {
+        icon = 'info';
+        iconClass = 'text-secondary';
+      } else if (type === 'warning') {
+        icon = 'warning';
+        iconClass = 'text-on-tertiary-container';
+      }
+      
+      toast.innerHTML = `<span class="material-symbols-outlined ${iconClass} text-[20px]">${icon}</span><span class="flex-1">${message}</span>`;
+      container.appendChild(toast);
+      
+      requestAnimationFrame(() => {
+        toast.classList.remove('translate-y-2', 'opacity-0');
+      });
+      
+      setTimeout(() => {
+        toast.classList.add('opacity-0', 'translate-y-2');
+        setTimeout(() => toast.remove(), 300);
+      }, 4500);
+    }
+
+    // Modal helper functions
+    function openModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+      }
+    }
+
+    function closeModal(modalId) {
+      const modal = document.getElementById(modalId);
+      if (modal) {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+      }
+    }
+
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        const modal = e.target.closest('[id$="-modal"]');
+        if (modal) {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      });
+    });
+
+    // 1. Vendor Card Click Selection
+    const vendorGrid = document.querySelector('.grid.grid-cols-1.md\\:grid-cols-2.lg\\:grid-cols-4');
+    const vendorCards = vendorGrid ? Array.from(vendorGrid.children) : [];
+
+    const vendorData = [
+      {
+        name: 'Thanjavur Agro & Grain Hub',
+        score: '94.2',
+        confidence: '98.4%',
+        amount: '₹22,36,500',
+        rationale: '<strong>Thanjavur Agro &amp; Grain Hub</strong> offers the optimal convergence of forensic quality assurance (<strong>9.1% moisture assay</strong>, broken grains restricted to <strong>&lt;1.8%</strong> against the 2.0% threshold) and lowest corridor logistics risk with a dedicated closed Eicher 6W fleet. Recommended for immediate PO dispatch.'
+      },
+      {
+        name: 'Velan Wholesale Distribution',
+        score: '89.6',
+        confidence: '91.2%',
+        amount: '₹22,26,000',
+        rationale: '<strong>Velan Wholesale Distribution</strong> offers the lowest initial landed cost (₹22,26,000), but broken grain ratio of 2.2% exceeds benchmark targets. Transit utilizes third-party multi-hub transshipment presenting marginal delivery delays.'
+      },
+      {
+        name: 'Cauvery Organic Traders',
+        score: '85.1',
+        confidence: '88.7%',
+        amount: '₹23,10,000',
+        rationale: '<strong>Cauvery Organic Traders</strong> brings superior dryness (8.9% moisture) and Jaivik Bharat organic certification, but commands a ₹73,500 premium over regional benchmark with a 5-day farm batch lead time.'
+      },
+      {
+        name: 'Delta Fresh Commodities',
+        score: '81.4',
+        confidence: '82.0%',
+        amount: '₹22,84,400',
+        rationale: '<strong>Delta Fresh Commodities</strong> operates at the upper moisture boundary (10.4%) with open-bed lorry freight risk. Recommended only as secondary contingency pending re-assay.'
+      }
+    ];
+
+    // Set initial ring on Vendor 1
+    if (vendorCards.length > 0) {
+      vendorCards[0].classList.add('border-2', 'border-primary-container', 'shadow-md');
+    }
+
+    vendorCards.forEach((card, idx) => {
+      card.style.cursor = 'pointer';
+      card.addEventListener('click', (e) => {
+        // Don't trigger card selection change if clicking an action button directly
+        if (e.target.closest('button')) return;
+        
+        vendorCards.forEach(c => {
+          c.classList.remove('border-2', 'border-primary-container', 'shadow-md');
+        });
+        card.classList.add('border-2', 'border-primary-container', 'shadow-md');
+        
+        const data = vendorData[idx];
+        if (!data) return;
+
+        // Update Sourcing Intelligence Dossier
+        const confidenceEl = document.querySelector('.lg\\:col-span-8 span.font-mono.font-bold.text-label-sm');
+        if (confidenceEl) {
+          confidenceEl.textContent = `CONFIDENCE: ${data.confidence}`;
+        }
+
+        const rationaleTextEl = document.querySelector('.lg\\:col-span-8 .bg-surface-container-low p');
+        if (rationaleTextEl) {
+          rationaleTextEl.innerHTML = data.rationale;
+        }
+
+        // Update Award modal data defaults
+        const modalVendor = document.getElementById('award-modal-vendor');
+        const modalAmount = document.getElementById('award-modal-amount');
+        if (modalVendor) modalVendor.textContent = data.name;
+        if (modalAmount) modalAmount.textContent = data.amount;
+      });
+    });
+
+    // 2. Award PO Modal Flow
+    const awardPOButtons = document.querySelectorAll('button:has(.material-symbols-outlined:contains("verified")), button:has(.material-symbols-outlined:contains("assignment_turned_in"))');
+    
+    // Find primary award button and card award button
+    const mainAwardBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Award Purchase Contract & Issue PO'));
+    const cardAwardBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Award Purchase Contract'));
+
+    [mainAwardBtn, cardAwardBtn].forEach(btn => {
+      if (btn) {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          openModal('award-modal');
+        });
+      }
+    });
+
+    const confirmEscrowBtn = document.getElementById('confirm-escrow-btn');
+    if (confirmEscrowBtn) {
+      confirmEscrowBtn.addEventListener('click', () => {
+        confirmEscrowBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin text-tertiary-fixed">sync</span><span>Executing Smart Escrow...</span>';
+        confirmEscrowBtn.disabled = true;
+
+        setTimeout(() => {
+          closeModal('award-modal');
+          confirmEscrowBtn.disabled = false;
+          confirmEscrowBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">lock</span><span>Confirm &amp; Execute Escrow</span>';
+          
+          if (mainAwardBtn) {
+            mainAwardBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">check_circle</span><span>PO-2026-0891 Awarded &amp; Dispatched</span>';
+            mainAwardBtn.classList.remove('bg-primary-container');
+            mainAwardBtn.classList.add('bg-primary');
+          }
+
+          showToast('APMC Mandi Escrow Locked: ₹22,36,500 deposited into tamper-evident vault. PO dispatched to Thanjavur Agro.', 'success');
+        }, 1000);
+      });
+    }
+
+    // 3. Counter-Offer Workflow
+    const counterBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Initiate Counter-Offer'));
+    if (counterBtn) {
+      counterBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openModal('counter-modal');
+      });
+    }
+
+    const submitCounterBtn = document.getElementById('submit-counter-btn');
+    if (submitCounterBtn) {
+      submitCounterBtn.addEventListener('click', () => {
+        const price = document.getElementById('counter-price-input')?.value || '₹50.50';
+        closeModal('counter-modal');
+        showToast(`Counter-Offer Dispatched: ${price}/kg with 50% Mandi Escrow terms transmitted to Velan Wholesale.`, 'info');
+      });
+    }
+
+    // 4. Request Clarification Workflow
+    const clarifyBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Request Clarification'));
+    if (clarifyBtn) {
+      clarifyBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openModal('clarify-modal');
+      });
+    }
+
+    const submitClarifyBtn = document.getElementById('submit-clarify-btn');
+    if (submitClarifyBtn) {
+      submitClarifyBtn.addEventListener('click', () => {
+        closeModal('clarify-modal');
+        showToast('Assay Query Dispatched: Central Rice Research Station re-assay notice transmitted to Cauvery Organic.', 'warning');
+      });
+    }
+
+    // 5. Corridor Filters & Sorting
+    const filterBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Filter: Cauvery Hubs'));
+    const sortBtn = Array.from(document.querySelectorAll('button')).find(b => b.textContent.includes('Sort: Value High-Low'));
+
+    let filterActive = false;
+    if (filterBtn) {
+      filterBtn.addEventListener('click', () => {
+        filterActive = !filterActive;
+        if (filterActive) {
+          filterBtn.classList.remove('bg-surface-container-low', 'text-on-surface');
+          filterBtn.classList.add('bg-primary-container', 'text-on-primary');
+          showToast('Corridor Filter Active: Displaying RFQs originating from Cauvery Delta basin hubs.', 'info');
+        } else {
+          filterBtn.classList.remove('bg-primary-container', 'text-on-primary');
+          filterBtn.classList.add('bg-surface-container-low', 'text-on-surface');
+          showToast('Corridor Filter Reset: Displaying all active hubs.', 'info');
+        }
+      });
+    }
+
+    let sortAsc = false;
+    if (sortBtn) {
+      sortBtn.addEventListener('click', () => {
+        sortAsc = !sortAsc;
+        sortBtn.textContent = sortAsc ? 'Sort: Value Low-High' : 'Sort: Value High-Low';
+        showToast(`Pipeline re-indexed: ${sortBtn.textContent}.`, 'info');
+      });
+    }
+  })();
+</script></body></html>

@@ -1,0 +1,992 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"primary-fixed":"#bfedd3","outline-variant":"#c1c8c2","on-primary":"#ffffff","tertiary-fixed-dim":"#f0bf60","secondary-fixed-dim":"#bec6e0","on-surface":"#0b1c30","tertiary-container":"#483200","error":"#ba1a1a","on-primary-fixed-variant":"#254f3b","on-primary-fixed":"#002114","on-secondary-fixed":"#131b2e","surface-container-low":"#eff4ff","surface-container-high":"#dce9ff","on-error-container":"#93000a","on-secondary-container":"#5c647a","on-tertiary":"#ffffff","on-primary-container":"#7da890","surface-dim":"#cbdbf5","on-tertiary-container":"#c4983d","on-tertiary-fixed-variant":"#5d4200","surface":"#f8f9ff","secondary-container":"#dae2fd","primary":"#002618","on-secondary":"#ffffff","primary-fixed-dim":"#a4d1b7","outline":"#717973","surface-variant":"#d3e4fe","primary-container":"#123d2b","background":"#f8f9ff","on-secondary-fixed-variant":"#3f465c","surface-container":"#e5eeff","on-error":"#ffffff","on-background":"#0b1c30","surface-bright":"#f8f9ff","secondary":"#565e74","inverse-on-surface":"#eaf1ff","surface-container-lowest":"#ffffff","surface-tint":"#3d6752","inverse-primary":"#a4d1b7","inverse-surface":"#213145","surface-container-highest":"#d3e4fe","on-surface-variant":"#414943","tertiary-fixed":"#ffdea5","on-tertiary-fixed":"#271900","error-container":"#ffdad6","secondary-fixed":"#dae2fd","tertiary":"#2d1e00"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-mobile":"1rem","space-lg":"1.5rem","space-xs":"0.25rem","gutter":"1.5rem","space-xl":"2.5rem","space-sm":"0.5rem","margin-mobile":"1rem","margin":"2rem","space-md":"1rem"},"fontFamily":{"headline-lg-mobile":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"label-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-sm":["Inter"]},"fontSize":{"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest z-50 flex flex-col justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between bg-surface-container-lowest"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary"><span class="material-symbols-outlined text-[20px] text-primary-fixed">agriculture</span></div><div><span class="block font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">VeriGrocery</span><span class="block font-label-sm text-label-sm uppercase tracking-wider text-on-tertiary-container mt-space-xs">Supplier Gateway</span></div></div><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">B2B</span></div><div class="px-space-md py-space-sm bg-surface-container-low"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[16px] text-surface-tint">verified</span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold">Verified Mill &amp; Producer Node</span></div><p class="font-label-sm text-label-sm text-on-surface-variant truncate mt-0.5">FSSAI • APMC Registered • TN Mandi</p></div><nav class="flex-1 px-space-sm py-space-md space-y-space-md overflow-y-auto max-h-[calc(100vh-210px)]" data-active-classes="bg-primary-container text-on-primary font-bold rounded-lg shadow-sm"><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Supplier Operations</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="">Overview</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="merchant-rfqs-and-quotations" href="#"><span class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">request_quote</span><span class="">RFQs &amp; Quotations</span></span><span class="px-1.5 py-0.5 rounded-full bg-tertiary-container text-on-tertiary-container font-label-sm text-label-sm">14 Live</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="bulk-product-catalogue" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="">Bulk Catalogue (SKUs)</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="purchase-orders" href="#"><span class="material-symbols-outlined text-[20px]">orders</span><span class="">Purchase Orders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="supply-and-dispatch-fleet" href="#"><span class="material-symbols-outlined text-[20px]">local_shipping</span><span class="">Dispatch &amp; POD Fleet</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Commercial Network</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="nagapattinam-store-tenders" href="#"><span class="material-symbols-outlined text-[20px]">hub</span><span class="">Nagapattinam Tenders</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="wholesale-price-radar" href="#"><span class="material-symbols-outlined text-[20px]">monitoring</span><span class="">Wholesale Price Radar</span></a></div></div><div><div class="px-space-sm mb-space-xs font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Credentials &amp; Compliance</div><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="mill-fssai-and-quality-lab" href="#"><span class="material-symbols-outlined text-[20px]">biotech</span><span class="">FSSAI &amp; Quality Lab</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-label-md text-label-md" data-path="gst-and-escrow-payouts" href="#"><span class="material-symbols-outlined text-[20px]">account_balance</span><span class="">GST &amp; Escrow Direct</span></a></div></div></nav></div><div class="p-space-sm bg-surface-container-lowest shadow-[0_-1px_6px_rgba(0,0,0,0.03)]"><a class="flex items-center justify-between p-space-sm rounded-lg bg-surface-container-low hover:bg-surface-container hover:text-on-surface text-on-surface transition-all" href="#"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-[18px] text-surface-tint">store</span><span class="font-label-md text-label-md font-bold">Switch to Retail Hub</span></span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">arrow_forward</span></a></div></aside><div class="pl-72"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-40 px-gutter flex items-center justify-between shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex items-center gap-space-md w-full max-w-lg"><div class="relative w-full flex items-center"><span class="material-symbols-outlined absolute left-3 text-secondary text-[20px]">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Search bulk SKUs, RFQs, store purchase orders (Ctrl+K)" type="text"></div></div><div class="flex items-center gap-space-md"><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container"><span class="material-symbols-outlined text-[18px] text-surface-tint">lock</span><div><span class="block font-label-sm text-label-sm uppercase text-secondary leading-none">Direct Escrow Locked</span><span class="block font-label-md text-label-md text-on-surface font-bold leading-tight">₹18,45,200</span></div></div><button class="flex items-center gap-1.5 h-10 px-space-md rounded-lg bg-primary-container text-on-primary hover:bg-primary font-label-md text-label-md transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">add_circle</span><span class="">+ List Bulk Lot</span></button><button class="relative w-10 h-10 rounded-lg flex items-center justify-center bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-tertiary-container"></span></button><div class="flex items-center gap-space-sm pl-space-xs"><div class="text-right hidden md:block"><span class="block font-label-md text-label-md font-bold text-on-surface leading-tight">Kumbakonam Agro Mills</span><span class="block font-label-sm text-label-sm text-secondary">GST: 33AAACK1234F1Z8</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="relative pt-16 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- TOP CONTEXT BANNER (Sandbox Alert) -->
+<div class="px-gutter py-2 bg-tertiary-container/10 border-b border-tertiary-container/20 flex flex-wrap items-center justify-between gap-3">
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-tertiary-container text-on-tertiary-container text-xs">
+<span class="material-symbols-outlined text-[14px]">tune</span>
+</span>
+<span class="font-label-md text-label-md font-bold text-on-surface">DEMO SIMULATION DATA</span>
+<span class="text-on-surface-variant font-body-sm text-body-sm">• APMC Sandbox Logistics Network • Tamil Nadu Delta Regional Fleet Telemetry</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container-high text-secondary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+        Simulated GPS Engine: NH-32 / NH-83 Matrix
+      </span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">NIC E-Way API: Mock Testnet v2.4</span>
+</div>
+</div>
+<!-- BREADCRUMBS & MAIN PAGE HEADER -->
+<div class="px-gutter pt-6 pb-5 flex flex-col xl:flex-row xl:items-end justify-between gap-4">
+<div>
+<nav class="flex items-center gap-2 text-secondary font-label-sm text-label-sm uppercase tracking-wider mb-2">
+<span class="hover:text-on-surface transition-colors">Thanjavur Agro &amp; Grain Hub</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="hover:text-on-surface transition-colors">Wholesale Supplier Gateway</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary-container font-bold">Supply Chain &amp; Dispatch Matrix</span>
+</nav>
+<div class="flex items-center gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+          Supply Chain Dispatch &amp; POD Fleet Tracking
+        </h1>
+<span class="hidden md:inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px] text-surface-tint">local_shipping</span>
+          Live Cauvery Delta Transit
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1.5 max-w-4xl">
+        Real-time dispatch coordination, multi-stop fleet transit across Nagapattinam and Delta Mandis, simulated E-Way bill compliance, and cryptographic digital Proof-of-Delivery (POD) escrow triggers.
+      </p>
+</div>
+<!-- Top Action Buttons -->
+<div class="flex items-center flex-wrap gap-2.5"><button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface border border-surface-container shadow-sm hover:bg-surface-container hover:border-outline-variant transition-all flex items-center gap-1.5 font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-[#D4A64A]">download</span><span class="">Download Delivery Manifest</span></button><button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface border border-surface-container shadow-sm hover:bg-surface-container hover:border-outline-variant transition-all flex items-center gap-1.5 font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-surface-tint">sensors</span><span class="">Live Driver Telematics</span></button><button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest text-on-surface border border-surface-container shadow-sm hover:bg-surface-container hover:border-outline-variant transition-all flex items-center gap-1.5 font-label-md text-label-md"><span class="material-symbols-outlined text-[18px] text-[#D4A64A]">radar</span><span class="">Ping GPS Beacon</span></button><button class="h-10 px-4 rounded-lg bg-[#123D2B] text-white shadow-sm hover:bg-primary transition-all flex items-center gap-2 font-label-md text-label-md font-bold border-l-2 border-[#D4A64A]"><span class="material-symbols-outlined text-[18px] text-[#D4A64A]">local_shipping</span><span class="">+ Dispatch Mill Fleet</span></button></div>
+</div>
+<!-- SECTION 2: DISPATCH OPERATIONS OVERVIEW (6 KPI Cards) -->
+<div class="px-gutter pb-6">
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-3.5">
+<!-- KPI 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Active Shipments</span>
+<span class="w-7 h-7 rounded-lg bg-secondary-container/60 text-on-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">inventory</span>
+</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface leading-tight font-bold">14</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="">₹9.85L cargo val</span>
+<span class="font-bold text-on-surface">24.6 MT</span>
+</div>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Awaiting Dispatch</span>
+<span class="w-7 h-7 rounded-lg bg-surface-container text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface leading-tight font-bold">3 <span class="font-label-md text-label-md text-secondary font-normal">Lorries</span></div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="">Bays 2 &amp; 4</span>
+<span class="text-surface-tint font-bold">SLA &lt; 2h</span>
+</div>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">In Transit</span>
+<span class="w-7 h-7 rounded-lg bg-primary-fixed text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">route</span>
+</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-primary-container leading-tight font-bold">6 <span class="font-label-md text-label-md text-secondary font-normal">Fleet</span></div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="">NH-32 / NH-83</span>
+<span class="text-surface-tint font-bold">Live Stream</span>
+</div>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Delivered Today</span>
+<span class="w-7 h-7 rounded-lg bg-primary-fixed-dim text-on-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">task_alt</span>
+</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface leading-tight font-bold">4</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="">100% Digital POD</span>
+<span class="text-surface-tint font-bold">Escrow Cleared</span>
+</div>
+</div>
+</div>
+<!-- KPI 5 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Exceptions / Alerts</span>
+<span class="w-7 h-7 rounded-lg bg-error-container text-on-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">fmd_bad</span>
+</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-error leading-tight font-bold">1 <span class="font-label-md text-label-md text-secondary font-normal">Active</span></div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="truncate max-w-[90px]">Sikkal Toll</span>
+<span class="text-error font-bold">+25m ETA</span>
+</div>
+</div>
+</div>
+<!-- KPI 6 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">On-Time SLA</span>
+<span class="w-7 h-7 rounded-lg bg-tertiary-container/15 text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">speed</span>
+</span>
+</div>
+<div>
+<div class="font-headline-lg text-headline-lg text-on-surface leading-tight font-bold">98.6%</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm mt-1">
+<span class="">Target: &gt;96.0%</span>
+<span class="text-surface-tint font-bold">+2.6% Delta</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 3: DISPATCH CONTROL & FILTER TOOLBAR -->
+<div class="px-gutter pb-6">
+<div class="bg-surface-container-lowest p-3 rounded-xl shadow-sm flex flex-col lg:flex-row items-center justify-between gap-3">
+<!-- Segmented Status Tabs -->
+<div class="flex items-center overflow-x-auto w-full lg:w-auto p-1 bg-surface-container-low rounded-lg">
+<button class="px-3.5 py-1.5 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-bold whitespace-nowrap shadow-sm">
+          All Shipments (14)
+        </button>
+<button class="px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="">In Transit</span>
+<span class="px-1.5 py-0.2 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px] font-bold">6</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="">Awaiting Dispatch</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container text-secondary text-[11px] font-bold">3</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="">Delivered Today</span>
+<span class="px-1.5 py-0.2 rounded-full bg-secondary-container text-on-secondary-container text-[11px] font-bold">4</span>
+</button>
+<button class="px-3.5 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-label-md text-label-md whitespace-nowrap transition-colors flex items-center gap-1.5">
+<span class="">Exceptions</span>
+<span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container text-[11px] font-bold">1</span>
+</button>
+</div>
+<!-- Quick Search & Secondary Filter Dropdowns -->
+<div class="flex items-center flex-wrap gap-2.5 w-full lg:w-auto justify-end">
+<div class="relative flex-1 lg:w-72">
+<span class="material-symbols-outlined absolute left-2.5 top-2.5 text-secondary text-[18px]">search</span>
+<input class="w-full h-9 pl-9 pr-3 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Search Shipment, PO #, Vehicle, Driver..." type="text" value="#SHP-TN-4401">
+</div>
+<select class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>Destination: All Delta Hubs</option>
+<option selected="">Nagapattinam Central</option>
+<option>Tiruvarur Mandi Node</option>
+<option>Mayiladuthurai Grain Market</option>
+<option>Karaikal Port Hub</option>
+<option>Velankanni Town</option>
+</select>
+<select class="h-9 px-3 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none">
+<option>Fleet: All Categories</option>
+<option selected="">Heavy &amp; Medium 6-Wheeler</option>
+<option>Tata Ace / Last-Mile</option>
+<option>10-Wheeler Taurus</option>
+</select>
+<div class="flex items-center gap-1 px-3 py-1.5 rounded-lg bg-surface-container-low text-secondary font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span class="">Today, 01 Feb 2025</span>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: MAIN 2-COLUMN OPERATIONAL WORKBENCH -->
+<div class="px-gutter pb-12 grid grid-cols-1 xl:grid-cols-12 gap-6">
+<!-- LEFT COLUMN (WIDE ~62%, xl:col-span-7 or 8) -->
+<div class="xl:col-span-7 flex flex-col gap-6">
+<!-- 4A. INTERACTIVE REGIONAL TRANSIT CORRIDOR MAP PANEL (Simulated) -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Map Header Strip -->
+<div class="p-4 bg-surface-container-low flex flex-wrap items-center justify-between gap-3"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-lg bg-[#123D2B] text-white flex items-center justify-center border-b-2 border-[#D4A64A]"><span class="material-symbols-outlined text-[20px] text-[#D4A64A]">alt_route</span></div><div><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight">Cauvery Delta Live Transit Corridor</span><span class="px-2.5 py-0.5 rounded-full bg-[#123D2B] text-[#D4A64A] font-label-sm text-label-sm font-semibold flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-[#D4A64A] animate-ping"></span>GPS Active: Virudhunagar Mill → Thanjavur Toll → Nagapattinam APMC</span></div><span class="font-label-sm text-label-sm text-secondary">NH-83 Eastward &amp; NH-32 Coastal Artery Logistics Feed • Real-Time Sensor Stream</span></div></div><div class="flex items-center gap-2 flex-wrap"><span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[15px] text-[#D4A64A]">device_thermostat</span><span class="">Cargo Temp: <strong>22.4°C (Safe)</strong></span></span><span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[15px] text-surface-tint">monitor_heart</span><span class="">Vehicle Health: <strong class="text-surface-tint">99.2% Optimal</strong></span></span><span class="px-2.5 py-1 rounded-md bg-surface-container-lowest border border-surface-container text-on-surface-variant font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[15px] text-surface-tint">speed</span>Avg: 42 km/h</span></div></div>
+<!-- High Fidelity Styled SVG Map Visualization -->
+<div class="relative w-full h-80 bg-surface-container-high/40 overflow-hidden flex items-center justify-center">
+<!-- Subtle Grid Canvas Background -->
+<svg class="absolute inset-0 w-full h-full text-surface-variant/40" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<pattern height="32" id="grid-pattern" patternUnits="userSpaceOnUse" width="32">
+<path d="M 32 0 L 0 0 0 32" fill="none" stroke="currentColor" stroke-dasharray="2,2" stroke-width="0.75"></path>
+</pattern>
+</defs>
+<rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
+</svg>
+<!-- Simulated Tamil Nadu Delta River and Roads Overlay -->
+<svg class="absolute inset-0 w-full h-full" fill="none" viewBox="0 0 820 340" xmlns="http://www.w3.org/2000/svg">
+<!-- Cauvery Tributary Stream (Stylized Organic Curve) -->
+<path d="M 20 60 Q 220 80, 420 120 T 780 140" opacity="0.6" stroke="#dae2fd" stroke-linecap="round" stroke-width="8"></path>
+<path d="M 400 120 Q 560 180, 790 260" opacity="0.4" stroke="#dae2fd" stroke-linecap="round" stroke-width="5"></path>
+<!-- Route 1: NH-83 (Thanjavur -> Tiruvarur -> Nagapattinam) -->
+<path d="M 90 200 L 380 200 L 660 210" stroke="#7da890" stroke-dasharray="6,4" stroke-linecap="round" stroke-width="5"></path>
+<!-- Active vehicle trace segment (glowing animated line) -->
+<path d="M 380 200 L 580 206" stroke="#123d2b" stroke-linecap="round" stroke-width="5"></path>
+<!-- Route 2: SH-64 (Thanjavur -> Kumbakonam -> Mayiladuthurai) -->
+<path d="M 90 200 Q 220 120, 310 90 L 560 80" stroke="#bec6e0" stroke-dasharray="4,4" stroke-linecap="round" stroke-width="4"></path>
+<path d="M 310 90 L 510 82" stroke="#565e74" stroke-linecap="round" stroke-width="4"></path>
+<!-- Route 3: Coastal Corridor NH-32 (Nagapattinam -> Karaikal & Velankanni) -->
+<path d="M 660 70 L 660 210 L 670 290" stroke="#bec6e0" stroke-dasharray="4,4" stroke-linecap="round" stroke-width="4"></path>
+<path d="M 660 70 L 660 140" stroke="#123d2b" stroke-linecap="round" stroke-width="4"></path>
+<!-- ORIGIN NODE: Thanjavur Agro & Grain Hub Central Silos -->
+<g transform="translate(90, 200)">
+<circle class="animate-ping" fill="#bfedd3" opacity="0.4" r="22"></circle>
+<circle fill="#123d2b" r="14"></circle>
+<circle fill="#ffffff" r="6"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="12" font-weight="700" text-anchor="middle" x="-4" y="32">THANJAVUR CENTRAL</text>
+<text fill="#565e74" font-family="Inter" font-size="10" text-anchor="middle" x="-4" y="44">Main Mill Silo Yard (Bay 1-4)</text>
+</g>
+<!-- WAYPOINT 1: Kumbakonam Node -->
+<g transform="translate(310, 90)">
+<circle fill="#ffffff" r="7" stroke="#565e74" stroke-width="2"></circle>
+<text fill="#414943" font-family="Inter" font-size="10" font-weight="600" text-anchor="middle" x="0" y="-12">Kumbakonam Depot</text>
+</g>
+<!-- DESTINATION 2: Mayiladuthurai Grain Market -->
+<g transform="translate(560, 80)">
+<circle fill="#e5eeff" r="9" stroke="#123d2b" stroke-width="2.5"></circle>
+<circle fill="#123d2b" r="4"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="11" font-weight="700" text-anchor="middle" x="0" y="-14">Mayiladuthurai Market</text>
+<text fill="#565e74" font-family="Inter" font-size="9" text-anchor="middle" x="0" y="22">PO-TN-9831 • Dispatched</text>
+</g>
+<!-- WAYPOINT 2: Tiruvarur Mandi Node -->
+<g transform="translate(380, 200)">
+<circle fill="#ffffff" r="8" stroke="#3d6752" stroke-width="2"></circle>
+<circle fill="#3d6752" r="3.5"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="11" font-weight="600" text-anchor="middle" x="0" y="-14">Tiruvarur Junction</text>
+<text fill="#565e74" font-family="Inter" font-size="9" text-anchor="middle" x="0" y="24">Clear • Transit Pass #88</text>
+</g>
+<!-- EXCEPTION POINT: Sikkal Roadwork -->
+<g transform="translate(520, 203)">
+<circle fill="#ffdad6" r="9"></circle>
+<circle fill="#ba1a1a" r="4"></circle>
+<text fill="#93000a" font-family="Inter" font-size="9" font-weight="700" text-anchor="middle" x="0" y="-12">⚠ Sikkal Toll Roadwork (+25m)</text>
+</g>
+<!-- DESTINATION 1 (SELECTED & PULSING): Nagapattinam Central Bazaar -->
+<g transform="translate(660, 210)">
+<circle fill="#bfedd3" opacity="0.6" r="20"></circle>
+<circle fill="#123d2b" r="13"></circle>
+<circle fill="#ffffff" r="5"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="12" font-weight="700" text-anchor="start" x="14" y="-8">Nagapattinam Central Hub</text>
+<text fill="#123d2b" font-family="Inter" font-size="10" font-weight="600" text-anchor="start" x="14" y="6">PO-TN-9819 (Target: 16:30)</text>
+<text fill="#565e74" font-family="Inter" font-size="9" text-anchor="start" x="14" y="18">Annamalai Organic Mart</text>
+</g>
+<!-- DESTINATION 3: Karaikal Port Hub -->
+<g transform="translate(660, 70)">
+<circle fill="#dae2fd" r="9"></circle>
+<circle fill="#0b1c30" r="4"></circle>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="11" font-weight="600" text-anchor="start" x="14" y="-2">Karaikal Port Node</text>
+<text fill="#565e74" font-family="Inter" font-size="9" text-anchor="start" x="14" y="12">Delivered (PO-TN-9805)</text>
+</g>
+<!-- DESTINATION 4: Velankanni Town Store -->
+<g transform="translate(670, 290)">
+<circle fill="#ffffff" r="8" stroke="#565e74" stroke-width="2"></circle>
+<circle fill="#565e74" r="3"></circle>
+<text fill="#414943" font-family="Inter" font-size="10" font-weight="600" text-anchor="start" x="14" y="4">Velankanni Bypass Node</text>
+</g>
+<!-- VEHICLE MARKER: Truck TN-51-AB-4412 (Active en route) -->
+<g transform="translate(580, 206)">
+<rect fill="#123d2b" filter="drop-shadow(0 2px 4px rgba(0,0,0,0.25))" height="24" rx="6" width="28" x="-14" y="-12"></rect>
+<!-- Mini truck icon / shape -->
+<path d="M -8 -4 L -2 -4 L 1 -1 L 6 -1 L 6 3 L -8 3 Z" fill="#bfedd3"></path>
+<circle cx="-5" cy="4" fill="#ffffff" r="1.5"></circle>
+<circle cx="3" cy="4" fill="#ffffff" r="1.5"></circle>
+<!-- Vehicle Tag floating -->
+<rect fill="#0b1c30" height="19" opacity="0.95" rx="4" width="112" x="-56" y="-36"></rect>
+<text fill="#bfedd3" font-family="Inter" font-size="10" font-weight="700" text-anchor="middle" x="0" y="-23">TN-51-AB-4412 • 44 km/h</text>
+<path d="M 0 -17 L -3 -14 L 3 -14 Z" fill="#0b1c30"></path>
+</g>
+<!-- VEHICLE MARKER 2: Eicher TN-49-C-1092 near Mayiladuthurai -->
+<g transform="translate(480, 84)">
+<rect fill="#3f465c" height="20" rx="4" width="24" x="-12" y="-10"></rect>
+<path d="M -6 -3 L -1 -3 L 1 0 L 5 0 L 5 3 L -6 3 Z" fill="#ffffff"></path>
+<rect fill="#213145" height="16" opacity="0.9" rx="3" width="100" x="-50" y="-30"></rect>
+<text fill="#ffffff" font-family="Inter" font-size="9" font-weight="600" text-anchor="middle" x="0" y="-19">TN-49-C-1092 • 48 km/h</text>
+</g>
+</svg>
+<!-- Interactive Map Controls Overlay -->
+<div class="absolute bottom-3 right-3 flex flex-col gap-1.5 bg-surface-container-lowest/90 backdrop-blur-md p-1 rounded-lg shadow-sm">
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">add</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">remove</span>
+</button>
+<button class="w-7 h-7 rounded hover:bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[16px]">layers</span>
+</button>
+</div>
+<!-- Bottom Left Disclaimer Tag -->
+<div class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-surface-container-lowest/90 backdrop-blur-md text-secondary font-label-sm text-label-sm flex items-center gap-1.5 shadow-sm">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">info</span>
+<span class="">STATIC REGIONAL LOGISTICS SIMULATION • Telemetry and waypoints are simulated demo records.</span>
+</div>
+</div>
+</div>
+<!-- 4B. MASTER SHIPMENT MANAGEMENT TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="p-4 bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-container">local_shipping</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Active Cauvery Delta Shipments</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">5 of 14 Active</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-secondary">Sort by: Departure (Latest)</span>
+</div>
+</div>
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-lowest font-label-sm text-label-sm uppercase tracking-wider text-secondary border-b border-surface-container">
+<th class="py-3 px-4">Shipment / Linked PO</th>
+<th class="py-3 px-3">Destination &amp; Consignee</th>
+<th class="py-3 px-3">Bulk Cargo &amp; Weight</th>
+<th class="py-3 px-3">Assigned Fleet &amp; Driver</th>
+<th class="py-3 px-3">Departure / ETA</th>
+<th class="py-3 px-3">Live Status</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="font-body-sm text-body-sm text-on-surface divide-y divide-surface-container-low">
+<!-- ROW 1 (ACTIVE / SELECTED) -->
+<tr class="bg-primary-fixed/20 hover:bg-primary-fixed/30 transition-colors cursor-pointer">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="font-label-md text-label-md font-bold text-primary-container">#SHP-TN-4401</span>
+</div>
+<div class="font-label-sm text-label-sm text-secondary pl-4">PO: <span class="font-semibold text-on-surface">#PO-TN-9819</span></div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[150px]">Annamalai Organic Mart</div>
+<div class="text-secondary font-label-sm text-label-sm">Nagapattinam Velankanni Bypass</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-semibold text-on-surface">Quinoa Grains 1.0 MT</div>
+<div class="text-secondary font-label-sm text-label-sm">40 Paper Sacks (25kg)</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">TN-51-AB-4412</div>
+<div class="text-secondary font-label-sm text-label-sm">Eicher Pro • M. Saravanan</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="text-secondary">Dep: <span class="font-semibold text-on-surface">14:15</span></div>
+<div class="text-primary-container font-semibold">ETA: 16:30 (On Time)</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="w-1.5 h-1.5 rounded-full bg-surface-tint"></span>
+                    In Transit (NH-32)
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm hover:bg-primary transition-colors">
+                    Selected
+                  </button>
+</td>
+</tr>
+<!-- ROW 2 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors cursor-pointer">
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md font-bold text-on-surface">#SHP-TN-4402</div>
+<div class="font-label-sm text-label-sm text-secondary">PO: <span class="font-semibold text-on-surface">#PO-TN-9842</span></div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[150px]">Velan Supermarket</div>
+<div class="text-secondary font-label-sm text-label-sm">Nagapattinam Central Town</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-semibold text-on-surface">Kattuyanam Red Rice 2.0 MT</div>
+<div class="text-secondary font-label-sm text-label-sm">40 Jute Sacks (50kg)</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">TN-49-D-8819</div>
+<div class="text-secondary font-label-sm text-label-sm">Ashok Leyland 16T • R. Kumar</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="text-secondary">Dep: <span class="font-semibold text-on-surface">15:45 (Est)</span></div>
+<div class="text-secondary">ETA: 18:00</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">warehouse</span>
+                    Staging Bay 3
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors">
+                    Inspect
+                  </button>
+</td>
+</tr>
+<!-- ROW 3 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors cursor-pointer">
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md font-bold text-on-surface">#SHP-TN-4403</div>
+<div class="font-label-sm text-label-sm text-secondary">PO: <span class="font-semibold text-on-surface">#PO-TN-9838</span></div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[150px]">Sri Murugan Supermarket</div>
+<div class="text-secondary font-label-sm text-label-sm">Nagapattinam Town Core</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-semibold text-on-surface">Gingelly Oil 1.2 MT</div>
+<div class="text-secondary font-label-sm text-label-sm">80 Sealed Tins (15kg)</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">TN-51-K-3304</div>
+<div class="text-secondary font-label-sm text-label-sm">Tata Ace • P. Selvam</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="text-secondary">Dep: <span class="font-semibold text-on-surface">12:30</span></div>
+<div class="text-primary-container font-semibold">ETA: 15:15</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">near_me</span>
+                    Out for Delivery
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors">
+                    Inspect
+                  </button>
+</td>
+</tr>
+<!-- ROW 4 -->
+<tr class="hover:bg-surface-container-low/70 transition-colors cursor-pointer">
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md font-bold text-on-surface">#SHP-TN-4404</div>
+<div class="font-label-sm text-label-sm text-secondary">PO: <span class="font-semibold text-on-surface">#PO-TN-9805</span></div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[150px]">Karaikal Port Trading Co</div>
+<div class="text-secondary font-label-sm text-label-sm">Karaikal Port Gate 2</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-semibold text-on-surface">Ceylon Cinnamon 150 kg</div>
+<div class="text-secondary font-label-sm text-label-sm">15 Master Cartons (10kg)</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">TN-49-X-1120</div>
+<div class="text-secondary font-label-sm text-label-sm">Bolero Maxi • G. Mani</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="text-secondary">Dep: <span class="font-semibold text-on-surface">09:00</span></div>
+<div class="text-surface-tint font-semibold">Delivered: 11:45</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed-dim text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">verified</span>
+                    POD Verified
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface-variant hover:bg-surface-container font-label-sm text-label-sm font-semibold transition-colors">
+                    View POD
+                  </button>
+</td>
+</tr>
+<!-- ROW 5 (EXCEPTION) -->
+<tr class="hover:bg-surface-container-low/70 transition-colors cursor-pointer">
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md font-bold text-on-surface">#SHP-TN-4405</div>
+<div class="font-label-sm text-label-sm text-secondary">PO: <span class="font-semibold text-on-surface">#PO-TN-9831</span></div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-md text-label-md font-bold text-on-surface truncate max-w-[150px]">Kaveri Provisions &amp; Whsle</div>
+<div class="text-secondary font-label-sm text-label-sm">Nagore Road Wholesale Hub</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-semibold text-on-surface">Ponni Boiled Rice 5.0 MT</div>
+<div class="text-secondary font-label-sm text-label-sm">100 Jute Sacks (50kg)</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="font-label-sm text-label-sm font-bold text-on-surface">TN-68-M-7741</div>
+<div class="text-secondary font-label-sm text-label-sm">Eicher 14ft • T. Anbarasan</div>
+</td>
+<td class="py-3.5 px-3">
+<div class="text-secondary">Dep: <span class="font-semibold text-on-surface">13:10</span></div>
+<div class="text-error font-semibold">ETA: 17:15 (+25m)</div>
+</td>
+<td class="py-3.5 px-3">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">warning</span>
+                    Sikkal Delay
+                  </span>
+</td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-2.5 py-1 rounded bg-error-container text-on-error-container hover:bg-error/20 font-label-sm text-label-sm font-semibold transition-colors">
+                    Reroute
+                  </button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination Footer -->
+<div class="p-3 bg-surface-container-low flex items-center justify-between text-secondary font-body-sm text-body-sm">
+<span class="">Showing 1 to 5 of 14 active manifests</span>
+<div class="flex items-center gap-1.5">
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-secondary flex items-center justify-center disabled:opacity-40" disabled="">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded bg-primary-container text-on-primary font-bold text-xs flex items-center justify-center">1</button>
+<button class="w-8 h-8 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-semibold text-xs flex items-center justify-center">2</button>
+<button class="w-8 h-8 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-semibold text-xs flex items-center justify-center">3</button>
+<button class="w-8 h-8 rounded bg-surface-container-lowest text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- 4C. FLEET & VEHICLE AVAILABILITY MATRIX (Grid Cards) -->
+<div>
+<div class="flex items-center justify-between mb-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-surface-tint">rv_hookup</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Dedicated Delta Logistics Fleet Matrix</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary">4 of 8 Vehicles Displayed</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3.5">
+<!-- Fleet Card 1 -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">TN-51-AB-4412</span>
+<div class="text-secondary font-label-sm text-label-sm">Eicher Pro 3015 (6-Wheeler)</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">In Transit</span>
+</div>
+<div class="mt-2.5 space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Assigned Driver:</span>
+<span class="font-semibold text-on-surface">M. Saravanan (+91 94421...)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Load Utilization:</span>
+<span class="font-bold text-on-surface">2.4 MT / 4.5 MT (53%)</span>
+</div>
+<!-- Mini Progress Bar -->
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 53%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2.5 mt-2.5 border-t border-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span class="">Battery: 94% • Speed: 46 km/h</span>
+<span class="text-surface-tint font-bold">Telemetry Live</span>
+</div>
+</div>
+<!-- Fleet Card 2 -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">TN-49-D-8819</span>
+<div class="text-secondary font-label-sm text-label-sm">Ashok Leyland Taurus (10-Wheeler)</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-secondary font-label-sm text-label-sm font-bold">Loading Bay 3</span>
+</div>
+<div class="mt-2.5 space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Assigned Driver:</span>
+<span class="font-semibold text-on-surface">R. Kumar (+91 98421...)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Load Utilization:</span>
+<span class="font-bold text-on-surface">8.0 MT / 16.0 MT (50%)</span>
+</div>
+<!-- Mini Progress Bar -->
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-surface-tint rounded-full" style="width: 50%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2.5 mt-2.5 border-t border-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span class="">Gross Weight: 12.8 MT</span>
+<span class="text-on-surface font-semibold">Weighbridge Cleared</span>
+</div>
+</div>
+<!-- Fleet Card 3 -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">TN-51-K-3304</span>
+<div class="text-secondary font-label-sm text-label-sm">Tata Super Ace (Last-Mile)</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold">Out for Delivery</span>
+</div>
+<div class="mt-2.5 space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Assigned Driver:</span>
+<span class="font-semibold text-on-surface">P. Selvam (+91 97892...)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Load Utilization:</span>
+<span class="font-bold text-on-surface">1.2 MT / 1.5 MT (80%)</span>
+</div>
+<!-- Mini Progress Bar -->
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-tertiary-container rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2.5 mt-2.5 border-t border-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-secondary">
+<span class="">Destination: Town Core</span>
+<span class="text-primary-container font-semibold">Dist: 1.8 km</span>
+</div>
+</div>
+<!-- Fleet Card 4 -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between">
+<div>
+<span class="font-label-md text-label-md font-bold text-on-surface">TN-49-M-2210</span>
+<div class="text-secondary font-label-sm text-label-sm">Mahindra Furio 12 (6-Wheeler)</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-bold">Available Yard A</span>
+</div>
+<div class="mt-2.5 space-y-1.5 font-body-sm text-body-sm">
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Assigned Driver:</span>
+<span class="font-semibold text-on-surface">S. Murugesan (+91 94432...)</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant">
+<span class="">Load Utilization:</span>
+<span class="font-bold text-on-surface">Empty (Ready to Stage)</span>
+</div>
+<!-- Mini Progress Bar -->
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 0%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-2.5 mt-2.5 border-t border-surface-container-low flex items-center justify-between font-label-sm text-label-sm text-secondary"><div class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full bg-surface-tint"></span><span class="">Pre-trip Checklist: <strong>Passed</strong></span></div><button class="h-7 px-2.5 rounded bg-[#123D2B] text-white hover:bg-primary font-label-sm text-label-sm font-bold flex items-center gap-1 transition-all border-l-2 border-[#D4A64A]"><span class="material-symbols-outlined text-[14px] text-[#D4A64A]">assignment_turned_in</span><span class="">Assign Truck &amp; Bay</span></button></div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN (DETAILED INSPECTOR & COMPLIANCE DRAWER ~38%, xl:col-span-5) -->
+<div class="xl:col-span-5 flex flex-col gap-6">
+<!-- 4A. ACTIVE SHIPMENT DETAILS DRAWER -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<!-- Inspector Header -->
+<div class="p-4 bg-primary-container text-on-primary flex items-start justify-between">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="font-headline-sm text-headline-sm font-bold">#SHP-TN-4401</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">In Transit</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-primary-container">
+              Linked Purchase Order: <span class="text-on-primary font-bold">#PO-TN-9819</span>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-on-primary/10 text-on-primary font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check_circle</span>
+            On Schedule
+          </span>
+</div>
+<!-- Consignor & Consignee Card Strip -->
+<div class="p-4 bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-surface-tint text-on-primary text-xs flex items-center justify-center font-bold">A</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Origin (Consignor Hub)</span>
+<div class="font-label-md text-label-md font-bold text-on-surface">Thanjavur Agro &amp; Grain Hub Central Silos</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Gate 2 Weighbridge, Mandi Road, Thanjavur (GST: 33AAACK1234F1Z8)</p>
+</div>
+</div>
+<div class="w-0.5 h-3 bg-secondary-fixed-dim ml-3"></div>
+<div class="flex items-start gap-3">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary text-xs flex items-center justify-center font-bold">B</span>
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold">Destination (Consignee Store)</span>
+<div class="font-label-md text-label-md font-bold text-on-surface">Annamalai Organic Mart (#NAG-902)</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Velankanni Bypass Road, Nagapattinam Town, TN (GST: 33BBBPK8821R1Z2)</p>
+</div>
+</div>
+</div>
+<!-- Cargo Details Grid -->
+<div class="p-4 grid grid-cols-2 gap-3 text-body-sm border-b border-surface-container-low">
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="block font-label-sm text-label-sm text-secondary">Verified Commodity</span>
+<span class="font-bold text-on-surface">Organic Ivory Quinoa</span>
+<span class="block text-secondary text-xs">Lot: #LOT-QNA-2025-03</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="block font-label-sm text-label-sm text-secondary">Net Bulk Weight</span>
+<span class="font-bold text-on-surface">1,000 kg (1.0 MT)</span>
+<span class="block text-secondary text-xs">40 Paper Sacks × 25kg</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="block font-label-sm text-label-sm text-secondary">Assay Certification</span>
+<span class="font-bold text-surface-tint">Moisture 9.2% • NABL</span>
+<span class="block text-secondary text-xs">Zero Pesticide Residue</span>
+</div>
+<div class="bg-surface-container-low p-2.5 rounded-lg">
+<span class="block font-label-sm text-label-sm text-secondary">Escrow Direct Locked</span>
+<span class="font-bold text-primary-container">₹1,42,000 + GST</span>
+<span class="block text-secondary text-xs">HDFC APMC Smart Vault</span>
+</div>
+</div>
+<!-- 4B. INTERACTIVE SHIPMENT TRACKING TIMELINE -->
+<div class="p-4">
+<div class="flex items-center justify-between mb-3">
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Milestone Audit Trail</span>
+<span class="font-label-sm text-label-sm text-surface-tint font-bold">6 of 8 Steps Complete</span>
+</div>
+<div class="space-y-4 relative pl-2">
+<!-- Continuous line -->
+<div class="absolute left-4 top-2 bottom-4 w-0.5 bg-surface-tint"></div>
+<!-- Step 1 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Order Confirmed &amp; Escrow Locked</div>
+<div class="text-secondary font-body-sm text-body-sm">Jan 28, 16:30 • Escrow Bond #ESC-NG-8842 verified by bank</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Mill Silo Picking &amp; Bagging</div>
+<div class="text-secondary font-body-sm text-body-sm">Jan 29, 09:15 • Lot #LOT-QNA-2025-03 bagged in multi-wall kraft</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Quality Lab Assay &amp; Moisture Check</div>
+<div class="text-secondary font-body-sm text-body-sm">Jan 29, 11:30 • Passed 9.2% moisture by Quality Assayer K. Rajan</div>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Weighbridge Staging &amp; Tamper Seal</div>
+<div class="text-secondary font-body-sm text-body-sm">Jan 29, 13:45 • Gross: 4.8 MT | Net: 2.0 MT | Seal #TN-SEAL-8842-APMC</div>
+</div>
+</div>
+<!-- Step 5 -->
+<div class="flex items-start gap-3 relative">
+<span class="w-5 h-5 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[13px]">check</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Dispatched from Thanjavur Depot</div>
+<div class="text-secondary font-body-sm text-body-sm">Jan 29, 14:15 • Gate Pass #GP-88 signed out by security</div>
+</div>
+</div>
+<!-- Step 6 (Current) -->
+<div class="flex items-start gap-3 relative">
+<span class="w-5 h-5 rounded-full bg-primary-fixed text-on-primary-fixed flex items-center justify-center shrink-0 z-10 ring-4 ring-primary-fixed/40">
+<span class="material-symbols-outlined text-[13px] text-surface-tint">local_shipping</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-primary-container">In Transit • Sikkal Toll Passing</div>
+<div class="text-secondary font-body-sm text-body-sm">Active at 15:42 • Speed 44 km/h • Remaining distance 14 km</div>
+</div>
+</div>
+<!-- Step 7 (Pending) -->
+<div class="flex items-start gap-3 relative opacity-60">
+<span class="w-5 h-5 rounded-full bg-surface-container text-secondary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[12px]">schedule</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Out for Delivery &amp; Store Bay Handover</div>
+<div class="text-secondary font-body-sm text-body-sm">Estimated at 16:15 • Gate verification &amp; unloading</div>
+</div>
+</div>
+<!-- Step 8 (Pending Final) -->
+<div class="flex items-start gap-3 relative opacity-60">
+<span class="w-5 h-5 rounded-full bg-surface-container text-secondary flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-[12px]">lock_clock</span>
+</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">POD Cryptographic Counter-Sign &amp; Payout</div>
+<div class="text-secondary font-body-sm text-body-sm">Simulated instant credit of ₹1,42,000 to Kumbakonam Agro account</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 4C. SIMULATED E-WAY BILL & COMPLIANCE DOCUMENTS PANEL -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-surface-tint">verified_user</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Transit Compliance &amp; E-Way Challans</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary font-label-sm text-label-sm">Sandbox Mode</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          E-Way Bill &amp; Mandi Gate documents are generated adhering to Tamil Nadu APMC agricultural transport frameworks.
+        </p>
+<!-- Document List -->
+<div class="space-y-2">
+<!-- Doc 1: Simulated E-Way Bill -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2"><div class="flex items-center gap-2.5"><span class="material-symbols-outlined text-[22px] text-[#123D2B]">description</span><div><div class="font-label-md text-label-md font-bold text-on-surface flex items-center gap-2"><span class="">Simulated E-Way Bill #3314-8892-0194</span><span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed text-[10px] font-bold">NIC Verified</span></div><div class="text-secondary font-label-sm text-label-sm">Valid till: 31 Jan 2025 • HSN 1006 • 84 km</div></div></div><div class="flex items-center gap-1.5"><button class="h-8 px-2.5 rounded bg-surface-container-lowest border border-surface-container hover:bg-surface-container hover:border-outline-variant text-on-surface font-label-sm text-label-sm font-semibold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[14px] text-secondary">visibility</span><span class="">Preview</span></button><button class="h-8 px-3 rounded bg-[#123D2B] text-white hover:bg-primary font-label-sm text-label-sm font-bold shadow-sm transition-all flex items-center gap-1 border-l-2 border-[#D4A64A]"><span class="material-symbols-outlined text-[14px] text-[#D4A64A]">verified</span><span class="">Issue E-Way Bill</span></button></div></div>
+<!-- Doc 2: Tax Invoice -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px] text-surface-tint">receipt</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">Proforma Tax Invoice #INV-TAGH-2025-0914</div>
+<div class="text-secondary font-label-sm text-label-sm">Net: ₹1,42,000 + GST 5% (₹7,100) = ₹1,49,100</div>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors">View</button>
+</div>
+<!-- Doc 3: Lab Assay -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px] text-tertiary-container">biotech</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">NABL Lab Moisture &amp; Assay #LAB-CH-4410</div>
+<div class="text-secondary font-label-sm text-label-sm">Grade A Standard Passed • Zero Chemical Residue</div>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors">Certificate</button>
+</div>
+<!-- Doc 4: Gate Pass -->
+<div class="p-3 rounded-lg bg-surface-container-low flex items-center justify-between gap-2">
+<div class="flex items-center gap-2.5">
+<span class="material-symbols-outlined text-[22px] text-secondary">pin</span>
+<div>
+<div class="font-label-md text-label-md font-bold text-on-surface">APMC Mandi Gate Pass #GP-88</div>
+<div class="text-secondary font-label-sm text-label-sm">Tamper Seal #TN-SEAL-8842-APMC Verified</div>
+</div>
+</div>
+<button class="px-2.5 py-1 rounded bg-surface-container-lowest hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors">Print Slip</button>
+</div>
+</div>
+</div>
+<!-- 4D. DIGITAL PROOF OF DELIVERY (POD) EXECUTION PREVIEW -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm p-4 flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-container">draw</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-bold">Digital Proof of Delivery (POD) Terminal</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-tertiary-container/15 text-on-tertiary-container font-label-sm text-label-sm font-bold">
+            Pending Handover
+          </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Final merchant receipt verification triggers the automated HDFC Escrow release to Kumbakonam Agro Mills.
+        </p>
+<!-- POD Verification Summary Box -->
+<div class="p-3.5 rounded-lg bg-surface-container-low space-y-2.5">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-secondary">Store Receiver:</span>
+<span class="font-bold text-on-surface">S. Annamalai (Proprietor) • ID #TN-MER-492</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-secondary">Expected Quantity:</span>
+<span class="font-bold text-on-surface">40 Sacks / 1,000 kg (Full Consignment)</span>
+</div>
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-secondary">Seal Integrity:</span>
+<span class="text-surface-tint font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              #TN-SEAL-8842-APMC Intact
+            </span>
+</div>
+<!-- Digital Signature & QR Preview Card -->
+<div class="mt-3 p-3 bg-surface-container-lowest rounded-lg border border-surface-container flex items-center justify-between gap-3">
+<div>
+<span class="block font-label-sm text-label-sm uppercase tracking-wider text-secondary">Authorized Signature Pad</span>
+<div class="font-serif italic text-lg text-primary-container font-semibold my-1">
+                S. Annamalai
+              </div>
+<span class="block text-secondary font-label-sm text-label-sm">
+                Crypto Hash: SHA256:8f2a...c09e
+              </span>
+</div>
+<!-- Mock QR code -->
+<div class="w-16 h-16 bg-surface-container p-1 rounded flex items-center justify-center shrink-0">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewBox="0 0 40 40">
+<rect height="12" width="12" x="2" y="2"></rect>
+<rect fill="#ffffff" height="8" width="8" x="4" y="4"></rect>
+<rect height="4" width="4" x="6" y="6"></rect>
+<rect height="12" width="12" x="26" y="2"></rect>
+<rect fill="#ffffff" height="8" width="8" x="28" y="4"></rect>
+<rect height="4" width="4" x="30" y="6"></rect>
+<rect height="12" width="12" x="2" y="26"></rect>
+<rect fill="#ffffff" height="8" width="8" x="4" y="28"></rect>
+<rect height="4" width="4" x="6" y="30"></rect>
+<rect height="8" width="4" x="18" y="4"></rect>
+<rect height="4" width="8" x="18" y="16"></rect>
+<rect height="8" width="8" x="28" y="18"></rect>
+<rect height="6" width="6" x="16" y="26"></rect>
+<rect height="4" width="8" x="26" y="28"></rect>
+</svg>
+</div>
+</div>
+<!-- Escrow Release Note -->
+<div class="p-2 rounded bg-primary-fixed/30 text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-surface-tint">account_balance_wallet</span>
+<span class="">Escrow bond of ₹1,42,000 will be credited to supplier within 24h of merchant sign-off.</span>
+</div>
+</div>
+<!-- POD Action Triggers -->
+<div class="flex items-center gap-2.5 pt-1"><button class="flex-1 h-10 px-3.5 rounded-lg bg-[#123D2B] text-white hover:bg-primary transition-all font-label-md text-label-md font-bold flex items-center justify-center gap-2 shadow-sm border-l-2 border-[#D4A64A]" id="pod-simulate-btn" onclick="simulatePodAcceptance()"><span class="material-symbols-outlined text-[18px] text-[#D4A64A]">draw</span><span class="">Sign Digital Proof of Delivery (POD)</span></button><button class="h-10 px-3.5 rounded-lg bg-surface-container-lowest border border-surface-container hover:bg-surface-container hover:border-outline-variant text-secondary font-label-md text-label-md font-semibold transition-colors flex items-center gap-1.5 shadow-sm"><span class="material-symbols-outlined text-[18px] text-[#D4A64A]">share_location</span><span class="">Ping GPS Beacon</span></button><button class="h-10 px-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-error font-label-md text-label-md font-semibold transition-colors flex items-center gap-1"><span class="material-symbols-outlined text-[18px]">report_problem</span><span class="">Report Issue</span></button></div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: SYSTEM TELEMETRY FOOTER STRIP -->
+<div class="px-gutter py-3 bg-surface-container-low border-t border-surface-container flex flex-wrap items-center justify-between text-secondary font-body-sm text-body-sm gap-3">
+<div class="flex items-center flex-wrap gap-4">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="">APMC Gateway Ping: <strong class="text-on-surface">38ms</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="">GPS Telemetry Engine: <strong class="text-on-surface">Active Simulation</strong></span>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-tint"></span>
+<span class="">Tamper Guard: <strong class="text-on-surface">100% Intact</strong></span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<span class="font-label-sm text-label-sm">Escrow Settlement: <strong class="text-primary-container font-bold">HDFC Smart Contract Ready</strong></span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">VeriGrocery B2B Fleet Engine v4.2</span>
+</div>
+</div>
+<!-- INTERACTIVE CLIENT-SIDE SCRIPT -->
+<script>
+    function simulatePodAcceptance() {
+      const btn = document.getElementById('pod-simulate-btn');
+      if (!btn) return;
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">refresh</span><span>Verifying Cryptographic POD...</span>';
+      btn.classList.add('opacity-80', 'pointer-events-none');
+      setTimeout(() => {
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">check_circle</span><span>POD Verified • ₹1,42,000 Released!</span>';
+        btn.className = 'flex-1 h-10 px-3 rounded-lg bg-surface-tint text-on-primary font-label-md text-label-md font-bold flex items-center justify-center gap-1.5 shadow-sm transition-all';
+      }, 1200);
+    }
+  </script>
+</div></main></div>
+
+</body></html>

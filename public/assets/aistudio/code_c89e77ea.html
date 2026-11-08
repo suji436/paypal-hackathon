@@ -1,0 +1,496 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","tertiary-fixed-dim":"#f0bf60","background":"#f8f9ff","secondary-fixed":"#dae2fd","secondary":"#565e74","primary-container":"#123d2b","surface-dim":"#cbdbf5","surface-container-highest":"#d3e4fe","on-surface":"#0b1c30","surface-variant":"#d3e4fe","surface":"#f8f9ff","on-tertiary-container":"#c4983d","primary-fixed":"#bfedd3","on-primary":"#ffffff","on-error":"#ffffff","surface-tint":"#3d6752","inverse-on-surface":"#eaf1ff","on-secondary":"#ffffff","on-tertiary":"#ffffff","tertiary-fixed":"#ffdea5","on-primary-fixed-variant":"#254f3b","surface-container-high":"#dce9ff","outline":"#717973","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","secondary-container":"#dae2fd","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#bec6e0","on-background":"#0b1c30","inverse-primary":"#a4d1b7","error":"#ba1a1a","inverse-surface":"#213145","on-primary-fixed":"#002114","primary":"#002618","tertiary-container":"#483200","tertiary":"#2d1e00","on-tertiary-fixed-variant":"#5d4200","on-secondary-fixed-variant":"#3f465c","on-tertiary-fixed":"#271900","on-error-container":"#93000a","on-surface-variant":"#414943","on-secondary-fixed":"#131b2e","primary-fixed-dim":"#a4d1b7","surface-container":"#e5eeff","on-primary-container":"#7da890","on-secondary-container":"#5c647a","outline-variant":"#c1c8c2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin":"2rem"},"fontFamily":{"label-sm":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-6 py-5 bg-surface-container-lowest flex flex-col gap-2"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">VeriGrocery<span class="text-tertiary-fixed-dim ml-1">AI</span></span><div class="flex items-center gap-1.5 mt-0.5"><span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase font-semibold">Enterprise Control</span></div></div></div></div><div class="px-4 py-2"><div class="px-3 py-1.5 rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">SYSTEM V5.0 ACTIVE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-1.5 py-0.5 rounded">PROD-MIRROR</span></div></div><nav class="flex-1 overflow-y-auto px-3 py-3 space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">grid_view</span><span class="">Overview</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all group" data-path="user-management" href="#"><span class="material-symbols-outlined text-[20px] text-on-primary">manage_accounts</span><span class="">User Management</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="verification-and-fraud" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">gshield</span><span class="flex-1">Verification &amp; Fraud</span><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">14</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="ai-intelligence" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">psychology</span><span class="">AI Intelligence</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="revenue-and-commission" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">account_balance_wallet</span><span class="">Revenue &amp; Commission</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="complaints-and-support" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">support_agent</span><span class="flex-1">Complaints &amp; Support</span><span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">8</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings-and-audit-logs" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">policy</span><span class="">Settings &amp; Audit Logs</span></a></nav></div><div class="p-4 bg-surface-container-low mx-3 mb-4 rounded-xl flex flex-col gap-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">admin_panel_settings</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">K. Rajasekaran</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Chief Platform Admin</span></div></div><div class="flex items-center justify-between pt-2"><div class="flex items-center gap-1.5"><span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">SANDBOX V5.0</span></div><button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded transition-colors flex items-center justify-center" title="Sign out simulated session" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-4 flex-1 max-w-2xl"><div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant shrink-0"><span class="font-semibold text-on-surface">VeriGrocery Admin</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-on-surface-variant">Enterprise Control</span></div><div class="relative flex-1 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-low rounded-lg pl-9 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search users, stores, products, GTIN, tickets, audit hash..." type="text"></div></div><div class="flex items-center gap-3"><div class="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span><span class="font-semibold">All Delta Regions</span><span class="text-on-surface-variant">•</span><span class="text-on-surface-variant">6 Districts</span></div><div class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-container text-tertiary-fixed-dim font-label-sm text-label-sm tracking-wide"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span><span class="">SIMULATED DATA</span></div><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors relative" title="System Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" title="Documentation &amp; Support" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface flex-1 w-full px-gutter py-space-lg"><div class="flex flex-col w-full space-y-6">
+<!-- Script: Update active sidebar state & local interactions -->
+<script>
+    (function() {
+      // Highlight User Management in sidebar
+      const navLinks = document.querySelectorAll('aside nav a[data-path]');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'user-management') {
+          link.className = 'flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md bg-primary-container text-on-primary font-semibold shadow-sm transition-all group';
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) {
+            icon.className = 'material-symbols-outlined text-[20px] text-on-primary';
+          }
+        } else {
+          link.className = 'flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group';
+        }
+      });
+    })();
+
+    // Simple interaction handlers for demo switching
+    function selectEntity(id, element) {
+      document.querySelectorAll('.entity-row').forEach(row => {
+        row.classList.remove('bg-surface-container-high/60');
+      });
+      if (element) {
+        element.classList.add('bg-surface-container-high/60');
+      }
+    }
+
+    function toggleAuditModal(show) {
+      const modal = document.getElementById('audit-suspension-modal');
+      if (modal) {
+        if (show) {
+          modal.classList.remove('hidden');
+          modal.classList.add('flex');
+        } else {
+          modal.classList.add('hidden');
+          modal.classList.remove('flex');
+        }
+      }
+    }
+  </script>
+<!-- Top Breadcrumb & Persistent Sandbox Header Bar -->
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 bg-surface-container-lowest p-4 rounded-xl shadow-sm">
+<div class="flex flex-col gap-1"><div class="flex flex-wrap items-center gap-1.5 p-1 bg-surface-container-low rounded-xl"><button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm border border-outline-variant/30 flex items-center gap-1.5 cursor-pointer" type="button"><span class="">All Entities</span><span class="ml-0.5 px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm font-semibold">(12,840)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Verified Stores</span><span class="px-1.5 py-0.2 rounded-full bg-primary/10 text-primary-container font-label-sm font-semibold">(348)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">APMC Suppliers</span><span class="px-1.5 py-0.2 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm font-semibold">(186)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Pending KYC</span><span class="px-1.5 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary font-label-sm font-bold">36</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-error font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Suspended</span><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm font-bold">12</span></button></div><div class="flex flex-wrap items-center gap-2"><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-sm active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">sync</span><span class="">Batch Audit POS Sync</span></button><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-sm active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span><span class="">Export Master Registry (.CSV)</span></button><button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all border border-tertiary-fixed-dim/40 active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">add_circle</span><span class="">+ Onboard Enterprise Merchant / Mill</span></button></div></div>
+<!-- Sandbox Notification Pill -->
+<div class="flex items-center gap-2.5 px-3.5 py-2 rounded-lg bg-tertiary-container/30 text-on-surface">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-tertiary font-bold tracking-wider uppercase">Enterprise Admin Sandbox</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All entities, licenses &amp; financial aggregates are simulated records</span>
+</div>
+</div>
+</div>
+<!-- Section 1: Executive KPI Header Grid (8 Metrics) -->
+<div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-8 gap-3">
+<!-- 1: Total Platform Users -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Total Users</span>
+<span class="material-symbols-outlined text-primary-container text-[18px]">group</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">12,840</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary-container font-bold mt-0.5">
+<span class="material-symbols-outlined text-[14px]">trending_up</span>
+<span class="">+8.4% MoM</span>
+</div>
+</div>
+</div>
+<!-- 2: Active Consumers -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Consumers</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">shopping_basket</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">9,420</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">73.3% pool engaged</div>
+</div>
+</div>
+<!-- 3: Store Owners -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Store Owners</span>
+<span class="material-symbols-outlined text-primary text-[18px]">storefront</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">348</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">6 Delta Districts</div>
+</div>
+</div>
+<!-- 4: Verified Agro Suppliers -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Agro Suppliers</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">agriculture</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">186</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-primary-container font-semibold mt-0.5">
+<span class="material-symbols-outlined text-[12px]">verified</span>
+<span class="">APMC/FPO Cert</span>
+</div>
+</div>
+</div>
+<!-- 5: Procurement Managers -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Procurement</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">local_shipping</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">42</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">B2B Regional Hub</div>
+</div>
+</div>
+<!-- 6: System Admins & RBAC -->
+<div class="bg-surface-container-lowest p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Admin / Staff</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">badge</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">24</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">4 Tier Clearance</div>
+</div>
+</div>
+<!-- 7: Pending Verification -->
+<div class="bg-tertiary-container/10 p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-tertiary font-semibold uppercase">Pending Queue</span>
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">hourglass_top</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-on-surface">36</div>
+<div class="font-label-sm text-label-sm text-tertiary font-semibold mt-0.5">Needs Review</div>
+</div>
+</div>
+<!-- 8: Suspended / Audit Hold -->
+<div class="bg-error-container/20 p-3.5 rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-error-container font-semibold uppercase">Audit Hold</span>
+<span class="material-symbols-outlined text-error text-[18px]">warning</span>
+</div>
+<div class="mt-2">
+<div class="font-headline-sm text-headline-sm text-error">12</div>
+<div class="font-label-sm text-label-sm text-on-error-container font-semibold mt-0.5">Suspended / Flag</div>
+</div>
+</div>
+</div>
+<!-- Section 2: Multi-Entity Filter & Quick Tabs Bar -->
+<div class="bg-surface-container-lowest p-4 rounded-xl shadow-sm flex flex-col gap-4">
+<!-- Top Row: Primary Navigation Segmented Tabs -->
+<div class="flex flex-wrap items-center justify-between gap-3 pb-3"><div class="flex flex-wrap items-center gap-1.5 p-1 bg-surface-container-low rounded-xl"><button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm border border-outline-variant/30 flex items-center gap-1.5 cursor-pointer" type="button"><span class="">All Entities</span><span class="ml-0.5 px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm font-semibold">(12,840)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Verified Stores</span><span class="px-1.5 py-0.2 rounded-full bg-primary/10 text-primary-container font-label-sm font-semibold">(348)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">APMC Suppliers</span><span class="px-1.5 py-0.2 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm font-semibold">(186)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Pending KYC</span><span class="px-1.5 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary font-label-sm font-bold">36</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-error font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Suspended</span><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm font-bold">12</span></button></div><div class="flex flex-wrap items-center gap-2"><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-sm active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">sync</span><span class="">Batch Audit POS Sync</span></button><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-sm active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span><span class="">Export Master Registry (.CSV)</span></button><button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all border border-tertiary-fixed-dim/40 active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">add_circle</span><span class="">+ Onboard Enterprise Merchant / Mill</span></button></div></div>
+<!-- Bottom Row: Filter Controls -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-3 items-center">
+<!-- Search Input -->
+<div class="lg:col-span-5 relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span>
+<input class="w-full bg-surface-container-low rounded-lg pl-9 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="Search by User ID, Entity Name, GSTIN, Mobile, Mandi ID..." type="text" value="USR-SP-001">
+</div>
+<!-- District Selector -->
+<div class="lg:col-span-3">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant">map</span>
+<select class="w-full bg-surface-container-low rounded-lg pl-8 pr-8 py-2 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm appearance-none cursor-pointer">
+<option value="all">Delta Hub: All 6 Districts</option>
+<option selected="" value="thanjavur">Thanjavur Agro Corridor (Central)</option>
+<option value="nagapattinam">Nagapattinam Maritime Belt</option>
+<option value="tiruvarur">Tiruvarur Paddy Basin</option>
+<option value="mayiladuthurai">Mayiladuthurai Northern Zone</option>
+<option value="karaikal">Karaikal Coastal Node</option>
+<option value="kumbakonam">Kumbakonam Agro Cluster</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Verification / Status Selector -->
+<div class="lg:col-span-2">
+<div class="relative">
+<select class="w-full bg-surface-container-low rounded-lg px-3 py-2 font-body-sm text-body-sm text-on-surface focus:outline-none focus:bg-surface-container-lowest shadow-sm appearance-none cursor-pointer">
+<option value="all">Status: All States</option>
+<option selected="" value="active">Active / Live</option>
+<option value="pending">Pending Review</option>
+<option value="suspended">Suspended (Audit)</option>
+<option value="demo-verified">Demo-Verified Only</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 text-[16px] text-on-surface-variant pointer-events-none">expand_more</span>
+</div>
+</div>
+<!-- Reset / Filter Metric Counter -->
+<div class="lg:col-span-2 flex items-center justify-between sm:justify-end gap-2 text-on-surface-variant">
+<span class="font-label-sm text-label-sm">Displaying <strong>6 of 12,840</strong></span>
+<button class="p-2 hover:bg-surface-container-low rounded-lg transition-colors text-on-surface-variant hover:text-on-surface" title="Clear Filters" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Section 3: Split Workspace Layout (Left: Unified Directory | Right: Dossier & Governance) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
+<!-- LEFT PANE: Directory Master Table (7 Columns) -->
+<div class="lg:col-span-7 bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden flex flex-col">
+<div class="px-5 py-4 bg-surface-container-lowest flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px] text-primary-container">dns</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Registered Entity Register</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">Real-time Stream</span>
+</div>
+<!-- Directory Table Responsive Container -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4" scope="col">Entity &amp; ID</th>
+<th class="py-3 px-3" scope="col">Role / Node</th>
+<th class="py-3 px-3" scope="col">Regional Hub</th>
+<th class="py-3 px-3" scope="col">Verification</th>
+<th class="py-3 px-3 text-right" scope="col">Throughput</th>
+<th class="py-3 px-3 text-center" scope="col">Status</th>
+<th class="py-3 px-4 text-center" scope="col">Action</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface"><!-- Row 1: Sri Murugan Organics (Even: subtle zebra bg) --><tr class="entity-row bg-surface-container-lowest hover:bg-surface-container-low/80 transition-colors cursor-pointer group" onclick="selectEntity('USR-ST-882', this)"><td class="py-3.5 px-4"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-label-md font-bold text-on-surface-variant">SM</div><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Sri Murugan Organics</span></div><span class="font-label-sm text-label-sm text-on-surface-variant">USR-ST-882 • P. Selvam</span></div></div></td><td class="py-3.5 px-3"><span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Store Owner</span></td><td class="py-3.5 px-3"><span class="text-on-surface-variant font-body-sm text-body-sm">Thanjavur Agro</span></td><td class="py-3.5 px-3"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary-container font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">verified</span><span class="">Demo-Verified</span></span><span class="inline-flex items-center gap-0.5 font-label-sm text-[10px] text-on-surface-variant font-mono"><span class="material-symbols-outlined text-[10px] text-primary">verified_user</span><span class="">FSSAI #1242008</span></span></div></td><td class="py-3.5 px-3 text-right"><div class="font-semibold text-on-surface">₹4.8L Vol</div><div class="font-label-sm text-label-sm text-primary-container font-medium">420 SKUs Active</div></td><td class="py-3.5 px-3 text-center"><span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Active</span></td><td class="py-3.5 px-4 text-center"><div class="inline-flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors cursor-pointer" type="button" title="Audit POS">Audit POS</button><button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant cursor-pointer" type="button" title="Actions Menu"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></td></tr><!-- Row 2: Thanjavur Agro Hub (Odd: Zebra tint + Selected highlight) --><tr class="entity-row bg-surface-container-high/60 hover:bg-surface-container-high transition-colors cursor-pointer group" onclick="selectEntity('USR-SP-001', this)"><td class="py-3.5 px-4"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shadow-sm">TA</div><div class="flex flex-col min-w-0"><div class="flex items-center gap-1.5"><span class="font-label-lg text-label-lg text-on-surface font-bold truncate text-primary-container">Thanjavur Agro Hub</span><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim" title="Selected Dossier"></span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">USR-SP-001 • M. Subramanian</span></div></div></td><td class="py-3.5 px-3"><span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Agro Supplier</span></td><td class="py-3.5 px-3"><div class="font-body-sm text-body-sm text-on-surface font-semibold">Thanjavur Central</div><div class="font-label-sm text-label-sm text-on-surface-variant">WH-TNJ-01</div></td><td class="py-3.5 px-3"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/20 text-primary-container font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[12px]">verified</span><span class="">APMC Verified Trust</span></span><span class="inline-flex items-center gap-0.5 font-label-sm text-[10px] text-on-surface-variant font-mono"><span class="material-symbols-outlined text-[10px] text-primary">verified_user</span><span class="">FSSAI #1242300</span></span></div></td><td class="py-3.5 px-3 text-right"><div class="font-semibold text-on-surface">120 MT/mo</div><div class="font-label-sm text-label-sm text-primary-container font-semibold">₹74.5L Agg Vol</div></td><td class="py-3.5 px-3 text-center"><span class="inline-flex items-center px-2 py-0.5 rounded bg-primary/20 text-primary-container font-label-sm text-label-sm font-bold">Active</span></td><td class="py-3.5 px-4 text-center"><div class="inline-flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold shadow-sm active:scale-95 cursor-pointer" type="button" title="Audit POS">Audit POS</button><button class="p-1 rounded hover:bg-surface-container-highest text-on-surface cursor-pointer" type="button" title="Actions Menu"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></td></tr><!-- Row 3: Velan Supermarket (Even) --><tr class="entity-row bg-surface-container-lowest hover:bg-surface-container-low/80 transition-colors cursor-pointer group" onclick="selectEntity('USR-ST-904', this)"><td class="py-3.5 px-4"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-label-md font-bold text-on-surface-variant">VS</div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Velan Supermarket</span><span class="font-label-sm text-label-sm text-on-surface-variant">USR-ST-904 • V. Balakrishnan</span></div></div></td><td class="py-3.5 px-3"><span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Store Owner</span></td><td class="py-3.5 px-3"><span class="text-on-surface-variant font-body-sm text-body-sm">Nagapattinam Central</span></td><td class="py-3.5 px-3"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary-container font-label-sm text-label-sm font-semibold"><span class="material-symbols-outlined text-[12px]">verified</span><span class="">Demo-Verified</span></span><span class="inline-flex items-center gap-0.5 font-label-sm text-[10px] text-on-surface-variant font-mono"><span class="material-symbols-outlined text-[10px] text-primary">verified_user</span><span class="">FSSAI #1242104</span></span></div></td><td class="py-3.5 px-3 text-right"><div class="font-semibold text-on-surface">₹8.2L Vol</div><div class="font-label-sm text-label-sm text-primary-container font-medium">850 SKUs Active</div></td><td class="py-3.5 px-3 text-center"><span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Active</span></td><td class="py-3.5 px-4 text-center"><div class="inline-flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors cursor-pointer" type="button" title="Audit POS">Audit POS</button><button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant cursor-pointer" type="button" title="Actions Menu"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></td></tr><!-- Row 4: Cauvery Organic Traders (Odd: subtle zebra tint) --><tr class="entity-row bg-surface-container-low/40 hover:bg-surface-container-low/80 transition-colors cursor-pointer group" onclick="selectEntity('USR-SP-042', this)"><td class="py-3.5 px-4"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-tertiary-container/20 text-tertiary flex items-center justify-center font-label-md text-label-md font-bold">CO</div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Cauvery Organic Traders</span><span class="font-label-sm text-label-sm text-on-surface-variant">USR-SP-042 • S. Meenakshi</span></div></div></td><td class="py-3.5 px-3"><span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">Agro Supplier</span></td><td class="py-3.5 px-3"><div class="font-body-sm text-body-sm text-on-surface">Tiruvarur Node</div><div class="font-label-sm text-label-sm text-on-surface-variant">WH-MYL-02</div></td><td class="py-3.5 px-3"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[12px]">schedule</span><span class="">APMC Re-audit</span></span><span class="inline-flex items-center gap-0.5 font-label-sm text-[10px] text-tertiary font-mono"><span class="material-symbols-outlined text-[10px]">warning</span><span class="">Notice Sent</span></span></div></td><td class="py-3.5 px-3 text-right"><div class="font-semibold text-on-surface">45 MT/mo</div><div class="font-label-sm text-label-sm text-on-surface-variant">12 Active POs</div></td><td class="py-3.5 px-3 text-center"><span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary font-label-sm text-label-sm font-bold">Review</span></td><td class="py-3.5 px-4 text-center"><div class="inline-flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-tertiary-container/20 hover:bg-tertiary-container/30 text-tertiary font-label-sm text-label-sm font-semibold transition-colors cursor-pointer" type="button" title="Issue Compliance Notice">Notice</button><button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant cursor-pointer" type="button" title="Actions Menu"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></td></tr><!-- Row 5: Ananya Sundaram (Even) --><tr class="entity-row bg-surface-container-lowest hover:bg-surface-container-low/80 transition-colors cursor-pointer group" onclick="selectEntity('USR-CS-4410', this)"><td class="py-3.5 px-4"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center font-label-md text-label-md font-bold text-on-surface-variant">AS</div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Ananya Sundaram</span><span class="font-label-sm text-label-sm text-on-surface-variant">USR-CS-4410 • Mayiladuthurai</span></div></div></td><td class="py-3.5 px-3"><span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-medium">Consumer Pooler</span></td><td class="py-3.5 px-3"><span class="text-on-surface-variant font-body-sm text-body-sm">Mayiladuthurai Urban</span></td><td class="py-3.5 px-3"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium"><span class="material-symbols-outlined text-[12px]">phone_android</span><span class="">OTP Verified</span></span><span class="inline-flex items-center gap-0.5 font-label-sm text-[10px] text-on-surface-variant font-mono"><span class="">Aadhaar Link OK</span></span></div></td><td class="py-3.5 px-3 text-right"><div class="font-semibold text-on-surface">14 Pools</div><div class="font-label-sm text-label-sm text-on-surface-variant">₹24,800 saved</div></td><td class="py-3.5 px-3 text-center"><span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-bold">Active</span></td><td class="py-3.5 px-4 text-center"><div class="inline-flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm font-semibold transition-colors cursor-pointer" type="button" title="Inspect">Inspect</button><button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant cursor-pointer" type="button" title="Actions Menu"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></td></tr><!-- Row 6: Coastal Kirana Mart (Odd: subtle zebra tint + error state) --><tr class="entity-row bg-error-container/10 hover:bg-error-container/20 transition-colors cursor-pointer group" onclick="selectEntity('USR-ST-773', this)"><td class="py-3.5 px-4"><div class="flex items-center gap-2.5"><div class="w-8 h-8 rounded-lg bg-error-container text-on-error-container flex items-center justify-center font-label-md text-label-md font-bold">CK</div><div class="flex flex-col min-w-0"><span class="font-label-lg text-label-lg text-on-surface font-semibold truncate group-hover:text-primary transition-colors">Coastal Kirana Mart</span><span class="font-label-sm text-label-sm text-on-surface-variant">USR-ST-773 • K. Ramanathan</span></div></div></td><td class="py-3.5 px-3"><span class="inline-flex items-center px-2 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm font-medium">Store Owner</span></td><td class="py-3.5 px-3"><span class="text-on-surface-variant font-body-sm text-body-sm">Velankanni South</span></td><td class="py-3.5 px-3"><div class="flex flex-col gap-1"><span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-bold"><span class="material-symbols-outlined text-[12px]">cancel</span><span class="">Expired FSSAI</span></span><span class="inline-flex items-center gap-0.5 font-label-sm text-[10px] text-error font-mono font-semibold"><span class="material-symbols-outlined text-[10px]">error</span><span class="">Freeze Triggered</span></span></div></td><td class="py-3.5 px-3 text-right"><div class="font-semibold text-error">Frozen / Zero</div><div class="font-label-sm text-label-sm text-on-surface-variant">180 SKUs off</div></td><td class="py-3.5 px-3 text-center"><span class="inline-flex items-center px-2 py-0.5 rounded bg-error text-on-error font-label-sm text-label-sm font-bold">Suspended</span></td><td class="py-3.5 px-4 text-center"><div class="inline-flex items-center gap-1"><button class="px-2.5 py-1 rounded bg-error-container/40 text-on-error-container font-label-sm text-label-sm font-bold hover:bg-error-container transition-colors cursor-pointer" type="button" title="Freeze Account">Frozen</button><button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant cursor-pointer" type="button" title="Actions Menu"><span class="material-symbols-outlined text-[16px]">more_vert</span></button></div></td></tr></tbody>
+</table>
+</div>
+<!-- Pagination / Summary Footer -->
+<div class="p-3 bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Showing batch 1–6 of 12,840 registered records</span>
+<div class="flex items-center gap-1.5">
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface disabled:opacity-40" disabled="" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<span class="px-2.5 py-0.5 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-bold">1</span>
+<span class="px-2.5 py-0.5 rounded hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm cursor-pointer">2</span>
+<span class="px-2.5 py-0.5 rounded hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm cursor-pointer">3</span>
+<span class="text-on-surface-variant text-[12px]">...</span>
+<span class="px-2.5 py-0.5 rounded hover:bg-surface-container text-on-surface-variant font-label-sm text-label-sm cursor-pointer">2,140</span>
+<button class="p-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- RIGHT PANE: Active Entity Dossier & Governance Console (5 Columns) -->
+<div class="lg:col-span-5 flex flex-col gap-5">
+<!-- Primary Entity Card: USR-SP-001 Thanjavur Agro & Grain Hub -->
+<div class="bg-surface-container-lowest rounded-xl p-5 shadow-sm flex flex-col gap-5 relative overflow-hidden">
+<!-- Ambient Top Accent Gradient -->
+<div class="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-primary-container via-tertiary-fixed-dim to-primary"></div>
+<!-- Header: Entity Title & Tier Badges -->
+<div class="flex items-start justify-between gap-3 pt-1">
+<div class="flex items-start gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm font-bold shrink-0 shadow-sm">
+              TA
+            </div>
+<div class="flex flex-col">
+<div class="flex items-center gap-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold">Thanjavur Agro &amp; Grain Hub</h2>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Contact: M. Subramanian (Chief Operations Partner)</span>
+<div class="flex items-center gap-2 mt-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">USR-SP-001</span>
+<span class="text-on-surface-variant text-[10px]">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Member since Oct 14, 2022</span>
+</div>
+</div>
+</div>
+<div class="flex flex-col items-end gap-1 shrink-0">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded bg-tertiary-container text-tertiary-fixed-dim font-label-sm text-label-sm font-bold shadow-sm">
+<span class="material-symbols-outlined text-[14px]">stars</span>
+<span class="">Gold Tier Agro Supplier</span>
+</span>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary-container font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="">Fully Operational</span>
+</span>
+</div>
+</div>
+<!-- Statutory Compliance & Credentials Panel -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">gavel</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Compliance &amp; Statutory Registry</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary font-label-sm text-label-sm font-bold">SIMULATED AUDIT</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-body-sm font-body-sm">
+<!-- FSSAI License -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">FSSAI Central Lic</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-semibold text-on-surface font-mono mt-0.5">#12423008000412</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Exp: Nov 2028 (Demo Verified)</span>
+</div>
+<!-- APMC Mandi Registration -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">APMC Mandi Reg</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-semibold text-on-surface font-mono mt-0.5">TN-TNJ-8839</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Node WH-TNJ-01 Validated</span>
+</div>
+<!-- GSTIN -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">State GSTIN ID</span>
+<span class="material-symbols-outlined text-primary text-[14px]">check_circle</span>
+</div>
+<span class="font-semibold text-on-surface font-mono mt-0.5">33AAACT1120K1ZX</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tamil Nadu State Tax Verified</span>
+</div>
+<!-- Cold Storage Node -->
+<div class="p-2.5 rounded-lg bg-surface-container-lowest flex flex-col">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Cold Storage Node</span>
+<span class="material-symbols-outlined text-primary text-[14px]">ac_unit</span>
+</div>
+<span class="font-semibold text-on-surface mt-0.5">3,200 MT Capacity</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">IoT Temp Log: 4.2°C Steady</span>
+</div>
+</div>
+<div class="px-2.5 py-1.5 rounded bg-surface-container-high/60 flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">info</span>
+<span class="">DEMO DOCUMENT RECORD – NOT STATUTORILY VALIDATED BY EXTERNAL GOVERNMENT BODIES.</span>
+</div>
+</div>
+<!-- Operational Metrics & Contract Volume -->
+<div class="flex flex-col gap-2.5">
+<div class="flex items-center justify-between">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Operational Performance SLAs</span>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold">99.1% Compliance</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low text-center">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">99.1%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">On-Time SLA</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low text-center">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">1.8h</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">RFQ Turnaround</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low text-center">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">342</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Bulk Contracts</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low text-center">
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold">₹74.5L</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Gross Throughput</div>
+</div>
+</div>
+<!-- Micro Progress Bar for Fulfillment Reliability -->
+<div class="p-3 rounded-lg bg-surface-container-low flex flex-col gap-1.5">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface font-medium">B2B Dispatch Verification Score</span>
+<span class="text-primary-container font-bold">98.4 / 100</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-highest overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 98.4%;"></div>
+</div>
+</div>
+</div>
+<!-- Linked Sub-Entities & Associated Documents -->
+<div class="flex flex-col gap-2 pt-2">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Linked Sub-Entities &amp; Dossiers</span>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+<a class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col" href="#">
+<div class="flex items-center gap-1.5 text-primary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">store</span>
+<span class="">Linked Stores</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">18 Retail Partners</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Active supply pipelines</span>
+</a>
+<a class="p-2.5 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors flex flex-col" href="#">
+<div class="flex items-center gap-1.5 text-primary-container font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span class="">Active RFQ Dossier</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">#RFQ-2026-0104</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">50 MT Samba Rice</span>
+</a>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex flex-col">
+<div class="flex items-center gap-1.5 text-primary font-label-md text-label-md font-semibold">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span class="">Dispute History</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface font-semibold mt-1">0 Open Complaints</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Clean 24mo record</span>
+</div>
+</div>
+</div>
+<!-- Admin Governance Actions -->
+<div class="pt-3 flex flex-col gap-2.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Administrative Governance Actions</span>
+<div class="grid grid-cols-2 gap-2"><button class="px-3.5 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md font-semibold shadow-sm hover:opacity-95 transition-all border border-tertiary-fixed-dim/40 active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">point_of_sale</span><span class="">Audit POS</span></button><button class="px-3.5 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-all shadow-sm active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">announcement</span><span class="">Issue Compliance Notice</span></button><button class="px-3.5 py-2 rounded-lg bg-error-container text-on-error-container font-label-md text-label-md font-semibold hover:bg-error-container/80 transition-all shadow-sm active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer" onclick="toggleAuditModal(true)" type="button"><span class="material-symbols-outlined text-[16px]">ac_unit</span><span class="">Freeze Account</span></button><button class="px-3.5 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-high transition-all shadow-sm active:scale-95 flex items-center justify-center gap-1.5 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px]">edit_note</span><span class="">Forensic Audit Note</span></button></div>
+</div>
+</div>
+<!-- Quick Audit Log Snippet for Selected Entity -->
+<div class="bg-surface-container-lowest rounded-xl p-4 shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between"><div class="flex flex-wrap items-center gap-1.5 p-1 bg-surface-container-low rounded-xl"><button class="px-3.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm border border-outline-variant/30 flex items-center gap-1.5 cursor-pointer" type="button"><span class="">All Entities</span><span class="ml-0.5 px-1.5 py-0.2 rounded-full bg-surface-container text-on-surface-variant font-label-sm font-semibold">(12,840)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Verified Stores</span><span class="px-1.5 py-0.2 rounded-full bg-primary/10 text-primary-container font-label-sm font-semibold">(348)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">APMC Suppliers</span><span class="px-1.5 py-0.2 rounded-full bg-tertiary-container/20 text-tertiary font-label-sm font-semibold">(186)</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Pending KYC</span><span class="px-1.5 py-0.2 rounded-full bg-tertiary-fixed text-on-tertiary font-label-sm font-bold">36</span></button><button class="px-3.5 py-1.5 rounded-lg text-on-surface-variant hover:text-error font-label-md text-label-md transition-colors flex items-center gap-1.5 cursor-pointer" type="button"><span class="">Suspended</span><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm font-bold">12</span></button></div><div class="flex flex-wrap items-center gap-2"><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-sm active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">sync</span><span class="">Batch Audit POS Sync</span></button><button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-md text-label-md transition-all shadow-sm active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">file_download</span><span class="">Export Master Registry (.CSV)</span></button><button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-sm hover:opacity-95 transition-all border border-tertiary-fixed-dim/40 active:scale-95 cursor-pointer" type="button"><span class="material-symbols-outlined text-[16px] text-tertiary-fixed-dim">add_circle</span><span class="">+ Onboard Enterprise Merchant / Mill</span></button></div></div>
+<div class="flex flex-col gap-2.5 font-body-sm text-body-sm">
+<div class="flex items-start gap-2.5">
+<span class="w-2 h-2 rounded-full bg-emerald-500 mt-1.5 shrink-0"></span>
+<div class="flex flex-col">
+<div class="text-on-surface"><strong class="font-semibold">APMC Warehouse License Re-Certified</strong> by Admin K. Rajasekaran</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Today at 10:14 AM • Hash: 0x8f2a...c31b</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed-dim mt-1.5 shrink-0"></span>
+<div class="flex flex-col">
+<div class="text-on-surface"><strong class="font-semibold">Contract Volume Cap Adjusted</strong> to 150 MT/month</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Yesterday at 4:30 PM • Auto-trigger: SLA &gt; 99%</span>
+</div>
+</div>
+<div class="flex items-start gap-2.5">
+<span class="w-2 h-2 rounded-full bg-surface-tint mt-1.5 shrink-0"></span>
+<div class="flex flex-col">
+<div class="text-on-surface"><strong class="font-semibold">Forensic Audit Check Cleared</strong> for Paddy Lot #Lot-TNJ-881</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Oct 28, 2026 • AI Multi-spectral scanner valid</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Simulation Modal: Suspension & Status Change Audit (Hidden by default, triggered by button) -->
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-inverse-surface/40 backdrop-blur-sm p-4" id="audit-suspension-modal">
+<div class="bg-surface-container-lowest max-w-lg w-full rounded-2xl p-6 shadow-xl flex flex-col gap-4 relative">
+<div class="flex items-start justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container text-on-error-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">warning</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold">Suspend Entity Account</h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Target: USR-SP-001 (Thanjavur Agro &amp; Grain Hub)</span>
+</div>
+</div>
+<button class="p-1 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" onclick="toggleAuditModal(false)" type="button">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="p-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface">
+<p class="">Suspending this account will immediately revoke access to the B2B trading terminal, freeze active escrow allocations, and unlink live APMC mandi bid tickets across 6 Delta districts.</p>
+</div>
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-on-surface font-bold uppercase tracking-wide">
+          Mandatory Forensic Reason / Regulatory Clause *
+        </label>
+<textarea class="w-full bg-surface-container-low rounded-lg p-3 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="Enter specific audit justification (e.g., FSSAI violation, failed seed germination test, court attachment, non-conforming batch)..." rows="3"></textarea>
+</div>
+<div class="flex items-center gap-2">
+<input checked="" class="rounded text-primary-container focus:ring-0 cursor-pointer" id="freeze-escrow" type="checkbox">
+<label class="font-body-sm text-body-sm text-on-surface cursor-pointer" for="freeze-escrow">
+          Simulate automatic escrow freeze on ₹14.8L pending settlements
+        </label>
+</div>
+<div class="flex items-center justify-end gap-2.5 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold transition-colors" onclick="toggleAuditModal(false)" type="button">
+          Cancel
+        </button>
+<button class="px-4 py-2 rounded-lg bg-error text-on-error font-label-md text-label-md font-bold shadow-sm hover:opacity-95 transition-opacity" onclick="toggleAuditModal(false)" type="button">
+          Confirm Audit Suspension
+        </button>
+</div>
+</div>
+</div>
+<!-- Section 4: Sandbox Disclaimer Notification Footer -->
+<div class="p-4 rounded-xl bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-tertiary-container/40 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">security</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">
+        VERIGROCERY AI ENTERPRISE ADMIN SANDBOX – ALL USERS, STORES, SUPPLIERS, AND CREDENTIALS ARE SIMULATED DEMO RECORDS FOR PROTOTYPING.
+      </p>
+</div>
+<div class="flex items-center gap-2 shrink-0">
+<span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">NODE: TN-DELTA-CLUSTER-04</span>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-4 px-gutter shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">info</span><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">VERIGROCERY AI ENTERPRISE ADMIN SANDBOX – ALL USERS, STORES, SUPPLIERS, PRODUCTS, FINANCIAL DATA, VERIFICATION RESULTS AND AI INSIGHTS ARE SIMULATED DEMO RECORDS.</p></div><div class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Phase 5 Build 5.4.11-rc</div></div></footer></div>
+
+</body></html>
