@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: verigrocery-api
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm install
+    startCommand: npm run start
+    healthCheckPath: /api/health
+    autoDeploy: true
