@@ -8,7 +8,8 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig(() => {
   return {
-    base: process.env.NODE_ENV === 'production' ? '/1st-hackathon/' : '/',
+    // GitHub Pages publishes this project under the repository name.
+    base: process.env.NODE_ENV === 'production' ? '/paypal-hackathon/' : '/',
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
