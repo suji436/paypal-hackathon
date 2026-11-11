@@ -1,0 +1,508 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error-container":"#ffdad6","tertiary-fixed-dim":"#f0bf60","background":"#f8f9ff","secondary-fixed":"#dae2fd","secondary":"#565e74","primary-container":"#123d2b","surface-dim":"#cbdbf5","surface-container-highest":"#d3e4fe","on-surface":"#0b1c30","surface-variant":"#d3e4fe","surface":"#f8f9ff","on-tertiary-container":"#c4983d","primary-fixed":"#bfedd3","on-primary":"#ffffff","on-error":"#ffffff","surface-tint":"#3d6752","inverse-on-surface":"#eaf1ff","on-secondary":"#ffffff","on-tertiary":"#ffffff","tertiary-fixed":"#ffdea5","on-primary-fixed-variant":"#254f3b","surface-container-high":"#dce9ff","outline":"#717973","surface-bright":"#f8f9ff","surface-container-low":"#eff4ff","secondary-container":"#dae2fd","surface-container-lowest":"#ffffff","secondary-fixed-dim":"#bec6e0","on-background":"#0b1c30","inverse-primary":"#a4d1b7","error":"#ba1a1a","inverse-surface":"#213145","on-primary-fixed":"#002114","primary":"#002618","tertiary-container":"#483200","tertiary":"#2d1e00","on-tertiary-fixed-variant":"#5d4200","on-secondary-fixed-variant":"#3f465c","on-tertiary-fixed":"#271900","on-error-container":"#93000a","on-surface-variant":"#414943","on-secondary-fixed":"#131b2e","primary-fixed-dim":"#a4d1b7","surface-container":"#e5eeff","on-primary-container":"#7da890","on-secondary-container":"#5c647a","outline-variant":"#c1c8c2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-md":"1rem","space-xs":"0.25rem","gutter":"1.5rem","margin-mobile":"1rem","space-xl":"2.5rem","space-sm":"0.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin":"2rem"},"fontFamily":{"label-sm":["Inter"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-md":["Inter"],"label-md":["Inter"],"headline-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"label-lg":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"body-lg":["Inter"]},"fontSize":{"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}]}}}}</script></head><body class="bg-surface font-body-md text-on-surface"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-lowest shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col flex-1 min-h-0"><div class="px-6 py-5 bg-surface-container-lowest flex flex-col gap-2"><div class="flex items-center gap-3"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-on-primary shadow-sm"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">VeriGrocery<span class="text-tertiary-fixed-dim ml-1">AI</span></span><div class="flex items-center gap-1.5 mt-0.5"><span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm tracking-wider uppercase font-semibold">Enterprise Control</span></div></div></div></div><div class="px-4 py-2"><div class="px-3 py-1.5 rounded-lg bg-surface-container-low flex items-center justify-between"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant font-medium">SYSTEM V5.0 ACTIVE</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-bold bg-surface-container-highest px-1.5 py-0.5 rounded">PROD-MIRROR</span></div></div><nav class="flex-1 overflow-y-auto px-3 py-3 space-y-1" data-active-classes="bg-primary-container text-on-primary font-semibold shadow-sm"><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">grid_view</span><span class="">Overview</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="user-management" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">manage_accounts</span><span class="">User Management</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="verification-and-fraud" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">gshield</span><span class="flex-1">Verification &amp; Fraud</span><span class="px-1.5 py-0.2 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">14</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="ai-intelligence" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">psychology</span><span class="">AI Intelligence</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md bg-primary-container text-on-primary font-semibold shadow-sm" data-path="revenue-and-commission" href="#"><span class="material-symbols-outlined text-[20px] text-on-primary">account_balance_wallet</span><span class="">Revenue &amp; Commission</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="complaints-and-support" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">support_agent</span><span class="flex-1">Complaints &amp; Support</span><span class="px-1.5 py-0.2 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm">8</span></a><a class="flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group" data-path="settings-and-audit-logs" href="#"><span class="material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface">policy</span><span class="">Settings &amp; Audit Logs</span></a></nav></div><div class="p-4 bg-surface-container-low mx-3 mb-4 rounded-xl flex flex-col gap-3"><div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-on-primary text-[20px]">admin_panel_settings</span></div><div class="flex flex-col min-w-0 flex-1"><span class="font-label-lg text-label-lg font-bold text-on-surface truncate">K. Rajasekaran</span><span class="font-body-sm text-body-sm text-on-surface-variant truncate">Chief Platform Admin</span></div></div><div class="flex items-center justify-between pt-2"><div class="flex items-center gap-1.5"><span class="inline-flex items-center px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-semibold">SANDBOX V5.0</span></div><button class="p-1.5 text-on-surface-variant hover:text-error hover:bg-error-container/40 rounded transition-colors flex items-center justify-center" title="Sign out simulated session" type="button"><span class="material-symbols-outlined text-[18px]">logout</span></button></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 px-gutter flex items-center justify-between gap-4"><div class="flex items-center gap-4 flex-1 max-w-2xl"><div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant shrink-0"><span class="font-semibold text-on-surface">VeriGrocery Admin</span><span class="material-symbols-outlined text-[16px]">chevron_right</span><span class="text-on-surface-variant">Enterprise Control</span></div><div class="relative flex-1 hidden md:block"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-[18px] text-on-surface-variant">search</span><input class="w-full bg-surface-container-low rounded-lg pl-9 pr-4 py-2 font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70 focus:outline-none focus:bg-surface-container-lowest transition-all" placeholder="Search users, stores, products, GTIN, tickets, audit hash..." type="text"></div></div><div class="flex items-center gap-3"><div class="hidden xl:flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span><span class="font-semibold">All Delta Regions</span><span class="text-on-surface-variant">•</span><span class="text-on-surface-variant">6 Districts</span></div><div class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary-container text-tertiary-fixed-dim font-label-sm text-label-sm tracking-wide"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span><span class="">SIMULATED DATA</span></div><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors relative" title="System Notifications" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-2 right-2 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container-low transition-colors" title="Documentation &amp; Support" type="button"><span class="material-symbols-outlined text-[20px]">help</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0 ml-1"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 bg-surface flex-1 w-full px-gutter py-space-lg"><div class="flex flex-col w-full">
+<!-- Interactive Script for Sidebar Nav Sync & Dynamic Simulators -->
+<script>
+    (function() {
+      // Highlight Revenue & Commission in the Shell Sidebar
+      const navLinks = document.querySelectorAll('aside nav a');
+      navLinks.forEach(link => {
+        if (link.getAttribute('data-path') === 'revenue-and-commission') {
+          link.className = 'flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md bg-primary-container text-on-primary font-semibold shadow-sm';
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-primary';
+        } else {
+          link.className = 'flex items-center gap-3 px-3 py-2.5 rounded-lg font-body-md text-body-md text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all group';
+          const icon = link.querySelector('.material-symbols-outlined');
+          if (icon) icon.className = 'material-symbols-outlined text-[20px] text-on-surface-variant group-hover:text-on-surface';
+        }
+      });
+    })();
+
+    function simulateTierImpact() {
+      const input = document.getElementById('demo-tier-rate');
+      const gmvDisplay = document.getElementById('simulated-impact-val');
+      const val = parseFloat(input.value);
+      if (isNaN(val) || val < 0.0 || val > 10.0) {
+        alert('Validation Guard: Commission rate must stay constrained between 0.0% and 10.0%.');
+        return;
+      }
+      // ₹2.84 Cr * rate
+      const simulatedRevenueLakhs = (284 * (val / 100)).toFixed(2);
+      gmvDisplay.innerText = '₹' + simulatedRevenueLakhs + ' Lakh / mo';
+    }
+
+    function triggerSimulatedDisbursal() {
+      const btn = document.getElementById('disburse-btn');
+      const statusPill = document.getElementById('escrow-status-pill');
+      btn.disabled = true;
+      btn.innerText = 'Transmitting Simulated RTGS...';
+      setTimeout(() => {
+        statusPill.innerText = 'Disbursed via Simulated IMPS';
+        statusPill.className = 'px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm';
+        btn.innerText = 'Simulated Payout Finalized';
+        btn.className = 'w-full py-2.5 px-4 rounded-lg bg-surface-container-high text-on-surface-variant font-label-md text-label-md cursor-not-allowed';
+      }, 700);
+    }
+  </script>
+<!-- Sandbox Persistent Header Banner -->
+<div class="mb-space-lg rounded-xl bg-tertiary-container text-tertiary-fixed px-gutter py-space-sm flex flex-col md:flex-row items-center justify-between gap-3 shadow-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[22px]">developer_mode_tv</span>
+<div>
+<p class="font-label-sm text-label-sm tracking-widest text-tertiary-fixed-dim uppercase font-bold">ENTERPRISE AUDIT CONSOLE</p>
+<p class="font-body-md text-body-md text-tertiary-fixed font-medium">VERIGROCERY AI ENTERPRISE ADMIN SANDBOX – ALL DATA IS SIMULATED DEMO DATA.</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded bg-tertiary text-tertiary-fixed-dim font-label-sm text-label-sm font-semibold">
+<span class="w-2 h-2 rounded-full bg-emerald-400"></span>ESCROW LEDGER V5.4 ACTIVE
+      </span>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim">Delta Grid Sub-Hub #4</span>
+</div>
+</div>
+<!-- Page Title & Operational Control Toolbar -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4 mb-space-lg">
+<div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label-sm text-label-sm mb-1 uppercase tracking-wider">
+<span class="">VeriGrocery Admin</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-primary font-bold">Revenue &amp; Commission Management</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Platform Financial Ledger &amp; Take-Rate Workspace</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Consolidated settlement orchestration, escrow dispute clawbacks, and algorithmic dynamic commission policies across 6 Delta districts.
+      </p>
+</div>
+<!-- Quick Actions Toolbar -->
+<div class="flex items-center gap-2.5 self-start lg:self-auto"><button class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all active:scale-[0.98] flex items-center gap-2 border border-outline-variant/30" type="button" title="Download GST B2B Settlement Report"><span class="material-symbols-outlined text-[18px] text-tertiary-container">description</span><span class="">Download GST B2B Settlement Report</span></button><button class="px-3.5 py-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container-low transition-all active:scale-[0.98] flex items-center gap-2 border border-outline-variant/30" type="button" title="Reconcile APMC Cess Vault"><span class="material-symbols-outlined text-[18px] text-secondary">account_balance</span><span class="">Reconcile APMC Cess Vault</span></button><button class="px-4 py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:bg-primary transition-all active:scale-[0.98] flex items-center gap-2 border border-primary/40" type="button" title="Initiate Escrow Batch Disbursement"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">bolt</span><span class="font-semibold">Initiate Escrow Batch Disbursement</span></button></div>
+</div>
+<!-- Accounting Legend Callout -->
+<div class="rounded-xl bg-surface-container-low p-space-md mb-space-lg shadow-sm flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-surface-container-highest flex items-center justify-center shrink-0 text-on-surface">
+<span class="material-symbols-outlined text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Platform Accounting Formula &amp; Ledger Legend</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+<strong class="text-on-surface">Gross Merchandise Value (GMV)</strong> (Invoice Total) − <strong class="text-on-surface">Platform Take-Rate (Commission %)</strong> − <strong class="text-on-surface">Quality SLA Clawbacks</strong> = <strong class="text-primary font-semibold">Net Seller Disbursal Payable</strong>.
+        </p>
+</div>
+</div>
+<div class="flex items-center gap-3 shrink-0">
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span> GMV Base
+      </div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2.5 h-2.5 rounded-sm bg-tertiary-fixed-dim"></span> Platform Take (3.0%)
+      </div>
+<div class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-sm text-label-sm shadow-sm">
+<span class="w-2.5 h-2.5 rounded-sm bg-surface-container-highest"></span> Seller Net
+      </div>
+</div>
+</div>
+<!-- SECTION 1: Financial Accounting & Ledger KPI Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-4 mb-space-lg"><div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm border border-outline-variant/20 flex flex-col justify-between transition-all hover:shadow-md"><div class="flex items-center justify-between text-on-surface-variant mb-2"><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold">Gross GMV Settled</span><span class="material-symbols-outlined text-[18px] text-primary">storefront</span></div><div><div class="font-headline-lg text-headline-lg font-bold text-on-surface tracking-tight">₹1.42 Cr</div></div></div></div>
+<!-- SECTION 2: Interactive Commission Tier Engine & Policy Simulator -->
+<div class="rounded-xl bg-surface-container-lowest p-space-lg mb-space-lg shadow-sm">
+<div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 mb-space-md">
+<div>
+<div class="flex items-center gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Commission Matrix Policies &amp; Dynamic Tier Engine</h2>
+<span class="px-2 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">V5 RULESET</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-0.5">
+          Algorithmic fee tiers tailored by ecosystem stakeholder type, turnover velocity, and cooperative standing.
+        </p>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-low text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-colors" type="button">
+          Audit Version History
+        </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-dim transition-colors" type="button">
+          Apply Mass Override
+        </button>
+</div>
+</div>
+<!-- 4 Tier Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-space-md">
+<!-- Tier 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase">TIER 1 • STANDARD RETAIL</span>
+<span class="w-2 h-2 rounded-full bg-emerald-600"></span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">3.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on retail GMV</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Standard catalog listing fee for localized kiranas and independent merchants.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<span class="text-on-surface font-semibold">286 Merchants Active</span>
+<a class="text-primary font-bold hover:underline" href="#">Edit Policy</a>
+</div>
+</div>
+<!-- Tier 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase">TIER 2 • HIGH-VOLUME PARTNER</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">PREMIER</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">2.5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">on retail GMV</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Discounted tier for retail partners exceeding &gt; ₹2.0 Lakh/month sales velocity.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<span class="text-on-surface font-semibold">62 Supermarkets Qualified</span>
+<a class="text-primary font-bold hover:underline" href="#">View Thresholds</a>
+</div>
+</div>
+<!-- Tier 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase">TIER 3 • AGRO MILL / B2B MANDI</span>
+<span class="material-symbols-outlined text-[16px] text-secondary">factory</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">1.5% - 2.0%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">sliding bulk</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Procurement broker fees on bulk lots &gt; 10 MT with NABL quality certificate.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<span class="text-on-surface font-semibold">23 Certified Mills</span>
+<a class="text-primary font-bold hover:underline" href="#">Tier Schedule</a>
+</div>
+</div>
+<!-- Tier 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm font-bold text-on-surface-variant uppercase">TIER 4 • DIRECT FPO COOPERATIVE</span>
+<span class="px-1.5 py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">SUBSIDIZED</span>
+</div>
+<div class="flex items-baseline gap-2 mb-1">
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface">0.5%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">state incentive</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Promotional rate directly supporting smallholder Farmer Producer Organizations.</p>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between font-label-sm text-label-sm bg-surface-container-lowest px-2.5 py-1.5 rounded-lg">
+<span class="text-on-surface font-semibold">44 FPO Collectives</span>
+<a class="text-primary font-bold hover:underline" href="#">Govt Subsidies</a>
+</div>
+</div>
+</div>
+<!-- Admin Configuration Console & Sandbox Impact Simulator -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col lg:flex-row items-center justify-between gap-4">
+<div class="flex flex-col sm:flex-row items-start sm:items-center gap-3 w-full lg:w-auto">
+<span class="font-label-md text-label-md text-on-surface font-bold shrink-0 flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">query_stats</span>
+          Sandbox Policy Simulator:
+        </span>
+<div class="flex items-center gap-2 w-full sm:w-auto">
+<label class="font-label-sm text-label-sm text-on-surface-variant" for="demo-tier-rate">Simulated Default Rate (%):</label>
+<input class="w-24 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md focus:outline-none focus:bg-surface-container-high transition-colors text-right font-semibold" id="demo-tier-rate" max="10.0" min="0.0" step="0.1" type="number" value="3.0">
+<button class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-colors shrink-0" onclick="simulateTierImpact()" type="button">
+            Recalculate Run
+          </button>
+</div>
+</div>
+<div class="flex items-center gap-4 text-right w-full lg:w-auto justify-between lg:justify-end">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Projected Monthly Platform Revenue:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface" id="simulated-impact-val">₹8.52 Lakh / mo</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest hidden sm:block"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Validation guard: <strong class="text-on-surface">0.0% – 10.0% max constraint</strong></span>
+</div>
+</div>
+</div>
+<!-- SECTION 3: Financial Analytics & Revenue Trajectory -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Monthly GMV vs Commission Realization (7 Cols) -->
+<div class="lg:col-span-7 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-2">
+<div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">GMV Velocity vs. Realized Platform Take-Rate</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Oct 2025 – Feb 2026 growth trajectory across 6 Delta districts</p>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-low text-on-surface font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span> Monthly Consolidated
+          </span>
+</div>
+<!-- Inline SVG Chart -->
+<div class="mt-4 h-56 w-full">
+<svg class="w-full h-full" preserveAspectRatio="none" viewBox="0 0 540 200">
+<!-- Grid lines -->
+<line stroke="#dae2fd" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="540" y1="40" y2="40"></line>
+<line stroke="#dae2fd" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="540" y1="90" y2="90"></line>
+<line stroke="#dae2fd" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="540" y1="140" y2="140"></line>
+<!-- Oct 2025 -->
+<rect fill="#dae2fd" height="100" rx="4" width="34" x="45" y="60"></rect>
+<rect fill="#123d2b" height="30" rx="4" width="34" x="45" y="130"></rect>
+<text fill="#565e74" font-family="Inter" font-size="11" text-anchor="middle" x="62" y="180">Oct 25</text>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10" font-weight="600" text-anchor="middle" x="62" y="52">₹2.12Cr</text>
+<!-- Nov 2025 -->
+<rect fill="#dae2fd" height="110" rx="4" width="34" x="145" y="50"></rect>
+<rect fill="#123d2b" height="34" rx="4" width="34" x="145" y="126"></rect>
+<text fill="#565e74" font-family="Inter" font-size="11" text-anchor="middle" x="162" y="180">Nov 25</text>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10" font-weight="600" text-anchor="middle" x="162" y="42">₹2.28Cr</text>
+<!-- Dec 2025 -->
+<rect fill="#dae2fd" height="122" rx="4" width="34" x="245" y="38"></rect>
+<rect fill="#123d2b" height="38" rx="4" width="34" x="245" y="122"></rect>
+<text fill="#565e74" font-family="Inter" font-size="11" text-anchor="middle" x="262" y="180">Dec 25</text>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10" font-weight="600" text-anchor="middle" x="262" y="30">₹2.45Cr</text>
+<!-- Jan 2026 -->
+<rect fill="#dae2fd" height="130" rx="4" width="34" x="345" y="30"></rect>
+<rect fill="#123d2b" height="42" rx="4" width="34" x="345" y="118"></rect>
+<text fill="#565e74" font-family="Inter" font-size="11" text-anchor="middle" x="362" y="180">Jan 26</text>
+<text fill="#0b1c30" font-family="Plus Jakarta Sans" font-size="10" font-weight="600" text-anchor="middle" x="362" y="22">₹2.61Cr</text>
+<!-- Feb 2026 (Active) -->
+<rect fill="#bfedd3" height="142" rx="4" width="34" x="445" y="18"></rect>
+<rect fill="#123d2b" height="48" rx="4" width="34" x="445" y="112"></rect>
+<circle cx="462" cy="112" fill="#f0bf60" r="4"></circle>
+<text fill="#0b1c30" font-family="Inter" font-size="11" font-weight="700" text-anchor="middle" x="462" y="180">Feb 26</text>
+<text fill="#002618" font-family="Plus Jakarta Sans" font-size="10" font-weight="700" text-anchor="middle" x="462" y="12">₹2.84Cr</text>
+</svg>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 mt-2 bg-surface-container-low px-space-md py-2.5 rounded-lg">
+<div class="flex items-center gap-6">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-secondary-fixed"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Gross Order GMV</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded bg-primary-container"></span>
+<span class="font-body-sm text-body-sm text-on-surface">Platform Take (₹8.52L in Feb)</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 font-bold">+8.8% Comm MoM</span>
+</div>
+</div>
+<!-- Category Breakdown & District Velocity (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-4">
+<!-- Commodity Revenue Breakdown -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-3">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">Commission by Commodity</h3>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Feb 2026</span>
+</div>
+<div class="space-y-2.5">
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Grains &amp; Staples (Ponni, Idli Rice)</span>
+<span class="text-on-surface-variant font-bold">52% • ₹4.43 Lakh</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 52%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Cold-Pressed Oils (Sesame, Groundnut)</span>
+<span class="text-on-surface-variant font-bold">24% • ₹2.04 Lakh</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-tertiary-fixed-dim rounded-full" style="width: 24%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Spices &amp; Condiments (Turmeric, Pepper)</span>
+<span class="text-on-surface-variant font-bold">14% • ₹1.19 Lakh</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 14%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Organic Millets &amp; Pulses</span>
+<span class="text-on-surface-variant font-bold">10% • ₹0.85 Lakh</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-fixed-dim rounded-full" style="width: 10%"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- District Velocity Cards -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface">District Revenue Velocity</h3>
+<span class="font-label-sm text-label-sm text-primary font-bold">6 Delta Zones</span>
+</div>
+<div class="grid grid-cols-2 gap-2 text-on-surface">
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Thanjavur Mandi Hub</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">42%</span>
+<span class="font-body-sm text-body-sm text-secondary">₹3.58L take-rate</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Nagapattinam Port Node</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">28%</span>
+<span class="font-body-sm text-body-sm text-secondary">₹2.38L take-rate</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Tiruvarur Agro Corridor</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">16%</span>
+<span class="font-body-sm text-body-sm text-secondary">₹1.36L take-rate</span>
+</div>
+<div class="p-2 rounded-lg bg-surface-container-low flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Mayiladuthurai Organic</span>
+<span class="font-headline-sm text-headline-sm font-bold mt-0.5">14%</span>
+<span class="font-body-sm text-body-sm text-secondary">₹1.19L take-rate</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 4: Dual Ledger & Settlement Workspace -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg mb-space-lg">
+<!-- Left/Center: Multi-Entity Transaction Ledger (8 Cols) -->
+<div class="lg:col-span-8 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-space-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Multi-Entity Settlement Ledger</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time split disbursals, buyer-seller pairing, and quality assurance clawbacks</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low font-label-sm text-label-sm text-on-surface">Filtered: All Trx (4)</span>
+<button class="p-1.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface" title="Refresh Table" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Ledger Table -->
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase">
+<th class="py-2.5 px-3 rounded-l-lg">Txn ID / Ref</th>
+<th class="py-2.5 px-3">Buyer ← Seller Entity</th>
+<th class="py-2.5 px-3 text-right">Gross GMV</th>
+<th class="py-2.5 px-3 text-center">Comm %</th>
+<th class="py-2.5 px-3 text-right">Platform Take</th>
+<th class="py-2.5 px-3 text-right">Net Seller Disbursal</th>
+<th class="py-2.5 px-3 text-center">Escrow State</th>
+<th class="py-2.5 px-3 rounded-r-lg text-right">Statement</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 space-y-1"><tr class="bg-surface-container-low/60 hover:bg-surface-container-low transition-colors border-b border-surface-container-high/40"><td class="py-3 px-3"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md font-bold text-on-surface">TXN-9982</span><span class="px-1.5 py-0.2 rounded bg-tertiary-container/20 text-tertiary-fixed-dim font-mono text-[10px] font-bold">RTGS</span></div><div class="font-mono text-[11px] text-on-surface-variant mt-0.5">UTR: HDFC0091823901</div><div class="font-label-sm text-label-sm text-secondary">PO-NGP-2026-0142</div></td><td class="py-3 px-3"><div class="font-label-md text-label-md text-on-surface font-semibold">Velan Supermarket</div><div class="font-label-sm text-label-sm text-secondary">← Thanjavur Agro Hub (Mill)</div><span class="text-[11px] text-on-surface-variant">GST: 33AAACT0192Q1Z4</span></td><td class="py-3 px-3 text-right font-semibold text-on-surface">₹22,36,500.00</td><td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">1.5%</span><div class="text-[10px] text-on-surface-variant mt-0.5">Tier 3 Bulk</div></td><td class="py-3 px-3 text-right"><span class="text-primary font-bold">₹33,547.50</span><div class="text-[10px] text-secondary">Cess: ₹2,236</div></td><td class="py-3 px-3 text-right"><span class="font-bold text-on-surface">₹22,00,716.50</span><div class="text-[10px] text-emerald-700 font-medium">Net Payable</div></td><td class="py-3 px-3 text-center"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-tertiary-container/10 text-tertiary-fixed-dim font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim animate-pulse"></span>Escrow Transit</span><div class="text-[10px] text-on-surface-variant mt-0.5">Gate Pass 2/3</div></td><td class="py-3 px-3 text-right"><div class="flex items-center justify-end gap-1.5"><button class="px-2.5 py-1 rounded bg-surface-container-highest text-on-surface font-label-sm text-label-sm hover:bg-surface-dim transition-colors active:scale-[0.98]" type="button" title="View Ledger Detail">Dossier</button><button class="px-2 py-1 rounded bg-error-container/20 text-error font-label-sm text-label-sm hover:bg-error-container/40 transition-colors active:scale-[0.98] flex items-center gap-0.5" type="button" title="Freeze in Escrow"><span class="material-symbols-outlined text-[14px]">pause_circle</span>Freeze</button></div></td></tr><tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container-high/40"><td class="py-3 px-3"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md font-bold text-on-surface">TXN-9975</span><span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-mono text-[10px] font-bold">IMPS</span></div><div class="font-mono text-[11px] text-on-surface-variant mt-0.5">UTR: SBIN0084729104</div><div class="font-label-sm text-label-sm text-secondary">ORD-RT-4412</div></td><td class="py-3 px-3"><div class="font-label-md text-label-md text-on-surface font-semibold">Ananya S. (Consumer)</div><div class="font-label-sm text-label-sm text-secondary">← Sri Murugan Organics</div><span class="text-[11px] text-on-surface-variant">GST: 33BTYPK9918P1Z0</span></td><td class="py-3 px-3 text-right font-semibold text-on-surface">₹1,420.00</td><td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">3.0%</span><div class="text-[10px] text-on-surface-variant mt-0.5">Standard</div></td><td class="py-3 px-3 text-right"><span class="text-primary font-bold">₹42.60</span><div class="text-[10px] text-secondary">Cess: ₹0.00</div></td><td class="py-3 px-3 text-right"><span class="font-bold text-on-surface">₹1,377.40</span><div class="text-[10px] text-emerald-700 font-medium">Instant Pay</div></td><td class="py-3 px-3 text-center"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Disbursed</span><div class="text-[10px] text-emerald-700 mt-0.5">PG: Razorpay OK</div></td><td class="py-3 px-3 text-right"><div class="flex items-center justify-end gap-1.5"><button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors active:scale-[0.98]" type="button">View</button><button class="px-2 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors active:scale-[0.98] flex items-center gap-0.5" type="button" title="Verify Settlement"><span class="material-symbols-outlined text-[14px]">verified</span>UTR</button></div></td></tr><tr class="hover:bg-surface-container-low transition-colors border-b border-surface-container-high/40"><td class="py-3 px-3"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md font-bold text-on-surface">TXN-9964</span><span class="px-1.5 py-0.2 rounded bg-primary-fixed text-on-primary-fixed font-mono text-[10px] font-bold">NEFT</span></div><div class="font-mono text-[11px] text-on-surface-variant mt-0.5">UTR: ICIC0038472911</div><div class="font-label-sm text-label-sm text-secondary">PO-TRV-2026-0188</div></td><td class="py-3 px-3"><div class="font-label-md text-label-md text-on-surface font-semibold">Sri Murugan Organics</div><div class="font-label-sm text-label-sm text-secondary">← Cauvery Organic Co-op</div><span class="text-[11px] text-on-surface-variant">FPO Ref: TN-TRV-882</span></td><td class="py-3 px-3 text-right font-semibold text-on-surface">₹3,60,000.00</td><td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">2.0%</span><div class="text-[10px] text-on-surface-variant mt-0.5">FPO Direct</div></td><td class="py-3 px-3 text-right"><span class="text-primary font-bold">₹7,200.00</span><div class="text-[10px] text-secondary">Cess: ₹360</div></td><td class="py-3 px-3 text-right"><span class="font-bold text-on-surface">₹3,52,440.00</span><div class="text-[10px] text-emerald-700 font-medium">Co-op Credit</div></td><td class="py-3 px-3 text-center"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>Disbursed</span><div class="text-[10px] text-emerald-700 mt-0.5">PG: Node Clear</div></td><td class="py-3 px-3 text-right"><div class="flex items-center justify-end gap-1.5"><button class="px-2.5 py-1 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors active:scale-[0.98]" type="button">View</button><button class="px-2 py-1 rounded bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm hover:text-on-surface transition-colors active:scale-[0.98] flex items-center gap-0.5" type="button"><span class="material-symbols-outlined text-[14px]">receipt</span>Tax</button></div></td></tr><tr class="bg-error-container/10 hover:bg-error-container/20 transition-colors"><td class="py-3 px-3"><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md font-bold text-error">TXN-9950</span><span class="px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-mono text-[10px] font-bold">CLAWBACK</span></div><div class="font-mono text-[11px] text-error mt-0.5">UTR: REV-98230198-F</div><div class="font-label-sm text-label-sm text-on-surface-variant">REF-4410</div></td><td class="py-3 px-3"><div class="font-label-md text-label-md text-on-surface font-semibold">Customer Refund</div><div class="font-label-sm text-label-sm text-error font-medium">Tampering Clawback Dispute</div><span class="text-[11px] text-on-surface-variant">Audit Flag: Lab Seal Breached</span></td><td class="py-3 px-3 text-right font-semibold text-error">-₹1,280.00</td><td class="py-3 px-3 text-center"><span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold">3.0% Rev</span><div class="text-[10px] text-error mt-0.5">Commission Ret</div></td><td class="py-3 px-3 text-right text-error font-bold">-₹38.40<div class="text-[10px] text-error">Debited</div></td><td class="py-3 px-3 text-right font-bold text-error">-₹1,241.60<div class="text-[10px] text-error font-medium">Seller Clawback</div></td><td class="py-3 px-3 text-center"><span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm font-semibold"><span class="w-1.5 h-1.5 rounded-full bg-error"></span>Settled Refund</span><div class="text-[10px] text-error mt-0.5">Auto Reconciled</div></td><td class="py-3 px-3 text-right"><div class="flex items-center justify-end gap-1.5"><button class="px-2 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors active:scale-[0.98] flex items-center gap-0.5" type="button" title="1-Click Retry Reversal"><span class="material-symbols-outlined text-[14px]">replay</span>Retry</button><button class="px-2 py-1 rounded bg-surface-container-low text-error font-label-sm text-label-sm hover:bg-surface-container-high transition-colors active:scale-[0.98]" type="button">Audit</button></div></td></tr></tbody>
+</table>
+</div>
+</div>
+<div class="flex items-center justify-between pt-3 mt-4 bg-surface-container-low px-space-md py-2.5 rounded-lg text-on-surface font-label-sm text-label-sm">
+<span class="">Showing 4 of 416 Ledger Records (Last updated 2 mins ago)</span>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" type="button">← Prev</button>
+<span class="px-2 py-1 bg-primary text-on-primary rounded font-bold">1</span>
+<button class="px-2 py-1 rounded bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" type="button">Next →</button>
+</div>
+</div>
+</div>
+<!-- Right Panel: Active Settlement Inspection & Bank Transfer Simulator (4 Cols) -->
+<div class="lg:col-span-4 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between pb-3 mb-space-sm bg-surface-container-low px-3 py-2 rounded-lg">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">account_balance_wallet</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">Settlement Dossier</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded bg-surface-container-high font-mono text-on-surface">TXN-9982</span>
+</div>
+<!-- Entity Metadata Header -->
+<div class="mb-4">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">BENEFICIARY ENTITY</span>
+<span class="px-2.5 py-1 rounded-full bg-tertiary-container/10 text-tertiary-fixed-dim font-label-sm text-label-sm font-semibold flex items-center gap-1.5 shadow-sm" id="escrow-status-pill">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed-dim"></span>In Escrow Transit
+            </span>
+</div>
+<h3 class="font-headline-sm text-headline-sm font-bold text-on-surface mt-1">Thanjavur Agro Processing Hub</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">APMC Licensed Agro Entity • GSTIN: 33AAACT0192Q1Z4</p>
+</div>
+<!-- Escrow Account Node Info -->
+<div class="p-3 rounded-lg bg-surface-container-low mb-4 space-y-2">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Escrow Account Node:</span>
+<span class="font-mono font-semibold text-on-surface">HDFC Mandi Node #9012-DELTA</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Linked Contract PO:</span>
+<span class="font-mono font-semibold text-on-surface">PO-NGP-2026-0142 (40 MT Ponni)</span>
+</div>
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Locked Settlement Amount:</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">₹22,02,952.50</span>
+</div>
+</div>
+<!-- Escrow Release Trigger Conditions Checklist -->
+<div class="mb-4">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold tracking-wider">Automated Disbursal Triggers</span>
+<div class="mt-2 space-y-2">
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">1. NABL Gate Pass Verification</span>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 font-bold bg-primary-fixed px-1.5 py-0.5 rounded">PASSED</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed-dim">pending</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">2. Weighbridge Gross-Tare Slip</span>
+</div>
+<span class="font-label-sm text-label-sm text-tertiary-fixed-dim font-bold bg-tertiary-container/20 px-1.5 py-0.5 rounded">64% VERIFIED</span>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-emerald-600">check_circle</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">3. Dual CPO Authority Signature</span>
+</div>
+<span class="font-label-sm text-label-sm text-emerald-700 font-bold bg-primary-fixed px-1.5 py-0.5 rounded">SIGNED (K.R.)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Simulator Transfer Buttons -->
+<div class="space-y-2 pt-2">
+<button class="w-full py-2.5 px-4 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md shadow-md hover:bg-primary active:scale-[0.98] transition-all flex items-center justify-center gap-2 border border-tertiary-fixed-dim/30" id="disburse-btn" onclick="triggerSimulatedDisbursal()" type="button"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">send</span><span class="font-semibold">Release Simulated Escrow Disbursal</span></button>
+<div class="grid grid-cols-2 gap-2">
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">balance</span>
+            SLA Adjustment
+          </button>
+<button class="w-full py-2 px-3 rounded-lg bg-surface-container-low text-on-surface font-label-sm text-label-sm hover:bg-surface-container-high transition-colors flex items-center justify-center gap-1.5" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">picture_as_pdf</span>
+            GST-06 (.PDF)
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- SECTION 5: Mandatory Sandbox Financial Ledger Compliance Notice -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">security_update_warning</span>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-on-surface font-bold uppercase tracking-wider">Statutory Financial Ledger Sandbox Notice</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        SIMULATED FINANCIAL LEDGER: ALL REVENUES, ESCROW BALANCES, COMMISSION MATRICES, AND SETTLEMENT DISBURSALS ARE PROTOTYPE CALCULATIONS DEMONSTRATING ENTERPRISE WORKSPACE BEHAVIOR. NO REAL BANKING OR PAYMENT GATEWAY IS LINKED. TRANSACTION HASHES CORRESPOND TO MOCK RUNS FOR DELTA DISTRICTS APMC TESTBED.
+      </p>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-low py-4 px-gutter shadow-[0_-1px_6px_rgba(0,0,0,0.02)]"><div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left"><div class="flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-on-surface-variant">info</span><p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider font-semibold">VERIGROCERY AI ENTERPRISE ADMIN SANDBOX – ALL USERS, STORES, SUPPLIERS, PRODUCTS, FINANCIAL DATA, VERIFICATION RESULTS AND AI INSIGHTS ARE SIMULATED DEMO RECORDS.</p></div><div class="font-label-sm text-label-sm text-on-surface-variant shrink-0">Phase 5 Build 5.4.11-rc</div></div></footer></div>
+
+</body></html>

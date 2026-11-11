@@ -1,0 +1,724 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-highest":"#d3e4fe","on-tertiary-fixed":"#271900","primary-fixed":"#bfedd3","background":"#f8f9ff","surface-variant":"#d3e4fe","surface-container":"#e5eeff","outline":"#717973","primary-fixed-dim":"#a4d1b7","on-primary-container":"#7da890","on-tertiary-container":"#c4983d","error":"#ba1a1a","on-primary":"#ffffff","on-secondary-container":"#5c647a","on-secondary-fixed-variant":"#3f465c","secondary-fixed-dim":"#bec6e0","secondary":"#565e74","on-error-container":"#93000a","inverse-primary":"#a4d1b7","surface-container-lowest":"#ffffff","primary":"#002618","surface":"#f8f9ff","surface-container-high":"#dce9ff","on-error":"#ffffff","on-primary-fixed-variant":"#254f3b","outline-variant":"#c1c8c2","tertiary-fixed":"#ffdea5","error-container":"#ffdad6","secondary-container":"#dae2fd","surface-bright":"#f8f9ff","on-surface-variant":"#414943","surface-tint":"#3d6752","on-background":"#0b1c30","tertiary-container":"#483200","primary-container":"#123d2b","surface-dim":"#cbdbf5","secondary-fixed":"#dae2fd","on-surface":"#0b1c30","on-secondary":"#ffffff","on-tertiary-fixed-variant":"#5d4200","inverse-on-surface":"#eaf1ff","surface-container-low":"#eff4ff","tertiary":"#2d1e00","inverse-surface":"#213145","on-tertiary":"#ffffff","tertiary-fixed-dim":"#f0bf60","on-secondary-fixed":"#131b2e","on-primary-fixed":"#002114"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem","space-md":"1rem","space-xl":"2.5rem","gutter":"1.5rem","gutter-mobile":"1rem","margin-mobile":"1rem"},"fontFamily":{"label-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"body-md":["Inter"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-xl-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"body-lg":["Inter"],"label-sm":["Inter"],"headline-lg":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}}</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="w-full h-full px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center text-primary-fixed"><span class="material-symbols-outlined text-[20px]">verified</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight leading-none">VeriGrocery</span><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase px-1.5 py-0.5 rounded bg-tertiary-fixed/30 font-bold leading-none">AI</span></div><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Procurement Command</span></div></div><div class="h-6 w-[1px] bg-outline-variant/40 hidden xl:block"></div><div class="hidden xl:flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container transition-colors cursor-pointer"><span class="material-symbols-outlined text-on-surface-variant text-[18px]">location_on</span><div class="flex flex-col text-left"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase leading-none">Regional Hub</span><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Cauvery Delta Hub • Nagapattinam Corridor</span></div><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div></div><div class="flex-1 max-w-xl mx-space-md hidden md:block"><div class="relative flex items-center w-full"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm focus:outline-none focus:bg-surface-container transition-all" placeholder="Search PR #, PO #, Supplier, Commodity, GTIN..." type="text"><kbd class="absolute right-3 px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm uppercase font-mono">⌘K</kbd></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-fixed/20"><span class="material-symbols-outlined text-on-tertiary-container text-[14px]">bolt</span><span class="font-label-sm text-label-sm text-on-tertiary-container uppercase tracking-wider font-bold">Ledger Simulated • v4.8</span></div><div class="relative flex items-center"><button class="w-9 h-9 rounded-lg flex items-center justify-center text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span></button><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-[9px] flex items-center justify-center font-bold">9</span></div><div class="h-6 w-[1px] bg-outline-variant/40"></div><div class="flex items-center gap-space-sm pl-space-xs"><div class="flex flex-col text-right hidden sm:flex"><div class="flex items-center gap-1.5 justify-end"><span class="font-label-md text-label-md text-on-surface font-semibold leading-none">S. Ramanathan</span><span class="w-2 h-2 rounded-full bg-primary-container"></span></div><span class="font-label-sm text-label-sm text-on-surface-variant leading-tight">Chief Procurement Officer</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></div></header><aside class="fixed left-0 top-16 bottom-0 w-64 bg-surface-container-lowest z-40 flex flex-col justify-between py-space-md shadow-[0_1px_8px_rgba(0,0,0,0.02)]"><div class="flex flex-col gap-space-xs px-space-sm"><div class="px-space-sm py-space-xs mb-1"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest font-bold">Operations Matrix</span></div><nav class="flex flex-col gap-1" data-active-classes="bg-primary-container text-on-primary font-bold shadow-sm"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="overview" href="#"><span class="material-symbols-outlined text-[20px]">space_dashboard</span><span class="">Overview</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-bold shadow-sm font-label-md text-label-md" data-path="purchase-requests" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">assignment</span><span class="">Purchase Requests</span></div><span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-surface font-semibold">14</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="supplier-marketplace" href="#"><span class="material-symbols-outlined text-[20px]">storefront</span><span class="">Supplier Marketplace</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="quotation-comparison" href="#"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-[20px]">balance</span><span class="">Quotation Comparison</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed/40 font-label-sm text-label-sm text-on-tertiary-fixed-variant font-bold">AI</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="purchase-orders" href="#"><span class="material-symbols-outlined text-[20px]">receipt_long</span><span class="">Purchase Orders</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="goods-receipt" href="#"><span class="material-symbols-outlined text-[20px]">inventory_2</span><span class="">Goods Receipt</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="contracts" href="#"><span class="material-symbols-outlined text-[20px]">gavel</span><span class="">Contracts</span></a><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md" data-path="analytics" href="#"><span class="material-symbols-outlined text-[20px]">insights</span><span class="">Analytics</span></a></nav></div><div class="px-space-sm flex flex-col gap-space-sm"><div class="p-space-sm rounded-xl bg-surface-container-low"><div class="flex items-center justify-between mb-1.5"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-bold">Forensic Node</span><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span></div><p class="font-body-sm text-body-sm text-on-surface leading-tight mb-2">Agro-ledger integrity: 99.98% valid</p><div class="w-full h-1.5 rounded-full bg-surface-container-highest overflow-hidden"><div class="h-full bg-primary-container rounded-full" style="width: 96%"></div></div></div><div class="flex items-center justify-between px-space-xs text-on-surface-variant"><span class="font-label-sm text-label-sm uppercase">VeriProtocol v4.8.1</span><span class="material-symbols-outlined text-[16px]">lock</span></div></div></aside><div class="pl-64"><main class="w-full pt-16 bg-background px-gutter min-h-screen"><div class="flex flex-col w-full pb-16">
+<!-- SCRIPT TO ENSURE SHELL SYNC -->
+<script>
+    (function syncShellNav() {
+      const prLink = document.querySelector('aside a[data-path="purchase-requests"]');
+      if (prLink) {
+        document.querySelectorAll('aside nav a').forEach(el => {
+          el.className = 'flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors font-label-md text-label-md';
+        });
+        prLink.className = 'flex items-center justify-between px-space-sm py-2 rounded-lg bg-primary-container text-on-primary font-bold shadow-sm font-label-md text-label-md';
+      }
+    })();
+  </script>
+<!-- TOP BREADCRUMB & REGULATORY STRIP -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-sm py-space-sm mb-space-sm">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="hover:text-on-surface cursor-pointer">B2B Procurement</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-surface font-semibold">Purchase Requests &amp; Requisition Management</span>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+<span class="text-on-tertiary-container font-mono text-label-sm uppercase bg-surface-container px-2 py-0.5 rounded-full">Delta Corridor Node</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-mono tracking-tight shadow-sm">
+<span class="w-2 h-2 rounded-full bg-error animate-ping"></span>
+<span class="font-bold text-on-surface">SIMULATED DEMO DATA</span> • APMC SANDBOX NODE WH-TNJ-01 • ZERO LIVE FINANCIAL INTEGRATION
+      </div>
+</div>
+</div>
+<!-- COMMAND HERO BAR -->
+<div class="flex flex-col xl:flex-row xl:items-end justify-between gap-space-md p-space-lg rounded-xl bg-surface-container-lowest shadow-sm mb-space-lg relative overflow-hidden">
+<div class="absolute right-0 top-0 w-96 h-full bg-gradient-to-l from-surface-container-low to-transparent opacity-60 pointer-events-none"></div>
+<div class="flex flex-col gap-1 z-10">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container font-label-sm text-label-sm text-on-primary-fixed-variant uppercase font-bold tracking-wider">Cauvery Delta Regional Sourcing Hub</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">ISO 22000 &amp; Mandi Regulated</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Purchase Request (PR) &amp; Requisition Management</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-3xl">Multi-Store Demand Aggregation, Forensic Mandi Price Parity, and Algorithmic Budget Authorization Matrix for 14 Cauvery Delta retail nodes.</p>
+</div>
+<!-- COMMAND ACTIONS -->
+<div class="flex flex-wrap items-center gap-space-sm z-10"><button class="inline-flex items-center gap-2 px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all shadow-md active:scale-95 cursor-pointer border border-primary-fixed-dim/30 hover:shadow-lg" onclick="toggleModal('modal-create-pr')"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">add_circle</span><span class="">+ New Requisition (PR)</span><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed/30 text-on-tertiary-fixed font-label-sm text-[10px] font-bold tracking-wider uppercase ml-0.5">Fast-Track</span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-all shadow-sm active:scale-95 cursor-pointer border border-surface-container"><span class="material-symbols-outlined text-[18px] text-on-tertiary-container">upload_file</span><span class="">Bulk Requisition (.CSV)</span></button><button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-xl bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all shadow-sm active:scale-95 cursor-pointer border border-surface-container"><span class="material-symbols-outlined text-[18px]">history</span><span class="">Audit Log &amp; History</span></button></div>
+</div>
+<!-- KPI OVERVIEW DECK -->
+<div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-space-sm mb-space-lg">
+<!-- Card 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Total PRs</span>
+<span class="material-symbols-outlined text-[18px]">inventory_2</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">48 PRs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">₹32.80 L Gross Volume</div>
+</div>
+<div class="mt-2 w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-full"></div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Draft Requests</span>
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">8 PRs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Staged by Store Mgrs</div>
+</div>
+<div class="mt-2 w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[25%]"></div>
+</div>
+</div>
+<!-- Card 3 (Pending & Urgent) -->
+<div class="p-space-md rounded-xl bg-tertiary-fixed/30 shadow-sm flex flex-col justify-between hover:bg-tertiary-fixed/40 transition-all cursor-pointer relative overflow-hidden">
+<div class="flex items-center justify-between text-on-tertiary-container mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Pending Approval</span>
+<span class="material-symbols-outlined text-[18px]">pending_actions</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1.5">
+<span class="font-headline-md text-headline-md text-on-surface font-bold">9 PRs</span>
+<span class="font-label-sm text-label-sm text-error font-bold uppercase">(4 Urgent)</span>
+</div>
+<div class="font-label-sm text-label-sm text-on-tertiary-fixed-variant mt-0.5">Sign-off SLA: &lt; 4 Hours</div>
+</div>
+<div class="mt-2 w-full h-1 bg-tertiary-container/20 rounded-full overflow-hidden">
+<div class="bg-on-tertiary-container h-full w-[65%]"></div>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center justify-between text-primary-container mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Approved</span>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">18 PRs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Ready for RFQ issuance</div>
+</div>
+<div class="mt-2 w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[80%]"></div>
+</div>
+</div>
+<!-- Card 5 -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between hover:bg-surface-container-low transition-all cursor-pointer">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">RFQ Sent</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">8 PRs</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">24 Active Quotations</div>
+</div>
+<div class="mt-2 w-full h-1 bg-surface-container rounded-full overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full w-[45%]"></div>
+</div>
+</div>
+<!-- Card 6 (Budget Envelope) -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between text-on-surface-variant mb-2">
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-wider">Regional Budget</span>
+<span class="material-symbols-outlined text-[18px]">account_balance_wallet</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface font-bold">₹32.80 L</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Cap: ₹41.20 L (79.6% Utl.)</div>
+</div>
+<div class="mt-2 w-full h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[79.6%]"></div>
+</div>
+</div>
+</div>
+<!-- MAIN SPLIT WORKSPACE: 7-COL (Requisitions Table) & 5-COL (Deep Dive Dossier) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT 7-COL: REQUISITION QUEUE & FILTER SYSTEM -->
+<div class="xl:col-span-7 flex flex-col gap-space-md">
+<!-- FILTER & SEARCH BAR -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm">
+<div class="relative flex-1">
+<span class="material-symbols-outlined absolute left-3 top-2.5 text-on-surface-variant text-[18px]">search</span>
+<input class="w-full h-10 pl-10 pr-4 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant focus:outline-none focus:bg-surface-container transition-all" id="pr-table-search" placeholder="Search PR #, store name, commodity, or SKU..." type="text">
+</div>
+<div class="flex items-center gap-2">
+<select class="h-10 px-3 rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface focus:outline-none cursor-pointer">
+<option>All Requesting Stores</option>
+<option>Velan Supermarket (Nagapattinam)</option>
+<option>Sri Murugan Organics (Tiruvarur)</option>
+<option>Kannan Jubilee Stores (Velankanni)</option>
+<option>Delta Mart Consortium</option>
+</select>
+<button class="h-10 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center gap-1 font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">tune</span>
+<span class="">Filter</span>
+</button>
+</div>
+</div>
+<!-- Status Filter Pills -->
+<div class="flex items-center gap-1.5 overflow-x-auto pb-1 pt-0.5 no-scrollbar"><button class="px-3 py-1.5 rounded-xl bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold tracking-wide cursor-pointer whitespace-nowrap shadow-sm border border-primary-fixed-dim/20">All Requests (48)</button><button class="px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold tracking-wide cursor-pointer whitespace-nowrap border border-surface-container/60 transition-colors">Pending Approval (9)</button><button class="px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold tracking-wide cursor-pointer whitespace-nowrap border border-surface-container/60 transition-colors">Approved (18)</button><button class="px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold tracking-wide cursor-pointer whitespace-nowrap border border-surface-container/60 transition-colors">RFQ Sent (8)</button><button class="px-3 py-1.5 rounded-xl bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm font-semibold tracking-wide cursor-pointer whitespace-nowrap border border-surface-container/60 transition-colors">Drafts (8)</button><button class="px-3 py-1.5 rounded-xl bg-error-container text-on-error-container hover:bg-error/20 font-label-sm text-label-sm font-bold tracking-wide cursor-pointer whitespace-nowrap flex items-center gap-1.5 border border-error/20"><span class="material-symbols-outlined text-[14px]">priority_high</span><span class="">Urgent (4)</span></button></div>
+</div>
+<!-- ENTERPRISE PR TABLE -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm">
+<thead class="bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<tr>
+<th class="py-3 px-4">PR Ref ID</th>
+<th class="py-3 px-4">Title &amp; Requesting Store</th>
+<th class="py-3 px-4">Commodity / Volume</th>
+<th class="py-3 px-4">Est. Budget</th>
+<th class="py-3 px-4">Delivery SLA</th>
+<th class="py-3 px-4">Approval Status</th>
+<th class="py-3 px-4 text-right">Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container">
+<!-- ROW 1 (Active Focus Dossier) -->
+<tr class="bg-surface-container/60 hover:bg-surface-container transition-colors cursor-pointer group">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="">#PR-2026-0089</span>
+</div>
+<span class="inline-block px-1.5 py-0.2 rounded bg-error-container text-on-error-container font-label-sm text-[10px] font-bold uppercase mt-1">Urgent SLA</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface font-bold group-hover:text-primary transition-colors">Emergency Rice Buffer</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Velan Supermarket (Nagapattinam Central)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface font-semibold">Ponni Boiled Rice (Gr-A)</div>
+<div class="text-on-surface-variant font-mono text-label-sm">40 MT (800 Bags)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-on-surface">₹21,80,000</div>
+<div class="text-on-surface-variant font-mono text-[11px]">@ ₹54.50/kg</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-error font-semibold">Feb 28, 2026</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">3 Days left</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">hourglass_top</span>
+                    Pending CPO (4/5)
+                  </span>
+<div class="text-on-surface-variant text-[11px] mt-0.5">Off: K. Senthil Nathan</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-primary-container text-on-primary font-label-sm text-label-sm font-semibold hover:bg-primary transition-all">Review</button>
+<button class="w-7 h-7 rounded bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 2 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="">#PR-2026-0090</span>
+</div>
+<span class="inline-block px-1.5 py-0.2 rounded bg-surface-container text-on-surface font-label-sm text-[10px] uppercase mt-1">High Priority</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface font-bold group-hover:text-primary transition-colors">Organic Superfood Line</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Sri Murugan Organics (Tiruvarur)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface font-semibold">Organic White Quinoa Seeds</div>
+<div class="text-on-surface-variant font-mono text-label-sm">2 MT (40 Sacks)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-on-surface">₹3,60,000</div>
+<div class="text-on-surface-variant font-mono text-[11px]">@ ₹180.00/kg</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface font-semibold">Mar 02, 2026</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">5 Days left</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed/30 text-on-primary-fixed-variant font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">check_circle</span>
+                    Approved
+                  </span>
+<div class="text-on-surface-variant text-[11px] mt-0.5">Off: M. Dhanasekaran</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container-high transition-all">Convert RFQ</button>
+<button class="w-7 h-7 rounded bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 3 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span>
+<span class="">#PR-2026-0091</span>
+</div>
+<span class="inline-block px-1.5 py-0.2 rounded bg-surface-container-highest text-on-secondary-container font-label-sm text-[10px] uppercase mt-1">Normal</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface font-bold group-hover:text-primary transition-colors">Chekku Oil Restock</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Kannan Jubilee Stores (Velankanni)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface font-semibold">Wood-Pressed Gingelly Oil</div>
+<div class="text-on-surface-variant font-mono text-label-sm">1,500 L (100 Tins)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-on-surface">₹4,80,000</div>
+<div class="text-on-surface-variant font-mono text-[11px]">@ ₹320.00/L</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface">Mar 05, 2026</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">8 Days left</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+<span class="material-symbols-outlined text-[13px]">draft</span>
+                    Draft
+                  </span>
+<div class="text-on-surface-variant text-[11px] mt-0.5">Off: R. Revathi</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-surface-container-low text-on-surface font-label-sm text-label-sm font-semibold hover:bg-surface-container transition-all">Edit Draft</button>
+<button class="w-7 h-7 rounded bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- ROW 4 -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-4 font-mono font-bold text-on-surface">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="">#PR-2026-0088</span>
+</div>
+<span class="inline-block px-1.5 py-0.2 rounded bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-[10px] font-bold uppercase mt-1">High</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-label-md text-label-md text-on-surface font-bold group-hover:text-primary transition-colors">Salem Spice Replenishment</div>
+<div class="text-on-surface-variant font-label-sm text-label-sm">Delta Mart Consortium</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface font-semibold">Salem Turmeric Finger</div>
+<div class="text-on-surface-variant font-mono text-label-sm">10 MT (Curcumin &gt; 3.8%)</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="font-bold text-on-surface">₹14,15,000</div>
+<div class="text-on-surface-variant font-mono text-[11px]">@ ₹141.50/kg</div>
+</td>
+<td class="py-3.5 px-4">
+<div class="text-on-surface font-semibold">Feb 25, 2026</div>
+<div class="text-error font-label-sm text-label-sm">Tomorrow</div>
+</td>
+<td class="py-3.5 px-4">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[13px]">sync_alt</span>
+                    RFQ Sent (3 Bids)
+                  </span>
+<div class="text-on-surface-variant text-[11px] mt-0.5">Off: K. Senthil Nathan</div>
+</td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2 py-1 rounded bg-secondary-container text-on-secondary-fixed font-label-sm text-label-sm font-bold hover:bg-secondary-fixed-dim transition-all">View Bids</button>
+<button class="w-7 h-7 rounded bg-surface-container-low text-on-surface-variant flex items-center justify-center hover:bg-surface-container hover:text-on-surface">
+<span class="material-symbols-outlined text-[16px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- TABLE PAGINATION FOOTER -->
+<div class="p-space-sm bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="">Showing 1 to 4 of 48 Requisition Requests</span>
+<span class="text-outline-variant">•</span>
+<span class="font-mono">4 Flagged Urgent CPO Review</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface disabled:opacity-50" disabled="">Previous</button>
+<button class="px-2.5 py-1 rounded bg-primary-container text-on-primary font-bold">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">3</button>
+<button class="px-2 py-1 rounded bg-surface-container hover:bg-surface-container-high text-on-surface">Next</button>
+</div>
+</div>
+</div>
+<!-- COMMODITY DEMAND AGGREGATION & PROCUREMENT RADAR -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Frequently Requisitioned Commodities -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">analytics</span>
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase">Delta Demand Aggregation</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-mono bg-tertiary-fixed/30 px-2 py-0.5 rounded">Cycle 04</span>
+</div>
+<div class="flex flex-col gap-2.5">
+<!-- Item 1 -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Ponni Boiled Rice (Cauvery Delta)</span>
+<span class="font-mono text-on-surface font-bold">142 MT <span class="text-on-surface-variant font-normal">(8 Stores)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 82%"></div>
+</div>
+</div>
+<!-- Item 2 -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Salem Turmeric Finger Grade-1</span>
+<span class="font-mono text-on-surface font-bold">28 MT <span class="text-on-surface-variant font-normal">(5 Stores)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-on-tertiary-container rounded-full" style="width: 58%"></div>
+</div>
+</div>
+<!-- Item 3 -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Wood-Pressed Gingelly Oil</span>
+<span class="font-mono text-on-surface font-bold">18,500 L <span class="text-on-surface-variant font-normal">(11 Stores)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary-fixed-dim rounded-full" style="width: 44%"></div>
+</div>
+</div>
+<!-- Item 4 -->
+<div>
+<div class="flex justify-between font-label-sm text-label-sm mb-1">
+<span class="text-on-surface font-semibold">Organic White Quinoa</span>
+<span class="font-mono text-on-surface font-bold">12 MT <span class="text-on-surface-variant font-normal">(3 Stores)</span></span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 28%"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-2 border-t border-surface-container flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="">Aggregated Volume Savings: ~₹2.84 L</span>
+<a class="text-primary-container font-semibold hover:underline" href="#">Consolidate Orders →</a>
+</div>
+</div>
+<!-- Real-time Forensic Requisition Stream -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">stream</span>
+<span class="font-label-md text-label-md text-on-surface font-bold uppercase">Audit Activity Stream</span>
+</div>
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+</div>
+<div class="flex flex-col gap-space-xs font-body-sm text-body-sm">
+<div class="flex items-start gap-2 p-1.5 rounded-lg bg-surface-container-low">
+<span class="material-symbols-outlined text-[16px] text-primary-container mt-0.5">approval</span>
+<div class="flex-1 min-w-0">
+<p class="text-on-surface truncate"><strong class="font-semibold">P. Meenakshi</strong> verified budget for <span class="font-mono">#PR-0089</span></p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">24 mins ago • Commercial clearance ₹21.8L</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-1.5 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container mt-0.5">price_change</span>
+<div class="flex-1 min-w-0">
+<p class="text-on-surface truncate"><strong class="font-semibold">Mandi API:</strong> Ponni rice index adjusted -₹1.20/kg</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">42 mins ago • Thanjavur APMC Regulated Yard</span>
+</div>
+</div>
+<div class="flex items-start gap-2 p-1.5 rounded-lg hover:bg-surface-container-low transition-colors">
+<span class="material-symbols-outlined text-[16px] text-secondary mt-0.5">post_add</span>
+<div class="flex-1 min-w-0">
+<p class="text-on-surface truncate"><strong class="font-semibold">Velan Supermarket:</strong> Submitted PR-2026-0089</p>
+<span class="font-label-sm text-label-sm text-on-surface-variant">1 hr 12 mins ago • Triggered stock depletion alert</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-2 text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-mono">Consensus Hash: #940a...b47c</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT 5-COL: ACTIVE REQUISITION DOSSIER & WORKFLOW ENGINE (PR-2026-0089 FOCUS) -->
+<div class="xl:col-span-5 flex flex-col gap-space-md">
+<!-- DOSSIER CARD -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-md flex flex-col gap-space-md">
+<!-- Header & Priority Badge -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-surface-container pb-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-error-container text-on-error-container font-label-sm text-label-sm font-bold uppercase tracking-wider">Urgent SLA Approval Required</span>
+<span class="font-mono text-label-sm text-on-surface-variant">Step 4 of 5</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-bold mt-1">Requisition Dossier #PR-2026-0089</h2>
+<div class="font-label-sm text-label-sm text-on-surface-variant">Raised by Velan Supermarket (Nagapattinam Central Corridor)</div>
+</div>
+<div class="flex items-center gap-1.5 self-start sm:self-auto">
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant" title="Print Requisition">
+<span class="material-symbols-outlined text-[18px]">print</span>
+</button>
+<button class="p-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface-variant" title="Download Audit JSON">
+<span class="material-symbols-outlined text-[18px]">download</span>
+</button>
+</div>
+</div>
+<!-- COMMODITY SPECIFICATION MINI MATRIX -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary-container text-[18px]">conversion_path</span><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider">Multi-Tier Requisition Stepper</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-mono bg-surface-container-low px-2 py-0.5 rounded">Ledger Chain #WKF-9982</span></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/70 border border-surface-container"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[15px]">check</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface">1. Store Draft Origination</span><span class="font-mono text-label-sm text-on-surface-variant font-medium">Feb 23, 09:30 AM</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Raised by Velan Supermarket Store Manager (V. Balakrishnan)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/70 border border-surface-container"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[15px]">check</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface">2. Dept Head Inventory Review</span><span class="font-mono text-label-sm text-on-surface-variant font-medium">Feb 23, 11:15 AM</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cleared by Lead Buyer K. Senthil Nathan (Cauvery Staples Desk)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/70 border border-surface-container"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[15px]">check</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface">3. Finance Escrow Authorization</span><span class="font-mono text-label-sm text-on-surface-variant font-medium">Feb 23, 02:00 PM</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Validated by Finance Controller P. Meenakshi (Ledger Node TN-01)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-tertiary-fixed/30 border border-tertiary-fixed-dim/60 shadow-sm"><div class="w-7 h-7 rounded-full bg-on-tertiary-container text-on-primary flex items-center justify-center shrink-0 animate-pulse shadow-sm"><span class="material-symbols-outlined text-[15px]">hourglass_empty</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-tertiary-fixed-variant">4. CPO Executive Sign-Off (Active Step)</span><span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold uppercase tracking-wider">Pending Approval</span></div><p class="font-body-sm text-body-sm text-on-surface mt-0.5">Awaiting cryptographic sign-off by <strong>S. Ramanathan</strong> (CPO)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/30 opacity-60 border border-dashed border-outline-variant/40"><div class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[15px]">lock</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface-variant">5. Auto-Generate RFQ &amp; Dispatch</span><span class="font-mono text-label-sm text-on-surface-variant">Locked</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Triggers automated RFQ issuance to 12 registered Thanjavur grain mills.</p></div></div></div>
+<!-- MULTI-TIER BUDGET & COMMERCIAL VALIDATION HUD -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface-variant tracking-wider">Department Budget Validation</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container bg-primary-fixed/30 px-2 py-0.5 rounded">Within Authorized Cap</span>
+</div>
+<!-- Utilization Gauge -->
+<div class="flex flex-col gap-1">
+<div class="flex justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Grains &amp; Cereals Regional Allocation: ₹35,00,000</span>
+<span class="font-bold text-on-surface">88.6% Committed</span>
+</div>
+<!-- Segmented Progress Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container flex overflow-hidden p-0.5">
+<div class="h-full bg-secondary-fixed-dim rounded-l-full" style="width: 26.3%" title="Previously Committed: ₹9.20 L"></div>
+<div class="h-full bg-primary-container" style="width: 62.3%" title="This PR: ₹21.80 L"></div>
+<div class="h-full bg-transparent flex-1" title="Remaining: ₹4.00 L"></div>
+</div>
+</div>
+<div class="grid grid-cols-3 gap-2 font-label-sm text-label-sm pt-1">
+<div class="p-2 rounded bg-surface-container-low">
+<span class="text-on-surface-variant block text-[10px]">Previously Committed</span>
+<span class="font-mono font-bold text-on-surface">₹9,20,000</span>
+<span class="text-[10px] text-on-surface-variant block">(26.3%)</span>
+</div>
+<div class="p-2 rounded bg-primary-fixed/20">
+<span class="text-on-primary-fixed-variant block text-[10px] font-bold">This PR Request</span>
+<span class="font-mono font-bold text-primary-container">₹21,80,000</span>
+<span class="text-[10px] text-on-primary-fixed-variant block">(62.3%)</span>
+</div>
+<div class="p-2 rounded bg-surface-container-low">
+<span class="text-on-surface-variant block text-[10px]">Remaining Balance</span>
+<span class="font-mono font-bold text-on-surface">₹4,00,000</span>
+<span class="text-[10px] text-on-surface-variant block">(11.4% Buffer)</span>
+</div>
+</div>
+</div>
+<!-- 5-STAGE APPROVAL WORKFLOW & AUTHORITY MATRIX -->
+<div class="flex flex-col gap-space-xs"><div class="flex items-center justify-between mb-1.5"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary-container text-[18px]">conversion_path</span><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider">Multi-Tier Requisition Stepper</span></div><span class="font-label-sm text-label-sm text-on-surface-variant font-mono bg-surface-container-low px-2 py-0.5 rounded">Ledger Chain #WKF-9982</span></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/70 border border-surface-container"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[15px]">check</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface">1. Store Draft Origination</span><span class="font-mono text-label-sm text-on-surface-variant font-medium">Feb 23, 09:30 AM</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Raised by Velan Supermarket Store Manager (V. Balakrishnan)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/70 border border-surface-container"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[15px]">check</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface">2. Dept Head Inventory Review</span><span class="font-mono text-label-sm text-on-surface-variant font-medium">Feb 23, 11:15 AM</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Cleared by Lead Buyer K. Senthil Nathan (Cauvery Staples Desk)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/70 border border-surface-container"><div class="w-7 h-7 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm"><span class="material-symbols-outlined text-[15px]">check</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-surface">3. Finance Escrow Authorization</span><span class="font-mono text-label-sm text-on-surface-variant font-medium">Feb 23, 02:00 PM</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Validated by Finance Controller P. Meenakshi (Ledger Node TN-01)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-tertiary-fixed/30 border border-tertiary-fixed-dim/60 shadow-sm"><div class="w-7 h-7 rounded-full bg-on-tertiary-container text-on-primary flex items-center justify-center shrink-0 animate-pulse shadow-sm"><span class="material-symbols-outlined text-[15px]">hourglass_empty</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md font-bold text-on-tertiary-fixed-variant">4. CPO Executive Sign-Off (Active Step)</span><span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-[10px] font-bold uppercase tracking-wider">Pending Approval</span></div><p class="font-body-sm text-body-sm text-on-surface mt-0.5">Awaiting cryptographic sign-off by <strong>S. Ramanathan</strong> (CPO)</p></div></div><div class="flex items-start gap-space-sm p-2.5 rounded-xl bg-surface-container-low/30 opacity-60 border border-dashed border-outline-variant/40"><div class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-[15px]">lock</span></div><div class="flex-1 min-w-0"><div class="flex items-center justify-between"><span class="font-label-md text-label-md text-on-surface-variant">5. Auto-Generate RFQ &amp; Dispatch</span><span class="font-mono text-label-sm text-on-surface-variant">Locked</span></div><p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Triggers automated RFQ issuance to 12 registered Thanjavur grain mills.</p></div></div></div>
+<!-- CPO APPROVAL ACTION DRAWER -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-primary-container">shield</span>
+<span class="font-label-md text-label-md text-on-surface font-bold">CPO Authorization Console</span>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Authorization Justification / Field Observations</label>
+<textarea class="w-full h-18 p-2.5 rounded-lg bg-surface-container-lowest text-on-surface font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container resize-none" placeholder="Provide strategic procurement approval rationale...">Retail POS sales velocity in Nagapattinam shows high weekend stock depletion. Early harvest procurement prices are favorable (-11.6% below APMC mandi index). Authorized to proceed to RFQ.</textarea>
+</div>
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-2 pt-1"><button class="flex-1 inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-xl bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all shadow-md active:scale-95 cursor-pointer border border-primary-fixed-dim/30" id="btn-authorize-pr" onclick="simulateAuthorizePR()"><span class="material-symbols-outlined text-[18px] text-tertiary-fixed">verified</span><span class="font-bold">Authorize &amp; Sign PR</span></button><button class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all shadow-sm active:scale-95 cursor-pointer border border-surface-container"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">edit_calendar</span><span class="">Request Specs</span></button><button class="inline-flex items-center justify-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-error-container text-on-error-container font-label-md text-label-md hover:bg-error/20 transition-all shadow-sm active:scale-95 cursor-pointer border border-error/20"><span class="material-symbols-outlined text-[16px]">close</span><span class="">Reject PR</span></button></div>
+</div>
+</div>
+</div>
+</div>
+<!-- QUICK MODAL WIZARD: CREATE PURCHASE REQUEST (INTERACTIVE DOCK) -->
+<div class="fixed inset-0 z-50 bg-on-surface/40 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="modal-create-pr">
+<div class="bg-surface-container-lowest rounded-2xl shadow-xl w-full max-w-4xl max-h-[90vh] overflow-y-auto flex flex-col">
+<!-- Modal Header -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between border-b border-surface-container">
+<div>
+<span class="font-label-sm text-label-sm text-on-tertiary-container uppercase font-bold tracking-wider">Requisition Command Wizard</span>
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Create New Purchase Request (PR)</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Procure commodities against Regional Warehouse WH-TNJ-01 quota.</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="toggleModal('modal-create-pr')">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<!-- 5-Step Progress Stepper -->
+<div class="px-space-lg py-space-sm bg-surface-container-lowest border-b border-surface-container">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<div class="flex items-center gap-2 text-primary-container font-bold">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-xs">1</span>
+<span class="">Requisition Info</span>
+</div>
+<div class="h-[1px] flex-1 bg-primary-container mx-2"></div>
+<div class="flex items-center gap-2 text-primary-container font-bold">
+<span class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center text-xs">2</span>
+<span class="">Commodity Specs</span>
+</div>
+<div class="h-[1px] flex-1 bg-surface-container mx-2"></div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-xs">3</span>
+<span class="">Budget &amp; Commercials</span>
+</div>
+<div class="h-[1px] flex-1 bg-surface-container mx-2"></div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-xs">4</span>
+<span class="">Logistics &amp; Hub</span>
+</div>
+<div class="h-[1px] flex-1 bg-surface-container mx-2"></div>
+<div class="flex items-center gap-2 text-on-surface-variant">
+<span class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center text-xs">5</span>
+<span class="">Review</span>
+</div>
+</div>
+</div>
+<!-- Modal Body Form -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Requesting Store / Unit</label>
+<select class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Velan Supermarket (Nagapattinam Central)</option>
+<option>Sri Murugan Organics (Tiruvarur)</option>
+<option>Kannan Jubilee Stores (Velankanni)</option>
+<option>Delta Mart Consortium (Hub Node)</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Procurement Category</label>
+<select class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Grains, Cereals &amp; Pulses (Bulk)</option>
+<option>Edible Oils &amp; Cold-Pressed Products</option>
+<option>Spices, Masalas &amp; Condiments</option>
+<option>Certified Organic Produce</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Select Commodity SKU</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none" type="text" value="Grade-A Ponni Boiled Rice">
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Requisition Quantity</label>
+<div class="flex items-center gap-1">
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none font-mono" id="input-wizard-qty" oninput="calculatePRTotals()" type="number" value="40">
+<span class="px-3 py-2.5 rounded-lg bg-surface-container font-label-md text-label-md font-bold">MT</span>
+</div>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Target Mandi Base (₹/kg)</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none font-mono" id="input-wizard-price" oninput="calculatePRTotals()" step="0.5" type="number" value="54.50">
+</div>
+</div>
+<!-- Calculated Estimate Box -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">calculate</span>
+</div>
+<div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase">Dynamic PR Calculation (40,000 kg)</div>
+<div class="font-headline-sm text-headline-sm text-on-surface font-bold" id="calculated-pr-total">₹21,80,000.00</div>
+</div>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm">
+<div class="">APMC Tax (5%): <span class="font-mono text-on-surface font-semibold" id="calc-apmc-tax">₹1,09,000</span></div>
+<div class="">Est. Freight: <span class="font-mono text-on-surface font-semibold">₹42,000</span></div>
+<div class="">Gross Total: <span class="font-mono text-primary-container font-bold" id="calc-gross-total">₹23,31,000</span></div>
+</div>
+</div>
+<!-- Preferred Supplier Hub & Delivery SLA -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Preferred Sourcing Yard</label>
+<select class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none">
+<option>Thanjavur Agro &amp; Grain Hub (Preferred Mill #04)</option>
+<option>Nagapattinam APMC Mandi Yard 2</option>
+<option>Tiruvarur Farmer Producer Co. (Direct Sourcing)</option>
+</select>
+</div>
+<div>
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold block mb-1">Required Delivery Date</label>
+<input class="w-full h-11 px-3 rounded-lg bg-surface-container-low font-body-sm text-body-sm text-on-surface focus:outline-none font-mono" type="date" value="2026-02-28">
+</div>
+</div>
+</div>
+<!-- Modal Footer -->
+<div class="p-space-lg bg-surface-container-low flex items-center justify-between border-t border-surface-container">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all" onclick="toggleModal('modal-create-pr')">Cancel</button>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md hover:bg-surface-container-high transition-all">Save as Draft</button>
+<button class="inline-flex items-center gap-1.5 px-space-md py-2.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-all" onclick="submitNewPR()">
+<span class="material-symbols-outlined text-[18px]">send</span>
+<span class="">Submit for CPO Approval</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- REGULATORY SIMULATION COMPLIANCE FOOTER -->
+<div class="mt-space-xl p-space-md rounded-xl bg-surface-container-low text-on-surface-variant text-center font-label-sm text-label-sm flex flex-col md:flex-row items-center justify-between gap-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-tertiary-container">policy</span>
+<span class=""><strong>APMC REQUISITION SIMULATOR</strong> • ALL RECORDS, BUDGETS, PR NUMBERS, AND APPROVAL WORKFLOWS ARE DEMO SIMULATIONS FOR VERIGROCERY AI PROTOTYPING.</span>
+</div>
+<div class="flex items-center gap-3 font-mono text-[11px]">
+<span class="">WH-TNJ-01 / PROTOCOL v4.8</span>
+<span class="">•</span>
+<span class="">AUTH: S. RAMANATHAN (CPO)</span>
+</div>
+</div>
+<!-- INLINE INTERACTION LOGIC -->
+<script>
+    function toggleModal(id) {
+      const modal = document.getElementById(id);
+      if (modal) {
+        modal.classList.toggle('hidden');
+      }
+    }
+
+    function calculatePRTotals() {
+      const qty = parseFloat(document.getElementById('input-wizard-qty').value) || 0;
+      const rate = parseFloat(document.getElementById('input-wizard-price').value) || 0;
+      const subtotal = qty * 1000 * rate;
+      const tax = subtotal * 0.05;
+      const freight = 42000;
+      const gross = subtotal + tax + freight;
+
+      document.getElementById('calculated-pr-total').textContent = '₹' + subtotal.toLocaleString('en-IN', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+      document.getElementById('calc-apmc-tax').textContent = '₹' + tax.toLocaleString('en-IN', {maximumFractionDigits: 0});
+      document.getElementById('calc-gross-total').textContent = '₹' + gross.toLocaleString('en-IN', {maximumFractionDigits: 0});
+    }
+
+    function simulateAuthorizePR() {
+      const btn = document.getElementById('btn-authorize-pr');
+      btn.innerHTML = '<span class="material-symbols-outlined text-[18px] animate-spin">sync</span><span>Validating APMC Ledger...</span>';
+      btn.disabled = true;
+
+      setTimeout(() => {
+        btn.className = 'flex-1 inline-flex items-center justify-center gap-2 px-space-md py-2.5 rounded-lg bg-surface-container text-on-primary-fixed-variant font-label-md text-label-md cursor-default';
+        btn.innerHTML = '<span class="material-symbols-outlined text-[18px]">verified</span><span>PR-2026-0089 Authorized ✓</span>';
+        alert('Requisition #PR-2026-0089 successfully authorized by CPO S. Ramanathan. Automatically dispatched to Quotation Engine (RFQ Issuance).');
+      }, 1100);
+    }
+
+    function submitNewPR() {
+      alert('New Purchase Request staged and forwarded to Department Inventory Review step.');
+      toggleModal('modal-create-pr');
+    }
+  </script>
+</div></main></div>
+
+</body></html>

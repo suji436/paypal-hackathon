@@ -1,0 +1,343 @@
+<!DOCTYPE html><html class="light" lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"><meta content="mobile_tab" name="shell-type"><title>VeriGrocery AI</title><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#5c647a", "on-surface-variant": "#414943", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "surface-tint": "#3d6752", "secondary-fixed-dim": "#bec6e0", "on-primary-container": "#7da890", "secondary-container": "#dae2fd", "on-secondary": "#ffffff", "error": "#ba1a1a", "tertiary-fixed": "#ffdea5", "on-tertiary-fixed": "#271900", "primary-fixed": "#bfedd3", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff", "outline-variant": "#c1c8c2", "inverse-primary": "#a4d1b7", "primary-fixed-dim": "#a4d1b7", "surface-variant": "#d3e4fe", "background": "#f8f9ff", "surface-container": "#e5eeff", "tertiary": "#2d1e00", "on-background": "#0b1c30", "surface-bright": "#f8f9ff", "on-primary-fixed-variant": "#254f3b", "on-tertiary-fixed-variant": "#5d4200", "primary": "#002618", "surface-dim": "#cbdbf5", "outline": "#717973", "surface": "#f8f9ff", "on-error": "#ffffff", "inverse-surface": "#213145", "surface-container-highest": "#d3e4fe", "primary-container": "#123d2b", "on-secondary-fixed": "#131b2e", "on-secondary-fixed-variant": "#3f465c", "inverse-on-surface": "#eaf1ff", "on-surface": "#0b1c30", "on-primary-fixed": "#002114", "on-tertiary-container": "#c4983d", "tertiary-container": "#483200", "tertiary-fixed-dim": "#f0bf60", "error-container": "#ffdad6", "secondary": "#565e74", "on-error-container": "#93000a", "secondary-fixed": "#dae2fd", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "margin": "2rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.005em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.05em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f8f9ff; color: #0b1c30; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shrink-0 shadow-[0_1px_4px_rgba(18,61,43,0.15)]"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">verified</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none truncate">VeriGrocery</span><span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm leading-none">AI</span></div><button class="flex items-center gap-0.5 text-on-surface-variant hover:text-on-surface text-left"><span class="material-symbols-outlined text-[13px] text-primary-container">near_me</span><span class="font-label-md text-label-md truncate max-w-[150px]">Nagapattinam, TN 611001</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full relative">
+<!-- Dimmed Cart Review Background Layer -->
+<div class="flex flex-col w-full px-gutter-mobile gap-space-md opacity-45 pointer-events-none select-none filter blur-[1.5px] transition-all">
+  <!-- Store Header Summary Card -->
+  <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex items-center justify-between border border-surface-container">
+    <div class="flex items-center gap-space-sm min-w-0">
+      <div class="w-11 h-11 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-primary-container ring-1 ring-primary-container/20">
+        <span class="material-symbols-outlined text-[24px]">storefront</span>
+      </div>
+      <div class="flex flex-col min-w-0">
+        <span class="font-headline-sm text-headline-sm text-on-surface truncate">Sri Murugan Supermarket</span>
+        <div class="flex items-center gap-1.5 text-on-surface-variant font-label-md text-label-md">
+          <span class="text-primary-container font-semibold flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">verified</span> verified store</span>
+          <span class="">•</span>
+          <span class="">Nagapattinam</span>
+        </div>
+      </div>
+    </div>
+    <span class="px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant font-label-sm text-label-sm font-semibold shrink-0">
+      Express 15m
+    </span>
+  </div>
+
+  <!-- Trust Badges Strip -->
+  <div class="grid grid-cols-2 gap-2 text-center">
+    <div class="bg-surface-container-lowest rounded-lg p-2 shadow-sm border border-surface-container flex items-center gap-1.5 justify-center">
+      <span class="material-symbols-outlined text-primary-container text-[18px]">verified_user</span>
+      <span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">FSSAI Batch Verified</span>
+    </div>
+    <div class="bg-surface-container-lowest rounded-lg p-2 shadow-sm border border-surface-container flex items-center gap-1.5 justify-center">
+      <span class="material-symbols-outlined text-tertiary-fixed-dim text-[18px]">workspace_premium</span>
+      <span class="font-label-sm text-label-sm text-on-surface font-semibold truncate">100% Genuine Agro</span>
+    </div>
+  </div>
+
+  <!-- Cart Items List with min 44px touch targets -->
+  <div class="flex flex-col gap-space-xs">
+    <!-- Item 1 -->
+    <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container flex items-center gap-space-sm">
+      <img class="w-16 h-16 object-cover rounded-lg bg-surface-container shrink-0" alt="Aachi Sambar Powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAS6jtJQJbgCJ6ge0rHd16nY2_eJMmduxr71I7TqjnR7508oK1mgRCkTYMcb68JogUCUJd644W8XCYZZr6sNi5nxcdSlfHsZIoDto4H8qevBE8MLsTnBIcTM3KBd66lVr2HHemuEhORRUjImizcJ7pGlpB19LnkvT2F_Y16ndWYKKBwP8U3bLU16X8jVCwJ-Y9lCuIRaKsGhz2AzqjR1lMw_FVGc7n5Gn4LAnOXxxQ">
+      <div class="flex flex-col flex-1 min-w-0">
+        <div class="flex items-start justify-between gap-1">
+          <span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Aachi Sambar Powder</span>
+          <button class="w-11 h-11 -mr-2 -mt-2 flex items-center justify-center text-on-surface-variant hover:text-error" aria-label="Remove item">
+            <span class="material-symbols-outlined text-[20px]">delete_outline</span>
+          </button>
+        </div>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">500g pouch • ₹95</span>
+        <div class="flex items-center justify-between mt-2 pt-1 border-t border-surface-container-highest">
+          <div class="flex items-center gap-1 text-[11px] text-primary-container font-medium">
+            <span class="material-symbols-outlined text-[14px]">verified</span>
+            <span class="">AI Tested</span>
+          </div>
+          <div class="flex items-center bg-surface-container rounded-lg p-0.5">
+            <button class="w-11 h-11 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 text-[16px] font-bold" aria-label="Decrease quantity">-</button>
+            <span class="w-8 text-center font-label-md text-label-md font-bold">1</span>
+            <button class="w-11 h-11 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 text-[16px] font-bold" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container flex items-center gap-space-sm">
+      <img class="w-16 h-16 object-cover rounded-lg bg-surface-container shrink-0" alt="Tata Toor Dal" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCj1eoYYieH2lC3pykxt5BXHkBvfeaQK5OlKLuh6yULWpQfm14h0sKnx8e8PIdTF0GNofPQ91nfJktE9fJPy7jsmso3vvFo1qF7LtKdXRwjjv87N3ObX8gEqxL2L5ccbmqPbtURgmehLxOo-9J7biVzHtkZO3VO-E3jxF980P5jVpnFNMTW9oDDqKZiKrgQBYRQEqKHW5diF5ZMpWTX3J3xkxu50SQ8-XXGe_-bvO0">
+      <div class="flex flex-col flex-1 min-w-0">
+        <div class="flex items-start justify-between gap-1">
+          <span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Tata Toor Dal</span>
+          <button class="w-11 h-11 -mr-2 -mt-2 flex items-center justify-center text-on-surface-variant hover:text-error" aria-label="Remove item">
+            <span class="material-symbols-outlined text-[20px]">delete_outline</span>
+          </button>
+        </div>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">1kg bag • ₹168</span>
+        <div class="flex items-center justify-between mt-2 pt-1 border-t border-surface-container-highest">
+          <div class="flex items-center gap-1 text-[11px] text-primary-container font-medium">
+            <span class="material-symbols-outlined text-[14px]">verified</span>
+            <span class="">99.8% Pure</span>
+          </div>
+          <div class="flex items-center bg-surface-container rounded-lg p-0.5">
+            <button class="w-11 h-11 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 text-[16px] font-bold" aria-label="Decrease quantity">-</button>
+            <span class="w-8 text-center font-label-md text-label-md font-bold">1</span>
+            <button class="w-11 h-11 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 text-[16px] font-bold" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container flex items-center gap-space-sm">
+      <img class="w-16 h-16 object-cover rounded-lg bg-surface-container shrink-0" alt="Everest Turmeric Powder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA6ZRI-gTH0SQg-KHhxA4eLCGNk7YIjzIcehsnaS-hMT6Dv3GKcOXI8kgeMGi2C9rP2YbFmG7YU09WJsOVLYwXh46WgYnBldMqdNc1J0BPCofw9Eq4-OD_HtNLLTz_Lw9zKjouweSCuLrNe1gAPFAfWoiAgH63miQIJ6m83jnfziRd_0kTbvO08kifF_6Et8cnxAQ6ZWkTGT9aiNzQ2o70XavuT01GW0g3txYY_qNg">
+      <div class="flex flex-col flex-1 min-w-0">
+        <div class="flex items-start justify-between gap-1">
+          <span class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Everest Turmeric Powder</span>
+          <button class="w-11 h-11 -mr-2 -mt-2 flex items-center justify-center text-on-surface-variant hover:text-error" aria-label="Remove item">
+            <span class="material-symbols-outlined text-[20px]">delete_outline</span>
+          </button>
+        </div>
+        <span class="font-body-sm text-body-sm text-on-surface-variant">500g box • ₹110</span>
+        <div class="flex items-center justify-between mt-2 pt-1 border-t border-surface-container-highest">
+          <div class="flex items-center gap-1 text-[11px] text-primary-container font-medium">
+            <span class="material-symbols-outlined text-[14px]">verified</span>
+            <span class="">Seal Intact</span>
+          </div>
+          <div class="flex items-center bg-surface-container rounded-lg p-0.5">
+            <button class="w-11 h-11 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 text-[16px] font-bold" aria-label="Decrease quantity">-</button>
+            <span class="w-8 text-center font-label-md text-label-md font-bold">1</span>
+            <button class="w-11 h-11 flex items-center justify-center rounded-md bg-surface-container-lowest text-on-surface shadow-sm active:scale-95 text-[16px] font-bold" aria-label="Increase quantity">+</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Upgraded Coupon Voucher Box -->
+  <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container flex flex-col gap-2">
+    <div class="flex items-center justify-between">
+      <span class="font-label-sm text-label-sm font-bold text-on-surface uppercase tracking-wide flex items-center gap-1">
+        <span class="material-symbols-outlined text-primary-container text-[16px]">sell</span> Offers &amp; Discounts
+      </span>
+      <span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+        Save ₹30 with VERIAI
+      </span>
+    </div>
+    <div class="flex items-center gap-2 bg-surface-container-low rounded-lg p-1.5 border border-surface-container-high focus-within:border-primary-container">
+      <span class="material-symbols-outlined text-on-surface-variant text-[20px] ml-1.5">confirmation_number</span>
+      <input class="bg-transparent text-on-surface text-label-md font-label-md uppercase tracking-wider flex-1 outline-none min-w-0 placeholder:text-on-surface-variant/60" value="VERIAI30" placeholder="Enter Promo Code">
+      <button class="min-h-[44px] px-4 rounded-md bg-primary-container text-on-primary font-label-md text-label-md font-semibold active:scale-95 transition-all shadow-sm flex items-center justify-center shrink-0">
+        Applied
+      </button>
+    </div>
+  </div>
+
+  <!-- Cost Breakdown Card -->
+  <div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm border border-surface-container flex flex-col gap-space-xs">
+    <div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+      <span class="">Items Subtotal</span>
+      <span class="">₹373</span>
+    </div>
+    <div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+      <span class="">AI Quality &amp; Purity Testing</span>
+      <span class="text-primary-container font-semibold">FREE</span>
+    </div>
+    <div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+      <span class="">Delivery Fee (Nagapattinam Node)</span>
+      <span class="">₹25</span>
+    </div>
+    <div class="flex justify-between items-center text-on-surface-variant font-body-sm text-body-sm">
+      <span class="">Platform &amp; Gov Tax</span>
+      <span class="">₹46</span>
+    </div>
+    <div class="w-full h-px bg-surface-container-highest my-1"></div>
+    <div class="flex justify-between items-center font-headline-sm text-headline-sm text-on-surface">
+      <div class="flex flex-col">
+        <span class="">Final Total</span>
+        <span class="text-[11px] text-on-primary-container font-normal">Inclusive of all taxes</span>
+      </div>
+      <span class="text-primary-container font-bold text-[22px]">₹444</span>
+    </div>
+  </div>
+</div>
+<!-- Modal Backdrop with Scrim -->
+<div class="fixed inset-0 z-40 bg-on-surface/50 backdrop-blur-md flex flex-col justify-end transition-opacity duration-300" id="modal-container">
+  <!-- Bottom Sheet Modal Card -->
+  <div class="w-full bg-surface-container-lowest rounded-t-[1.75rem] shadow-xl p-gutter-mobile flex flex-col gap-space-sm max-h-[86vh] overflow-y-auto relative animate-in fade-in slide-in-from-bottom duration-300">
+    <!-- Top Drag Handle & Close Control Bar -->
+    <div class="flex items-center justify-between w-full pt-1 pb-1 relative">
+      <div class="w-10 h-1 bg-surface-container-highest rounded-full mx-auto absolute left-1/2 -translate-x-1/2 top-1.5"></div>
+      <div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm tracking-wide mt-1.5">
+        <span class="material-symbols-outlined text-[14px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+        <span class="truncate font-medium">Order #VG-9421 • Security Gate</span>
+      </div>
+      <button aria-label="Close Modal" class="w-11 h-11 rounded-full bg-surface-container hover:bg-surface-container-high flex items-center justify-center text-on-surface-variant active:scale-95 transition-all mt-1" id="modal-close-btn">
+        <span class="material-symbols-outlined text-[20px]">close</span>
+      </button>
+    </div>
+
+    <!-- 3-Step Checkout Indicator (Address -> Payment -> Review) -->
+    <div class="flex items-center justify-between px-2 py-2 bg-surface-container-low rounded-xl">
+      <!-- Step 1 -->
+      <div class="flex items-center gap-1.5 min-w-0">
+        <div class="w-6 h-6 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-label-sm text-[11px] font-bold shadow-sm ring-1 ring-tertiary-fixed-dim">1</div>
+        <span class="font-label-sm text-label-sm font-semibold text-primary-container truncate">Address</span>
+      </div>
+      <div class="flex-1 h-0.5 bg-primary-container/30 mx-2"></div>
+      <!-- Step 2 -->
+      <div class="flex items-center gap-1.5 min-w-0">
+        <div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-[11px] font-medium">2</div>
+        <span class="font-label-sm text-label-sm font-medium text-on-surface-variant truncate">Payment</span>
+      </div>
+      <div class="flex-1 h-0.5 bg-surface-container-highest mx-2"></div>
+      <!-- Step 3 -->
+      <div class="flex items-center gap-1.5 min-w-0">
+        <div class="w-6 h-6 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center font-label-sm text-[11px] font-medium">3</div>
+        <span class="font-label-sm text-label-sm font-medium text-on-surface-variant truncate">Review</span>
+      </div>
+    </div>
+
+    <!-- Verified Icon Shield Centerpiece -->
+    <div class="flex flex-col items-center text-center mt-1">
+      <div class="relative w-14 h-14 rounded-2xl bg-primary-container flex items-center justify-center shadow-md ring-2 ring-tertiary-fixed-dim/40">
+        <div class="absolute -inset-1 rounded-2xl bg-tertiary-fixed-dim/20 -z-10 animate-pulse"></div>
+        <span class="material-symbols-outlined text-tertiary-fixed-dim text-[28px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+      </div>
+      <!-- Required Primary Heading -->
+      <h2 class="font-headline-sm text-headline-sm text-primary mt-2.5 font-bold tracking-tight">
+        Log in to complete purchase
+      </h2>
+      <p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-[320px]">
+        Authenticate with phone or Google to access verified agro dispatch.
+      </p>
+    </div>
+
+    <!-- Delivery Address Selector with Tactile Radio Button -->
+    <div class="bg-surface-container-lowest rounded-xl p-space-md border-2 border-primary-container/40 shadow-sm flex items-start gap-space-sm cursor-pointer active:scale-[0.99] transition-all">
+      <div class="w-5 h-5 rounded-full border-2 border-primary-container flex items-center justify-center mt-0.5 shrink-0 bg-primary-container/10">
+        <div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+      </div>
+      <div class="flex flex-col flex-1 min-w-0 text-left">
+        <div class="flex items-center justify-between gap-1">
+          <span class="font-label-md text-label-md text-on-surface font-bold">Deliver to Current Node (Default)</span>
+          <span class="px-1.5 py-0.5 rounded bg-primary-fixed/50 text-on-primary-fixed font-label-sm text-[10px] font-semibold">FAST</span>
+        </div>
+        <p class="font-body-sm text-body-sm text-on-surface-variant truncate mt-0.5">
+          42/1 Beach Road, Nagapattinam Port, TN 611001
+        </p>
+      </div>
+    </div>
+
+    <!-- Protected Guest Cart Notice -->
+    <div class="bg-primary-fixed/20 border border-primary-fixed-dim/40 rounded-xl p-3 flex items-start gap-2.5 text-left">
+      <div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 mt-0.5 shadow-sm">
+        <span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">bookmark</span>
+      </div>
+      <div class="flex flex-col min-w-0">
+        <span class="font-label-md text-label-md text-on-primary-fixed font-semibold leading-tight">
+          Protected Guest Cart
+        </span>
+        <p class="font-body-sm text-body-sm text-on-primary-fixed-variant mt-0.5 leading-snug">
+          3 verified items (₹444 total) will automatically sync to your account.
+        </p>
+      </div>
+    </div>
+
+    <!-- Sticky / Tactile Action Buttons -->
+    <div class="flex flex-col gap-2 mt-1">
+      <!-- Primary CTA: 48px height, Deep Forest Green #123D2B, subtle gold trim, active feedback -->
+      <button class="w-full min-h-[48px] h-12 rounded-xl bg-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-between px-4 ring-1 ring-tertiary-fixed-dim/50 shadow-md active:scale-[0.98] transition-all hover:bg-primary" id="login-primary-btn">
+        <div class="flex items-center gap-2">
+          <span class="material-symbols-outlined text-[20px] text-tertiary-fixed-dim">lock_open</span>
+          <span class="">Proceed to Checkout</span>
+        </div>
+        <div class="flex items-center gap-1.5 bg-black/20 px-2.5 py-1 rounded-lg border border-tertiary-fixed-dim/30">
+          <span class="text-[14px] text-tertiary-fixed">₹444</span>
+          <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+        </div>
+      </button>
+
+      <!-- Secondary Action: Create Account -->
+      <button class="w-full min-h-[44px] h-11 rounded-xl bg-surface-container-lowest border border-surface-container hover:bg-surface-container-low active:scale-[0.98] text-on-surface font-label-md text-label-md font-semibold flex items-center justify-center gap-2 transition-all shadow-sm" id="create-account-btn">
+        <span class="material-symbols-outlined text-[18px] text-primary-container">person_add</span>
+        <span class="">Create New Account</span>
+      </button>
+
+      <!-- Federated 1-Click Option -->
+      <button class="w-full min-h-[44px] h-11 rounded-xl bg-surface-container hover:bg-surface-container-high active:scale-[0.98] text-on-surface font-label-md text-label-md font-medium flex items-center justify-center gap-2.5 transition-all" id="google-auth-btn">
+        <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24">
+          <path d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.8-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z" fill="#4285F4"></path>
+          <path d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.34 24 12 24z" fill="#34A853"></path>
+          <path d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.14-1.55.38-2.27V6.58H1.25C.45 8.18 0 10.03 0 12s.45 3.82 1.25 5.42l4.03-3.15z" fill="#FBBC05"></path>
+          <path d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.34 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z" fill="#EA4335"></path>
+        </svg>
+        <span class="">Continue with Google Account</span>
+      </button>
+
+      <!-- Dismiss / Cancel Touch Target >= 44px -->
+      <button class="min-h-[44px] flex items-center justify-center text-center font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors active:scale-95" id="dismiss-link">
+        Continue Browsing / Cancel
+      </button>
+    </div>
+
+    <!-- Trust Assurance Cryptographic Footer & Persistent Watermark -->
+    <div class="pt-1 flex flex-col items-center justify-center gap-1 text-center">
+      <div class="flex items-center justify-center gap-1.5 text-on-surface-variant">
+        <span class="material-symbols-outlined text-[13px] text-tertiary-fixed-dim" style="font-variation-settings: 'FILL' 1;">lock</span>
+        <span class="font-label-sm text-[11px] leading-tight text-on-surface-variant">
+          256-Bit Encrypted Session • Nagapattinam Cluster Node
+        </span>
+      </div>
+      <span class="text-[10px] text-on-surface-variant/70 tracking-wide font-medium">DEMO MODE • VERIGROCERY AI VERIFIED</span>
+    </div>
+  </div>
+</div>
+</div>
+<script>
+  (function() {
+    const modal = document.getElementById('modal-container');
+    const closeBtn = document.getElementById('modal-close-btn');
+    const dismissLink = document.getElementById('dismiss-link');
+    const loginBtn = document.getElementById('login-primary-btn');
+    const createBtn = document.getElementById('create-account-btn');
+    const googleBtn = document.getElementById('google-auth-btn');
+
+    function closeModal() {
+      if (modal) {
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          modal.style.display = 'none';
+        }, 280);
+      }
+    }
+
+    function triggerMockAuth(source) {
+      const originalText = source.innerText;
+      source.innerText = 'Securing Session...';
+      source.classList.add('opacity-75');
+      setTimeout(() => {
+        closeModal();
+      }, 700);
+    }
+
+    if (closeBtn) closeBtn.addEventListener('click', closeModal);
+    if (dismissLink) dismissLink.addEventListener('click', closeModal);
+    
+    if (loginBtn) {
+      loginBtn.addEventListener('click', function() {
+        triggerMockAuth(this);
+      });
+    }
+    if (createBtn) {
+      createBtn.addEventListener('click', function() {
+        triggerMockAuth(this);
+      });
+    }
+    if (googleBtn) {
+      googleBtn.addEventListener('click', function() {
+        triggerMockAuth(this);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,28,48,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-gutter-mobile flex items-center justify-between"><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm leading-tight">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors" data-path="stores" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-label-sm leading-tight">Stores</span></a><div class="flex-1 flex flex-col items-center justify-center relative"><a class="-top-5 absolute w-13 h-13 p-1 rounded-full bg-surface shadow-[0_4px_12px_rgba(18,61,43,0.22)] flex items-center justify-center transition-transform active:scale-95" data-path="scan-and-verify" href="#"><div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center ring-2 ring-tertiary-fixed-dim ring-offset-1 ring-offset-surface"><span class="material-symbols-outlined text-on-primary text-[24px]">document_scanner</span></div></a><span class="font-label-sm text-label-sm text-on-surface-variant mt-7 leading-tight">Scan &amp; Verify</span></div><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors" data-path="compare" href="#"><span class="material-symbols-outlined text-[22px]">balance</span><span class="font-label-sm text-label-sm leading-tight">Compare</span></a><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 transition-colors relative text-primary-container font-semibold" data-path="cart" href="#"><div class="relative"><span class="material-symbols-outlined text-[22px]">shopping_basket</span><span class="absolute -top-1 -right-2 px-1 min-w-[16px] h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center leading-none ring-1 ring-surface">3</span></div><span class="font-label-sm text-label-sm leading-tight">Cart</span></a></div></nav>
+
+</body></html>

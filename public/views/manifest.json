@@ -1,0 +1,749 @@
+[
+  {
+    "id": "v01",
+    "index": 1,
+    "filename": "view-01.html",
+    "path": "/views/view-01.html",
+    "title": "Product Search & Price Comparison",
+    "shortTitle": "Product Search & Price Comparison",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 55840,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v02",
+    "index": 2,
+    "filename": "view-02.html",
+    "path": "/views/view-02.html",
+    "title": "Customer Home Dashboard",
+    "shortTitle": "Customer Home Dashboard",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 75976,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v03",
+    "index": 3,
+    "filename": "view-03.html",
+    "path": "/views/view-03.html",
+    "title": "Shopping Cart & Guest Checkout Modal",
+    "shortTitle": "Shopping Cart & Guest Checkout Modal",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 35375,
+    "tags": [
+      "Desktop View",
+      "Checkout"
+    ]
+  },
+  {
+    "id": "v04",
+    "index": 4,
+    "filename": "view-04.html",
+    "path": "/views/view-04.html",
+    "title": "Product Details & Store Inventory",
+    "shortTitle": "Product Details & Store Inventory",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 44324,
+    "tags": [
+      "Desktop View",
+      "Inventory"
+    ]
+  },
+  {
+    "id": "v05",
+    "index": 5,
+    "filename": "view-05.html",
+    "path": "/views/view-05.html",
+    "title": "Welcome & Authentication Experience",
+    "shortTitle": "Welcome & Authentication Experience",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 34648,
+    "tags": [
+      "Desktop View",
+      "Auth"
+    ]
+  },
+  {
+    "id": "v06",
+    "index": 6,
+    "filename": "view-06.html",
+    "path": "/views/view-06.html",
+    "title": "Mobile Product Details & Store Inventory",
+    "shortTitle": "Product Details & Store Inventory",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 27187,
+    "tags": [
+      "Mobile View",
+      "Inventory"
+    ]
+  },
+  {
+    "id": "v07",
+    "index": 7,
+    "filename": "view-07.html",
+    "path": "/views/view-07.html",
+    "title": "Mobile Shopping Cart & Guest Checkout Modal",
+    "shortTitle": "Shopping Cart & Guest Checkout Modal",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 30885,
+    "tags": [
+      "Mobile View",
+      "Checkout"
+    ]
+  },
+  {
+    "id": "v08",
+    "index": 8,
+    "filename": "view-08.html",
+    "path": "/views/view-08.html",
+    "title": "Mobile Customer Home Dashboard",
+    "shortTitle": "Customer Home Dashboard",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 26923,
+    "tags": [
+      "Mobile View"
+    ]
+  },
+  {
+    "id": "v09",
+    "index": 9,
+    "filename": "view-09.html",
+    "path": "/views/view-09.html",
+    "title": "Mobile Product Search & Price Comparison",
+    "shortTitle": "Product Search & Price Comparison",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 27442,
+    "tags": [
+      "Mobile View"
+    ]
+  },
+  {
+    "id": "v10",
+    "index": 10,
+    "filename": "view-10.html",
+    "path": "/views/view-10.html",
+    "title": "Mobile Authentication & Guest Access",
+    "shortTitle": "Authentication & Guest Access",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 33154,
+    "tags": [
+      "Mobile View",
+      "Auth"
+    ]
+  },
+  {
+    "id": "v11",
+    "index": 11,
+    "filename": "view-11.html",
+    "path": "/views/view-11.html",
+    "title": "Product Verification Dossier",
+    "shortTitle": "Product Verification Dossier",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 70089,
+    "tags": [
+      "Desktop View",
+      "Fraud Ledger"
+    ]
+  },
+  {
+    "id": "v12",
+    "index": 12,
+    "filename": "view-12.html",
+    "path": "/views/view-12.html",
+    "title": "AI QR & Barcode Scanner HUD",
+    "shortTitle": "AI QR & Barcode Scanner HUD",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 38178,
+    "tags": [
+      "Desktop View",
+      "Scanner HUD"
+    ]
+  },
+  {
+    "id": "v13",
+    "index": 13,
+    "filename": "view-13.html",
+    "path": "/views/view-13.html",
+    "title": "Nagapattinam District Demand Hub",
+    "shortTitle": "Nagapattinam District Demand Hub",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 50515,
+    "tags": [
+      "Desktop View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v14",
+    "index": 14,
+    "filename": "view-14.html",
+    "path": "/views/view-14.html",
+    "title": "Crowdsourced Product Request Hub",
+    "shortTitle": "Crowdsourced Product Request Hub",
+    "category": "Customer Experience",
+    "isMobile": false,
+    "size": 45686,
+    "tags": [
+      "Desktop View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v15",
+    "index": 15,
+    "filename": "view-15.html",
+    "path": "/views/view-15.html",
+    "title": "Mobile AI QR & Barcode Scanner HUD",
+    "shortTitle": "AI QR & Barcode Scanner HUD",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 26110,
+    "tags": [
+      "Mobile View",
+      "Scanner HUD"
+    ]
+  },
+  {
+    "id": "v16",
+    "index": 16,
+    "filename": "view-16.html",
+    "path": "/views/view-16.html",
+    "title": "Mobile Product Verification Dossier",
+    "shortTitle": "Product Verification Dossier",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 46607,
+    "tags": [
+      "Mobile View",
+      "Fraud Ledger"
+    ]
+  },
+  {
+    "id": "v17",
+    "index": 17,
+    "filename": "view-17.html",
+    "path": "/views/view-17.html",
+    "title": "Mobile Crowdsourced Product Request Hub",
+    "shortTitle": "Crowdsourced Product Request Hub",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 39532,
+    "tags": [
+      "Mobile View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v18",
+    "index": 18,
+    "filename": "view-18.html",
+    "path": "/views/view-18.html",
+    "title": "Mobile Nagapattinam District Demand Hub",
+    "shortTitle": "Nagapattinam District Demand Hub",
+    "category": "Customer Experience",
+    "isMobile": true,
+    "size": 30405,
+    "tags": [
+      "Mobile View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v19",
+    "index": 19,
+    "filename": "view-19.html",
+    "path": "/views/view-19.html",
+    "title": "Inventory Management & SKU Studio",
+    "shortTitle": "Inventory Management & SKU Studio",
+    "category": "Merchant Operations",
+    "isMobile": false,
+    "size": 73022,
+    "tags": [
+      "Desktop View",
+      "Inventory"
+    ]
+  },
+  {
+    "id": "v20",
+    "index": 20,
+    "filename": "view-20.html",
+    "path": "/views/view-20.html",
+    "title": "Order Fulfillment & Live Dispatch Matrix",
+    "shortTitle": "Order Fulfillment & Live Dispatch Matrix",
+    "category": "Merchant Operations",
+    "isMobile": false,
+    "size": 59036,
+    "tags": [
+      "Desktop View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v21",
+    "index": 21,
+    "filename": "view-21.html",
+    "path": "/views/view-21.html",
+    "title": "Store Owner Operations Dashboard",
+    "shortTitle": "Store Owner Operations Dashboard",
+    "category": "Merchant Operations",
+    "isMobile": false,
+    "size": 51041,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v22",
+    "index": 22,
+    "filename": "view-22.html",
+    "path": "/views/view-22.html",
+    "title": "Customer Demand & Request Resolution Hub",
+    "shortTitle": "Customer Demand & Request Resolution Hub",
+    "category": "Merchant Operations",
+    "isMobile": false,
+    "size": 54862,
+    "tags": [
+      "Desktop View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v23",
+    "index": 23,
+    "filename": "view-23.html",
+    "path": "/views/view-23.html",
+    "title": "Mobile Store Owner Operations Dashboard",
+    "shortTitle": "Store Owner Operations Dashboard",
+    "category": "Merchant Operations",
+    "isMobile": true,
+    "size": 31233,
+    "tags": [
+      "Mobile View"
+    ]
+  },
+  {
+    "id": "v24",
+    "index": 24,
+    "filename": "view-24.html",
+    "path": "/views/view-24.html",
+    "title": "Mobile Customer Demand & Request Resolution Hub",
+    "shortTitle": "Customer Demand & Request Resolution Hub",
+    "category": "Merchant Operations",
+    "isMobile": true,
+    "size": 36150,
+    "tags": [
+      "Mobile View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v25",
+    "index": 25,
+    "filename": "view-25.html",
+    "path": "/views/view-25.html",
+    "title": "Mobile Order Fulfillment & Live Dispatch",
+    "shortTitle": "Order Fulfillment & Live Dispatch",
+    "category": "Merchant Operations",
+    "isMobile": true,
+    "size": 37708,
+    "tags": [
+      "Mobile View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v26",
+    "index": 26,
+    "filename": "view-26.html",
+    "path": "/views/view-26.html",
+    "title": "Mobile Inventory & SKU Studio",
+    "shortTitle": "Inventory & SKU Studio",
+    "category": "Merchant Operations",
+    "isMobile": true,
+    "size": 37982,
+    "tags": [
+      "Mobile View",
+      "Inventory"
+    ]
+  },
+  {
+    "id": "v27",
+    "index": 27,
+    "filename": "view-27.html",
+    "path": "/views/view-27.html",
+    "title": "Bulk Product Catalogue",
+    "shortTitle": "Bulk Product Catalogue",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 77495,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v28",
+    "index": 28,
+    "filename": "view-28.html",
+    "path": "/views/view-28.html",
+    "title": "Merchant RFQs & Quotations",
+    "shortTitle": "Merchant RFQs & Quotations",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 46307,
+    "tags": [
+      "Desktop View",
+      "RFQ & Bids"
+    ]
+  },
+  {
+    "id": "v29",
+    "index": 29,
+    "filename": "view-29.html",
+    "path": "/views/view-29.html",
+    "title": "Wholesale Supplier Dashboard",
+    "shortTitle": "Wholesale Supplier Dashboard",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 56886,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v30",
+    "index": 30,
+    "filename": "view-30.html",
+    "path": "/views/view-30.html",
+    "title": "Bulk Purchase Order Management",
+    "shortTitle": "Bulk Purchase Order Management",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 55575,
+    "tags": [
+      "Desktop View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v31",
+    "index": 31,
+    "filename": "view-31.html",
+    "path": "/views/view-31.html",
+    "title": "Supply Chain & Dispatch Tracking Matrix",
+    "shortTitle": "Supply Chain & Dispatch Tracking Matrix",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 73899,
+    "tags": [
+      "Desktop View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v32",
+    "index": 32,
+    "filename": "view-32.html",
+    "path": "/views/view-32.html",
+    "title": "Supplier Registration & Compliance Onboarding",
+    "shortTitle": "Supplier Registration & Compliance Onboarding",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 51853,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v33",
+    "index": 33,
+    "filename": "view-33.html",
+    "path": "/views/view-33.html",
+    "title": "Mobile Wholesale Supplier Dashboard",
+    "shortTitle": "Wholesale Supplier Dashboard",
+    "category": "Wholesale & Sourcing",
+    "isMobile": true,
+    "size": 33091,
+    "tags": [
+      "Mobile View"
+    ]
+  },
+  {
+    "id": "v34",
+    "index": 34,
+    "filename": "view-34.html",
+    "path": "/views/view-34.html",
+    "title": "Mobile Bulk Product Catalogue & Pricing Tiers",
+    "shortTitle": "Bulk Product Catalogue & Pricing Tiers",
+    "category": "Wholesale & Sourcing",
+    "isMobile": true,
+    "size": 41634,
+    "tags": [
+      "Mobile View"
+    ]
+  },
+  {
+    "id": "v35",
+    "index": 35,
+    "filename": "view-35.html",
+    "path": "/views/view-35.html",
+    "title": "Mobile Merchant RFQ & Quotation Engine",
+    "shortTitle": "Merchant RFQ & Quotation Engine",
+    "category": "Wholesale & Sourcing",
+    "isMobile": true,
+    "size": 38123,
+    "tags": [
+      "Mobile View",
+      "RFQ & Bids"
+    ]
+  },
+  {
+    "id": "v36",
+    "index": 36,
+    "filename": "view-36.html",
+    "path": "/views/view-36.html",
+    "title": "Mobile Bulk Purchase Order Management",
+    "shortTitle": "Bulk Purchase Order Management",
+    "category": "Wholesale & Sourcing",
+    "isMobile": true,
+    "size": 47019,
+    "tags": [
+      "Mobile View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v37",
+    "index": 37,
+    "filename": "view-37.html",
+    "path": "/views/view-37.html",
+    "title": "Mobile Supply Chain & Dispatch Tracking Matrix",
+    "shortTitle": "Supply Chain & Dispatch Tracking Matrix",
+    "category": "Wholesale & Sourcing",
+    "isMobile": true,
+    "size": 43750,
+    "tags": [
+      "Mobile View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v38",
+    "index": 38,
+    "filename": "view-38.html",
+    "path": "/views/view-38.html",
+    "title": "Mobile Supplier Registration & Compliance Onboarding",
+    "shortTitle": "Supplier Registration & Compliance Onboarding",
+    "category": "Wholesale & Sourcing",
+    "isMobile": true,
+    "size": 46856,
+    "tags": [
+      "Mobile View"
+    ]
+  },
+  {
+    "id": "v39",
+    "index": 39,
+    "filename": "view-39.html",
+    "path": "/views/view-39.html",
+    "title": "B2B Procurement Command Center & Analytics Dashboard",
+    "shortTitle": "B2B Procurement Command Center & Analytics Dashboard",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 69331,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v40",
+    "index": 40,
+    "filename": "view-40.html",
+    "path": "/views/view-40.html",
+    "title": "Purchase Request (PR) & Requisition Management",
+    "shortTitle": "Purchase Request (PR) & Requisition Management",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 67499,
+    "tags": [
+      "Desktop View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v41",
+    "index": 41,
+    "filename": "view-41.html",
+    "path": "/views/view-41.html",
+    "title": "Supplier Marketplace & Direct Sourcing Directory",
+    "shortTitle": "Supplier Marketplace & Direct Sourcing Directory",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 78356,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v42",
+    "index": 42,
+    "filename": "view-42.html",
+    "path": "/views/view-42.html",
+    "title": "Enterprise Purchase Orders & Digital Contracts",
+    "shortTitle": "Enterprise Purchase Orders & Digital Contracts",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 54536,
+    "tags": [
+      "Desktop View",
+      "Fulfillment"
+    ]
+  },
+  {
+    "id": "v43",
+    "index": 43,
+    "filename": "view-43.html",
+    "path": "/views/view-43.html",
+    "title": "Multi-Supplier Quotation Matrix & Evaluation Engine",
+    "shortTitle": "Multi-Supplier Quotation Matrix & Evaluation Engine",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 88216,
+    "tags": [
+      "Desktop View",
+      "RFQ & Bids"
+    ]
+  },
+  {
+    "id": "v44",
+    "index": 44,
+    "filename": "view-44.html",
+    "path": "/views/view-44.html",
+    "title": "Procurement Analytics & Spend Optimization",
+    "shortTitle": "Procurement Analytics & Spend Optimization",
+    "category": "Wholesale & Sourcing",
+    "isMobile": false,
+    "size": 69390,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v45",
+    "index": 45,
+    "filename": "view-45.html",
+    "path": "/views/view-45.html",
+    "title": "Super Admin Dashboard & Platform Overview",
+    "shortTitle": "Super Admin Dashboard & Platform Overview",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 60162,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v46",
+    "index": 46,
+    "filename": "view-46.html",
+    "path": "/views/view-46.html",
+    "title": "Platform Revenue & Commission Management",
+    "shortTitle": "Platform Revenue & Commission Management",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 55461,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v47",
+    "index": 47,
+    "filename": "view-47.html",
+    "path": "/views/view-47.html",
+    "title": "AI Intelligence & Demand Forecasting",
+    "shortTitle": "AI Intelligence & Demand Forecasting",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 53956,
+    "tags": [
+      "Desktop View",
+      "Demand Pooling"
+    ]
+  },
+  {
+    "id": "v48",
+    "index": 48,
+    "filename": "view-48.html",
+    "path": "/views/view-48.html",
+    "title": "Product Verification & Fraud Monitoring",
+    "shortTitle": "Product Verification & Fraud Monitoring",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 69208,
+    "tags": [
+      "Desktop View",
+      "Fraud Ledger"
+    ]
+  },
+  {
+    "id": "v49",
+    "index": 49,
+    "filename": "view-49.html",
+    "path": "/views/view-49.html",
+    "title": "Super Admin User, Store & Supplier Management",
+    "shortTitle": "Super Admin User, Store & Supplier Management",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 67914,
+    "tags": [
+      "Desktop View"
+    ]
+  },
+  {
+    "id": "v50",
+    "index": 50,
+    "filename": "view-50.html",
+    "path": "/views/view-50.html",
+    "title": "Complaints, Disputes & Customer Support",
+    "shortTitle": "Complaints, Disputes & Customer Support",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 56817,
+    "tags": [
+      "Desktop View",
+      "Disputes"
+    ]
+  },
+  {
+    "id": "v51",
+    "index": 51,
+    "filename": "view-51.html",
+    "path": "/views/view-51.html",
+    "title": "Platform Settings, RBAC & Audit Logs",
+    "shortTitle": "Platform Settings, RBAC & Audit Logs",
+    "category": "Super Admin",
+    "isMobile": false,
+    "size": 63360,
+    "tags": [
+      "Desktop View",
+      "Governance"
+    ]
+  }
+]

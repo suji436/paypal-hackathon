@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><title>VeriGrocery AI</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-secondary-container": "#5c647a", "on-surface-variant": "#414943", "surface-container-high": "#dce9ff", "on-primary": "#ffffff", "surface-tint": "#3d6752", "secondary-fixed-dim": "#bec6e0", "on-primary-container": "#7da890", "secondary-container": "#dae2fd", "on-secondary": "#ffffff", "error": "#ba1a1a", "tertiary-fixed": "#ffdea5", "on-tertiary-fixed": "#271900", "primary-fixed": "#bfedd3", "surface-container-lowest": "#ffffff", "surface-container-low": "#eff4ff", "outline-variant": "#c1c8c2", "inverse-primary": "#a4d1b7", "primary-fixed-dim": "#a4d1b7", "surface-variant": "#d3e4fe", "background": "#f8f9ff", "surface-container": "#e5eeff", "tertiary": "#2d1e00", "on-background": "#0b1c30", "surface-bright": "#f8f9ff", "on-primary-fixed-variant": "#254f3b", "on-tertiary-fixed-variant": "#5d4200", "primary": "#002618", "surface-dim": "#cbdbf5", "outline": "#717973", "surface": "#f8f9ff", "on-error": "#ffffff", "inverse-surface": "#213145", "surface-container-highest": "#d3e4fe", "primary-container": "#123d2b", "on-secondary-fixed": "#131b2e", "on-secondary-fixed-variant": "#3f465c", "inverse-on-surface": "#eaf1ff", "on-surface": "#0b1c30", "on-primary-fixed": "#002114", "on-tertiary-container": "#c4983d", "tertiary-container": "#483200", "tertiary-fixed-dim": "#f0bf60", "error-container": "#ffdad6", "secondary": "#565e74", "on-error-container": "#93000a", "secondary-fixed": "#dae2fd", "on-tertiary": "#ffffff" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "gutter-mobile": "1rem", "gutter": "1.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-xl": "2.5rem", "margin-mobile": "1rem", "margin": "2rem" }, fontFamily: { "headline-sm": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Inter"], "body-sm": ["Inter"], "label-lg": ["Inter"], "body-md": ["Inter"], "label-sm": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "body-lg": ["Inter"] }, fontSize: { "headline-sm": ["18px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "600" }], "headline-xl": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-xl-mobile": ["30px", { lineHeight: "38px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg-mobile": ["24px", { lineHeight: "32px", letterSpacing: "-0.01em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.02em", fontWeight: "600" }], "body-sm": ["12px", { lineHeight: "16px", letterSpacing: "0.005em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.01em", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "12px", letterSpacing: "0.05em", fontWeight: "700" }], "headline-md": ["22px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-lg": ["16px", { lineHeight: "24px", letterSpacing: "-0.005em", fontWeight: "400" }] } } } };</script><style>@layer base { html, body { width: 100%; margin: 0; padding: 0; background-color: #f8f9ff; color: #0b1c30; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface antialiased min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.03)]"><div class="h-16 px-gutter-mobile flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><div class="w-9 h-9 rounded-lg bg-primary-container flex items-center justify-center shrink-0 shadow-[0_1px_4px_rgba(18,61,43,0.15)]"><span class="material-symbols-outlined text-tertiary-fixed-dim text-[20px]">verified</span></div><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-primary tracking-tight leading-none truncate">VeriGrocery</span><span class="px-1.5 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm leading-none">AI</span></div><button class="flex items-center gap-0.5 text-on-surface-variant hover:text-on-surface text-left"><span class="material-symbols-outlined text-[13px] text-primary-container">near_me</span><span class="font-label-md text-label-md truncate max-w-[150px]">Nagapattinam, TN 611001</span><span class="material-symbols-outlined text-[14px]">expand_more</span></button></div></div><div class="flex items-center gap-space-xs shrink-0"><button aria-label="Notifications" class="w-11 h-11 flex items-center justify-center rounded-full text-on-surface hover:bg-surface-container-low transition-colors relative"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-2.5 right-2.5 w-2 h-2 rounded-full bg-error ring-2 ring-surface"></span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter-mobile gap-space-md">
+<!-- Pinned Cluster Live Status Banner -->
+<div class="w-full bg-surface-container-low rounded-xl px-space-md py-2.5 flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<div class="relative flex items-center justify-center shrink-0 w-3 h-3">
+<span class="absolute inline-flex h-full w-full rounded-full bg-primary-fixed opacity-75 animate-ping"></span>
+<span class="relative inline-flex rounded-full h-2 w-2 bg-primary-container"></span>
+</div>
+<p class="font-label-md text-label-md text-on-surface truncate">
+        Nagapattinam Cluster <span class="text-on-surface-variant font-normal">• 5 Active Stores Online</span>
+</p>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-label-sm shrink-0">
+      Live Sync
+    </span>
+</div>
+<!-- Search & Voice/Scan bar -->
+<div class="relative w-full flex items-center">
+<div class="w-full h-12 bg-surface-container-lowest rounded-xl shadow-sm flex items-center px-space-md gap-space-sm">
+<span class="material-symbols-outlined text-outline text-[20px] shrink-0">search</span>
+<input class="w-full bg-transparent font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none" placeholder="Search 12,000+ local grocery items..." type="text"/>
+<button aria-label="Voice Search" class="w-8 h-8 rounded-lg bg-surface-container-low flex items-center justify-center text-on-surface hover:text-primary-container shrink-0 transition-colors">
+<span class="material-symbols-outlined text-[18px]">mic</span>
+</button>
+<button aria-label="Quick Scan Barcode" class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shrink-0 transition-transform active:scale-95 shadow-sm">
+<span class="material-symbols-outlined text-[18px]">barcode_scanner</span>
+</button>
+</div>
+</div>
+<!-- Hero Banner Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm relative overflow-hidden flex flex-col gap-space-md">
+<div class="flex flex-col gap-1.5 relative z-10">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-tertiary-container tracking-wider uppercase">
+          AI-POWERED LOCAL GROCERY
+        </span>
+<div class="flex items-center gap-1 bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-on-tertiary-fixed-variant text-[13px]">trending_up</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-fixed-variant font-bold">₹142 Avg Daily Savings</span>
+</div>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight leading-tight">
+        Buy Smarter, Shop Local, Stay Original!
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+        Compare live prices across Nagapattinam grocers &amp; verify food authenticity.
+      </p>
+</div>
+<!-- Hero Visual / Store Collage snippet -->
+<div class="w-full h-24 rounded-lg overflow-hidden relative shadow-inner">
+<img class="w-full h-full object-cover" data-alt="A brightly lit, aesthetic local spice and organic grocery store shelf in Tamil Nadu, fresh natural produce, warm ambient lighting, premium clean aesthetic, natural wood shelves filled with neatly aligned authentic grocery packs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-fgB-rjgzlhOSn8sO6tZd_cWGD13WERos3fuP29E9SNpVk4QxRbKi7GRwqEW4Q744MIS6iqyfcn9g6K0J7qe0XdO2sQJs0mXkKbk_vByBYIOZQTaHMbeSC5wpaKuRmyuJdJaePZ2wHtXiMUplxAYgNJeDepV0DYs6ZAfCw6tdHUfZ3nBuz5tofBe9cXMGVtwt0sI3gdWtbxVnpIgcabaCfMxwvy-Kppo4Ipwd3o"/>
+<div class="absolute inset-0 bg-gradient-to-t from-primary/70 via-transparent to-transparent flex items-end p-2.5">
+<div class="flex items-center gap-1.5 text-on-primary">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">verified_user</span>
+<span class="font-label-sm text-label-sm tracking-wide">FSSAI &amp; Batch-Verified Stock</span>
+</div>
+</div>
+</div>
+<!-- CTA buttons -->
+<div class="flex items-center gap-space-sm pt-1">
+<button class="flex-1 h-11 bg-primary-container text-on-primary rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 shadow-sm active:scale-98 transition-transform">
+<span class="material-symbols-outlined text-[18px]">balance</span>
+<span>Compare Prices</span>
+</button>
+<button class="h-11 px-4 bg-tertiary-fixed/20 text-on-tertiary-fixed-variant rounded-lg font-label-lg text-label-lg flex items-center justify-center gap-1.5 active:scale-98 transition-transform">
+<span class="material-symbols-outlined text-tertiary-container text-[18px]">qr_code_scanner</span>
+<span>Quick Scan</span>
+</button>
+</div>
+</div>
+<!-- Quick Action Grid (4-icon grid) -->
+<div class="grid grid-cols-4 gap-2 w-full">
+<div class="flex flex-col items-center gap-1.5 bg-surface-container-lowest p-2.5 rounded-xl shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/40 flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[20px]">photo_camera</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-tight">Scan Barcode</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 bg-surface-container-lowest p-2.5 rounded-xl shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-full bg-secondary-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">scale</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-tight">Price Compare</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 bg-surface-container-lowest p-2.5 rounded-xl shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">groups</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-tight">District Pool</span>
+</div>
+<div class="flex flex-col items-center gap-1.5 bg-surface-container-lowest p-2.5 rounded-xl shadow-sm cursor-pointer hover:bg-surface-container-low transition-colors">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed/40 flex items-center justify-center text-on-tertiary-container">
+<span class="material-symbols-outlined text-[20px]">percent</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface text-center leading-tight">Price Drops</span>
+</div>
+</div>
+<!-- 'Live Price Spread Today' Compact Comparison Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+<span class="font-label-md text-label-md text-on-surface font-semibold tracking-wide">LIVE PRICE SPREAD</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Updated 8m ago</span>
+</div>
+<div class="flex items-center gap-space-md py-1">
+<div class="w-14 h-14 rounded-lg bg-surface-container-low shrink-0 overflow-hidden shadow-xs flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Authentic sealed pack of traditional South Indian sambar powder spices pouch against a soft neutral studio backdrop, high resolution product shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADL4lQ0UBOzNjd032076kUjeKZr848DB0N3ZPNSEWfVzKQaEAOzyaNrASErF-ALuh5ssXb8xojr-hIK0aetQTqrrx1Kl0PuXGM8FubZI5sXoXABbo2hxLtzo2_8VeVFFEhX9iHZGS7gYjYQKhFbv4J0cZs2RVnK7hE9Uco3hR9rqmMrqkjpq2Pid5yGvwwnV15KwUzF2HA65y27kKd5phu0rXSqos98RIeaNMANvM"/>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-label-lg text-label-lg text-on-surface truncate">Aachi Sambar Powder</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">500g pouch • 3 merchants verified</p>
+</div>
+</div>
+<!-- Merchant Comparison Row -->
+<div class="flex flex-col gap-1.5 bg-surface-container-low p-2.5 rounded-lg">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5 min-w-0">
+<span class="material-symbols-outlined text-primary-container text-[16px]">check_circle</span>
+<span class="font-label-sm text-label-sm text-on-surface truncate">Sri Murugan Supermarket</span>
+<span class="px-1.5 py-0.2 bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] rounded shrink-0">Lowest</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary-container">₹95</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate pl-5">Kaveri Provisions &amp; Spices</span>
+<span class="line-through text-outline">₹99</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="truncate pl-5">Town Super Bazaar</span>
+<span class="line-through text-outline">₹105</span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-primary-container">
+<span class="material-symbols-outlined text-[15px]">savings</span>
+<span class="font-label-sm text-label-sm">Save ₹10 per pack</span>
+</div>
+<button class="h-9 px-3.5 bg-primary-container text-on-primary rounded-lg font-label-md text-label-md flex items-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+<span>Add at ₹95</span>
+</button>
+</div>
+</div>
+<!-- 'Nearby Verified Stores' Horizontal Carousel -->
+<div class="flex flex-col gap-space-sm w-full">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Nearby Verified Stores</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time shelf audits in Nagapattinam</p>
+</div>
+<a class="font-label-md text-label-md text-primary-container flex items-center" href="#">
+        View All <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<!-- Carousel Track -->
+<div class="flex gap-space-md overflow-x-auto pb-1 scroll-smooth -mx-gutter-mobile px-gutter-mobile no-scrollbar">
+<!-- Store Card 1 -->
+<div class="w-64 bg-surface-container-lowest rounded-xl p-space-md shadow-sm shrink-0 flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<span class="px-2 py-0.5 rounded-full bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm font-semibold">
+              Cheapest Staples
+            </span>
+<div class="flex items-center gap-0.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md">4.8</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Sri Murugan Supermarket</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">0.8 km • Public Office Rd</p>
+</div>
+</div>
+<div class="pt-3 flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Shelf Stock Live</span>
+<span class="font-label-md text-label-md text-primary-container">98% Verified</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[98%] rounded-full"></div>
+</div>
+<button class="w-full mt-1 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1">
+<span>Browse Catalog</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Store Card 2 -->
+<div class="w-64 bg-surface-container-lowest rounded-xl p-space-md shadow-sm shrink-0 flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<span class="px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-semibold">
+              Best Oil Prices
+            </span>
+<div class="flex items-center gap-0.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md">4.7</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Kaveri Provisions &amp; Spices</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2.1 km • Neela South St</p>
+</div>
+</div>
+<div class="pt-3 flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Shelf Stock Live</span>
+<span class="font-label-md text-label-md text-primary-container">91% Verified</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[91%] rounded-full"></div>
+</div>
+<button class="w-full mt-1 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1">
+<span>Browse Catalog</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Store Card 3 -->
+<div class="w-64 bg-surface-container-lowest rounded-xl p-space-md shadow-sm shrink-0 flex flex-col justify-between">
+<div class="flex flex-col gap-2">
+<div class="flex items-start justify-between">
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed/50 text-on-primary-fixed-variant font-label-sm text-label-sm font-semibold">
+              Certified Organic
+            </span>
+<div class="flex items-center gap-0.5 text-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-md text-label-md">4.9</span>
+</div>
+</div>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Annamalai Organic Mart</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">1.4 km • Port Main Bazaar</p>
+</div>
+</div>
+<div class="pt-3 flex flex-col gap-2">
+<div class="flex items-center justify-between text-body-sm">
+<span class="text-on-surface-variant font-body-sm text-body-sm">Shelf Stock Live</span>
+<span class="font-label-md text-label-md text-primary-container">94% Verified</span>
+</div>
+<div class="w-full bg-surface-container h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[94%] rounded-full"></div>
+</div>
+<button class="w-full mt-1 h-8 rounded-lg bg-surface-container-low text-on-surface hover:bg-surface-container font-label-sm text-label-sm transition-colors flex items-center justify-center gap-1">
+<span>Browse Catalog</span>
+<span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Nagapattinam Community Demand Card -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary-container text-[18px]">hub</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold uppercase tracking-wide">Community Bulk Pool</span>
+</div>
+<span class="px-2 py-0.5 bg-tertiary-fixed/30 text-on-tertiary-fixed-variant font-label-sm text-label-sm rounded-full">
+        21% Wholesale Off
+      </span>
+</div>
+<div class="flex flex-col gap-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Quinoa Seeds &amp; Cold Pressed Sesame Oil</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        127 neighbors requested • 23 more orders needed to trigger wholesale direct delivery
+      </p>
+</div>
+<!-- Progress Track Bar -->
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Goal: 150 Units</span>
+<span class="text-primary-container font-semibold">85% Filled</span>
+</div>
+<div class="w-full bg-surface-container h-2 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full w-[85%] rounded-full relative">
+<div class="absolute right-0 top-0 bottom-0 w-2 bg-tertiary-fixed-dim rounded-full"></div>
+</div>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1">
+<div class="flex -space-x-2 overflow-hidden">
+<div class="inline-block h-6 w-6 rounded-full bg-secondary-fixed flex items-center justify-center text-[10px] font-bold text-on-secondary-fixed ring-1 ring-surface-container-lowest">N</div>
+<div class="inline-block h-6 w-6 rounded-full bg-tertiary-fixed flex items-center justify-center text-[10px] font-bold text-on-tertiary-fixed ring-1 ring-surface-container-lowest">S</div>
+<div class="inline-block h-6 w-6 rounded-full bg-primary-fixed flex items-center justify-center text-[10px] font-bold text-on-primary-fixed ring-1 ring-surface-container-lowest">+12</div>
+</div>
+<button class="h-9 px-4 bg-primary-container text-on-primary font-label-md text-label-md rounded-lg flex items-center gap-1 shadow-sm active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[16px]">group_add</span>
+<span>Join Pool</span>
+</button>
+</div>
+</div>
+<!-- Subtle Verification Assurance footer note -->
+<div class="w-full py-2 flex items-center justify-center gap-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary-container">security</span>
+<span class="font-body-sm text-body-sm">AI-Validated Pricing &amp; Original Packaging Guarantee</span>
+</div>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-2px_12px_rgba(11,28,48,0.05)]" data-active-classes="text-primary-container font-semibold"><div class="h-16 px-gutter-mobile flex items-center justify-between"><a aria-current="page" class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 transition-colors text-primary-container font-semibold" data-path="home" href="#"><span class="material-symbols-outlined text-[22px]">storefront</span><span class="font-label-sm text-label-sm leading-tight">Home</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors" data-path="stores" href="#"><span class="material-symbols-outlined text-[22px]">apartment</span><span class="font-label-sm text-label-sm leading-tight">Stores</span></a><div class="flex-1 flex flex-col items-center justify-center relative"><a class="-top-5 absolute w-13 h-13 p-1 rounded-full bg-surface shadow-[0_4px_12px_rgba(18,61,43,0.22)] flex items-center justify-center transition-transform active:scale-95" data-path="scan-and-verify" href="#"><div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center ring-2 ring-tertiary-fixed-dim ring-offset-1 ring-offset-surface"><span class="material-symbols-outlined text-on-primary text-[24px]">document_scanner</span></div></a><span class="font-label-sm text-label-sm text-on-surface-variant mt-7 leading-tight">Scan &amp; Verify</span></div><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors" data-path="compare" href="#"><span class="material-symbols-outlined text-[22px]">balance</span><span class="font-label-sm text-label-sm leading-tight">Compare</span></a><a class="flex-1 flex flex-col items-center justify-center min-h-[44px] gap-0.5 text-on-surface-variant hover:text-primary-container transition-colors relative" data-path="cart" href="#"><div class="relative"><span class="material-symbols-outlined text-[22px]">shopping_basket</span><span class="absolute -top-1 -right-2 px-1 min-w-[16px] h-4 rounded-full bg-primary-container text-on-primary font-label-sm text-[10px] flex items-center justify-center leading-none ring-1 ring-surface">3</span></div><span class="font-label-sm text-label-sm leading-tight">Cart</span></a></div></nav></body></html>

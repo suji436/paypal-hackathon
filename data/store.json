@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "id": "u-demo-001",
+      "name": "Senthil Nathan",
+      "email": "senthil@example.com",
+      "password": "123456",
+      "role": "customer",
+      "district": "Nagapattinam",
+      "cart": [],
+      "createdAt": "2026-11-09T00:00:00.000Z"
+    },
+    {
+      "id": "u-demo-002",
+      "name": "K. Sundaram",
+      "email": "sundaram@example.com",
+      "password": "123456",
+      "role": "merchant",
+      "district": "Nagapattinam",
+      "cart": [],
+      "createdAt": "2026-11-09T00:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "p-001",
+      "name": "Aachi Sambar Powder 500g",
+      "brand": "Aachi Masala Foods",
+      "category": "Spices",
+      "price": 95,
+      "originalPrice": 110,
+      "unit": "500g",
+      "stock": 42,
+      "rating": 4.8,
+      "district": "Nagapattinam",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": "p-002",
+      "name": "Ponni Boiled Rice 25kg",
+      "brand": "Delta Farmers Mill",
+      "category": "Rice",
+      "price": 1350,
+      "originalPrice": 1450,
+      "unit": "25kg",
+      "stock": 18,
+      "rating": 4.9,
+      "district": "Thanjavur",
+      "image": "https://images.unsplash.com/photo-1512058564366-18510be2db19?auto=format&fit=crop&w=700&q=80"
+    },
+    {
+      "id": "p-003",
+      "name": "Idhayam Sesame Oil 1L",
+      "brand": "V.V.V. & Sons",
+      "category": "Oils",
+      "price": 350,
+      "originalPrice": 380,
+      "unit": "1L",
+      "stock": 34,
+      "rating": 4.7,
+      "district": "Mayiladuthurai",
+      "image": "https://images.unsplash.com/photo-1471193945509-9ad0617afabf?auto=format&fit=crop&w=700&q=80"
+    }
+  ],
+  "orders": []
+}

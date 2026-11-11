@@ -1,0 +1,769 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"on-tertiary-fixed":"#271900","on-background":"#0b1c30","inverse-surface":"#213145","primary-fixed-dim":"#a4d1b7","surface-container":"#e5eeff","primary":"#002618","surface-tint":"#3d6752","on-surface-variant":"#414943","outline":"#717973","on-primary":"#ffffff","primary-fixed":"#bfedd3","surface-dim":"#cbdbf5","surface-container-low":"#eff4ff","tertiary":"#2d1e00","secondary-fixed-dim":"#bec6e0","on-secondary":"#ffffff","surface":"#f8f9ff","secondary-container":"#dae2fd","on-tertiary-fixed-variant":"#5d4200","surface-container-high":"#dce9ff","secondary-fixed":"#dae2fd","on-tertiary":"#ffffff","on-secondary-container":"#5c647a","error-container":"#ffdad6","background":"#f8f9ff","on-secondary-fixed-variant":"#3f465c","secondary":"#565e74","on-surface":"#0b1c30","on-primary-fixed":"#002114","on-secondary-fixed":"#131b2e","tertiary-fixed":"#ffdea5","inverse-on-surface":"#eaf1ff","surface-container-lowest":"#ffffff","surface-container-highest":"#d3e4fe","surface-bright":"#f8f9ff","on-tertiary-container":"#c4983d","on-primary-fixed-variant":"#254f3b","on-error":"#ffffff","on-primary-container":"#7da890","inverse-primary":"#a4d1b7","surface-variant":"#d3e4fe","outline-variant":"#c1c8c2","primary-container":"#123d2b","tertiary-container":"#483200","tertiary-fixed-dim":"#f0bf60","error":"#ba1a1a","on-error-container":"#93000a"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2.5rem","margin":"2rem","margin-mobile":"1rem","space-xs":"0.25rem","space-sm":"0.5rem","space-lg":"1.5rem","gutter-mobile":"1rem","gutter":"1.5rem","space-md":"1rem"},"fontFamily":{"body-md":["Inter"],"headline-xl-mobile":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"label-sm":["Inter"],"headline-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"headline-sm":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-md":["Inter"],"label-lg":["Inter"],"body-sm":["Inter"]},"fontSize":{"body-md":["14px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg-mobile":["24px",{"lineHeight":"32px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-sm":["10px",{"lineHeight":"12px","letterSpacing":"0.05em","fontWeight":"700"}],"headline-md":["22px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","letterSpacing":"-0.005em","fontWeight":"400"}],"headline-sm":["18px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"headline-xl":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"body-sm":["12px",{"lineHeight":"16px","letterSpacing":"0.005em","fontWeight":"400"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-28 max-w-[1440px] mx-auto px-margin-mobile lg:px-margin flex flex-col justify-between py-space-xs"><div class="flex items-center justify-between gap-space-md pt-space-xs"><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm"><img alt="VeriGrocery AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_lWVWHJydh7pevK2SFzt7Y7KFC4r4_5Agb6oHTo47NgkhBUdB4dszO0mteENedpAWd9tvWLrVKX4WAlD0pzu6_CvlW77CUY0rJaNHm9DQgZxFsIukwzhZuu2NRS3kT-nVIl6WhDig4NMyCzXT-rqP0Z0O2hJDUnJ2mHAi_S5yELVsP8KhNC3J8n_PEwoOeDpmnGpfiiiIHLiwG45QSmdCybtkWlhYEXbwztHjvrE"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none tracking-tight">VeriGrocery AI</span><span class="font-label-sm text-label-sm text-on-tertiary-container tracking-wider uppercase mt-0.5">AI Verification &amp; Deals</span></div></div><div id="location-trigger-btn" onclick="openLocationModal()" class="hidden xl:flex items-center gap-space-xs bg-surface-container-low px-space-sm py-1.5 rounded-full text-on-surface hover:bg-surface-container transition-colors cursor-pointer ring-1 ring-transparent hover:ring-primary/20"><span class="material-symbols-outlined text-primary text-[18px]">location_on</span><span id="header-location-name" class="font-label-md text-label-md">Nagapattinam, TN (611001)</span><span class="flex items-center gap-1 ml-1 pl-1.5 border-l border-outline-variant"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span id="header-stores-count" class="font-label-sm text-label-sm text-on-surface-variant font-medium">5 active stores</span></span><span class="material-symbols-outlined text-on-surface-variant text-[16px]">expand_more</span></div></div><div class="flex-1 max-w-2xl mx-space-sm hidden md:block"><div class="relative flex items-center bg-surface-container-low rounded-xl px-space-sm py-1.5 shadow-[inset_0_1px_2px_rgba(0,0,0,0.03)] hover:bg-surface-container transition-all"><span class="material-symbols-outlined text-on-surface-variant mr-space-sm text-[20px]">search</span><input class="w-full bg-transparent border-none outline-none font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant/70" placeholder="Search 12,000+ local grocery items or scan barcode..." type="text"><div class="flex items-center gap-1.5 shrink-0"><span class="bg-surface-container-lowest font-label-sm text-label-sm text-on-surface-variant px-space-xs py-0.5 rounded shadow-sm">Ctrl+K</span><button class="flex items-center justify-center p-1 hover:bg-surface-container-highest rounded text-on-surface-variant hover:text-primary transition-colors" title="Scan Barcode"><span class="material-symbols-outlined text-[18px]">barcode_scanner</span></button></div></div></div><div class="flex items-center gap-space-sm shrink-0"><button class="relative hidden sm:flex items-center gap-1.5 bg-tertiary-fixed text-on-tertiary-fixed px-space-sm py-1.5 rounded-lg font-label-md text-label-md hover:bg-tertiary-fixed-dim transition-colors shadow-sm"><span class="material-symbols-outlined text-[18px]">qr_code_scanner</span><span class="">Scan &amp; Verify</span><span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-error rounded-full ring-2 ring-surface-container-lowest"></span></button><button aria-label="Notifications" class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-tertiary-fixed-dim"></span></button><button aria-label="Cart" class="relative flex items-center gap-1.5 p-2 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[22px]">shopping_bag</span><span class="bg-primary-container text-on-primary font-label-sm text-label-sm px-1.5 py-0.5 rounded-full leading-none">3</span></button><div class="flex items-center gap-space-sm pl-space-xs border-l border-outline-variant"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDZR86VnRxnaWFsC7rUwlWu1efoK66MRCAl5pXY0kxsJpUulcZ7gyQt19C7lQTK2dBtc-gNSSSwd-WUg6JbpjY6pBhmTko3RMVhyFLo0B02CufeebNHOB7L87O3O1b03yCrpQ2oM8tMcz2_CA0ykFZ1onqLEOpo-PsBOY0FBGHT63L1OKSIjvqwiQjMtlDmX4ZqFL56YS7VmGGwWY4fSVIbyEerJ2D7bnGjsBNQBPg"><div class="hidden lg:flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface leading-tight">Guest</span><span class="font-label-sm text-label-sm text-on-surface-variant hover:text-primary cursor-pointer leading-tight">Log In</span></div></div></div></div><div class="flex items-center justify-between border-t border-surface-container-high pt-1"><nav class="flex items-center gap-space-lg overflow-x-auto py-1" data-active-classes="text-on-surface font-headline-sm border-b-2 border-primary-container"><a aria-current="page" class="transition-colors whitespace-nowrap pb-1 text-on-surface font-headline-sm border-b-2 border-primary-container" data-path="home" href="#">Home</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap pb-1" data-path="store-discovery" href="#">Store Discovery</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap pb-1" data-path="price-compare" href="#">Price Compare</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap pb-1" data-path="scan-and-verify" href="#">Scan &amp; Verify</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap pb-1" data-path="district-demand" href="#">District Demand</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-colors whitespace-nowrap pb-1" data-path="my-cart" href="#">My Cart</a></nav><div class="hidden md:flex items-center gap-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant">Verified Network:</span><span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-space-xs py-0.5 rounded font-medium">100% Tamper-Proof Chain</span></div></div></div></header><main class="w-full pt-28 bg-background min-h-[calc(100vh-14rem)] max-w-[1440px] mx-auto px-margin-mobile lg:px-margin"><div class="flex flex-col w-full pb-space-xl">
+<!-- Top Intelligence Banner / Live District Pulse -->
+<section class="w-full mb-space-lg">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-low p-space-md lg:p-space-lg shadow-sm">
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute right-1/4 -bottom-20 w-64 h-64 rounded-full bg-tertiary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Left Content -->
+<div class="lg:col-span-8 flex flex-col gap-space-sm">
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm tracking-wider uppercase">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-ping"></span>
+              AI-Powered Local Grocery Intelligence
+            </span>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px] text-primary">verified_user</span>
+              Nagapattinam Grid 611001
+            </span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+            Buy Smarter, Shop Local, <span class="text-primary-container">Stay Original!</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+            Compare real-time prices across verified Nagapattinam grocery stores, scan QR/barcodes for forensic authenticity, and unlock community bulk savings in your district.
+          </p>
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<button class="flex items-center justify-center gap-2 h-11 px-space-lg rounded-lg bg-primary-container text-on-primary font-label-lg text-label-lg hover:bg-primary transition-all shadow-sm">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+<span class="">Compare Live Prices</span>
+</button>
+<button class="flex items-center justify-center gap-2 h-11 px-space-lg rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg hover:bg-surface-container-high transition-all shadow-sm">
+<span class="material-symbols-outlined text-[20px] text-on-tertiary-container">photo_camera</span>
+<span class="">Scan &amp; Verify Product</span>
+</button>
+</div>
+<!-- Quick Stat Chips -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm pt-space-sm">
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">storefront</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none">5 Active</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stores Online Now</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Authenticity Verified</span>
+</div>
+</div>
+<div class="flex items-center gap-2.5 p-2 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-on-secondary-container">
+<span class="material-symbols-outlined text-[18px]">savings</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-none">Avg. 18%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Savings Today</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Visual Feature: Shield Graphic -->
+<div class="lg:col-span-4 flex justify-center">
+<div class="relative w-full max-w-sm rounded-xl bg-surface-container-lowest p-space-md shadow-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs border-b border-surface-container-high">
+<span class="font-label-md text-label-md text-on-surface font-semibold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">shield</span>
+                Live VeriGrocery AI Feed
+              </span>
+<span class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-bold">LIVE SYNC</span>
+</div>
+<div class="flex items-center gap-space-md">
+<div class="relative w-16 h-16 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-inner">
+<svg class="w-10 h-10" fill="none" viewBox="0 0 48 48">
+<path d="M24 6L9 12V22C9 32 15.5 41 24 44C32.5 41 39 32 39 22V12L24 6Z" fill="#123D2B" stroke="#A4D1B7" stroke-linejoin="round" stroke-width="2.5"></path>
+<path d="M19 23.5L23 27.5L31 19.5" stroke="#F0BF60" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<path d="M24 14C24 14 18 19 18 25" stroke="#A4D1B7" stroke-linecap="round" stroke-width="1.8"></path>
+</svg>
+<span class="absolute -bottom-1 -right-1 flex h-4 w-4">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary-fixed opacity-75"></span>
+<span class="relative inline-flex rounded-full h-4 w-4 bg-tertiary-fixed text-[9px] items-center justify-center font-bold text-on-tertiary-fixed">AI</span>
+</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Tamper-Proof</span>
+<span class="material-symbols-outlined text-primary text-[16px]">lock_clock</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Latest scan: Aachi Spices Lot #9082 authenticated 4 mins ago</span>
+</div>
+</div>
+<!-- Mini Sparkline Comparison -->
+<div class="bg-surface-container-low rounded-lg p-space-xs flex flex-col gap-1">
+<div class="flex justify-between items-center text-label-sm font-label-sm text-on-surface-variant">
+<span class="">District Price Variance</span>
+<span class="text-on-tertiary-container font-semibold">14.2% spread</span>
+</div>
+<svg class="w-full h-8" preserveAspectRatio="none" viewBox="0 0 200 36">
+<path d="M0,28 Q30,12 60,20 T120,8 T160,22 T200,6" fill="none" stroke="#123d2b" stroke-linecap="round" stroke-width="2.5"></path>
+<circle cx="60" cy="20" fill="#f0bf60" r="3"></circle>
+<circle cx="120" cy="8" fill="#123d2b" r="3"></circle>
+<circle cx="200" cy="6" fill="#002618" r="3"></circle>
+</svg>
+</div>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant pt-1">
+<span class="">Cryptographic Signatures:</span>
+<span class="font-mono text-on-surface font-semibold">SHA-256 #891F</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Smart Quick Actions Bar -->
+<section class="w-full mb-space-xl">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">bolt</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Smart Quick Actions</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Instant Access Tools</span>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-space-sm">
+<!-- Action 1 -->
+<button class="group p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-200 shadow-sm flex flex-col items-start gap-space-xs text-left">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">barcode_scanner</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Scan Barcode</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Instant authenticity check</span>
+</button>
+<!-- Action 2 -->
+<button class="group p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-200 shadow-sm flex flex-col items-start gap-space-xs text-left">
+<div class="w-10 h-10 rounded-lg bg-secondary-container flex items-center justify-center text-secondary group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">compare_arrows</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Multi-Store Compare</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">All 5 stores side-by-side</span>
+</button>
+<!-- Action 3 -->
+<button class="group p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-200 shadow-sm flex flex-col items-start gap-space-xs text-left">
+<div class="w-10 h-10 rounded-lg bg-tertiary-fixed flex items-center justify-center text-on-tertiary-fixed group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">groups</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">District Requests</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Vote for bulk price drops</span>
+</button>
+<!-- Action 4 -->
+<button class="group p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-200 shadow-sm flex flex-col items-start gap-space-xs text-left">
+<div class="w-10 h-10 rounded-lg bg-surface-container-highest flex items-center justify-center text-on-surface-variant group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">add_task</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Request Missing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Add items to store radar</span>
+</button>
+<!-- Action 5 -->
+<button class="group p-space-md rounded-xl bg-surface-container-lowest hover:bg-surface-container-low transition-all duration-200 shadow-sm flex flex-col items-start gap-space-xs text-left col-span-2 sm:col-span-1">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-on-primary-fixed group-hover:scale-105 transition-transform">
+<span class="material-symbols-outlined text-[22px]">notifications_active</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">Price Drop Radar</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Live alerts for staple items</span>
+</button>
+</div>
+</section>
+<!-- Hyper-Local Nearby Verified Stores -->
+<section class="w-full mb-space-xl">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between mb-space-md gap-space-xs">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Geographic Coverage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-0.5">Nearby Verified Stores</h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-md text-label-md text-on-surface-variant">Sort by:</span>
+<button class="px-3 py-1 rounded-lg bg-surface-container-low font-label-md text-label-md text-on-surface flex items-center gap-1 hover:bg-surface-container transition-colors">
+<span class="">Proximity (Nearest first)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_drop_down</span>
+</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Store 1 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">Sri Murugan Supermarket</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-sm font-label-sm mt-1">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span class="font-semibold">0.8 km</span>
+</span>
+<span class="">•</span>
+<span class="flex items-center gap-0.5 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.8</span>
+<span class="text-on-surface-variant">(420)</span>
+</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-semibold">Open</span>
+</div>
+<div class="mt-space-md space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Real-time Catalog:</span>
+<span class="font-semibold text-on-surface">98% in stock</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 98%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              Verified Partner
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm font-medium">
+              Cheapest Staples
+            </span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Avg. fulfillment: 15m</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-0.5">
+            View Aisles <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Store 2 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">Annamalai Organic Mart</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-sm font-label-sm mt-1">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span class="font-semibold">1.4 km</span>
+</span>
+<span class="">•</span>
+<span class="flex items-center gap-0.5 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.9</span>
+<span class="text-on-surface-variant">(310)</span>
+</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-semibold">Open</span>
+</div>
+<div class="mt-space-md space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Real-time Catalog:</span>
+<span class="font-semibold text-on-surface">94% in stock</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 94%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">eco</span>
+              100% Certified Organic
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+              Forensic Lab Tested
+            </span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Avg. fulfillment: 20m</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-0.5">
+            View Aisles <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Store 3 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">Kaveri Provisions &amp; Spices</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-sm font-label-sm mt-1">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span class="font-semibold">2.1 km</span>
+</span>
+<span class="">•</span>
+<span class="flex items-center gap-0.5 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.7</span>
+<span class="text-on-surface-variant">(195)</span>
+</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-semibold">Open</span>
+</div>
+<div class="mt-space-md space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Real-time Catalog:</span>
+<span class="font-semibold text-on-surface">91% in stock</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 91%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">local_shipping</span>
+              Fast 25-Min Delivery
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed/60 text-on-tertiary-fixed font-label-sm text-label-sm font-medium">
+              Best Oil Prices
+            </span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Direct phone support</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-0.5">
+            View Aisles <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Store 4 -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold leading-snug">GreenLeaf Farm Fresh</h3>
+<div class="flex items-center gap-2 text-on-surface-variant text-label-sm font-label-sm mt-1">
+<span class="flex items-center gap-0.5 text-primary">
+<span class="material-symbols-outlined text-[14px]">near_me</span>
+<span class="font-semibold">2.6 km</span>
+</span>
+<span class="">•</span>
+<span class="flex items-center gap-0.5 text-on-tertiary-container">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-semibold text-on-surface">4.6</span>
+<span class="text-on-surface-variant">(150)</span>
+</span>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm uppercase font-semibold">Open</span>
+</div>
+<div class="mt-space-md space-y-2">
+<div class="flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-on-surface-variant">Real-time Catalog:</span>
+<span class="font-semibold text-on-surface">89% in stock</span>
+</div>
+<div class="w-full bg-surface-container-high rounded-full h-1.5 overflow-hidden">
+<div class="bg-primary-container h-full rounded-full" style="width: 89%;"></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-space-md">
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed/40 text-on-primary-fixed-variant font-label-sm text-label-sm flex items-center gap-1 font-medium">
+<span class="material-symbols-outlined text-[14px]">agriculture</span>
+              Farm Direct
+            </span>
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant font-label-sm text-label-sm font-medium">
+              Daily Harvest
+            </span>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+<span class="text-label-sm font-label-sm text-on-surface-variant">Morning supply restocked</span>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-0.5">
+            View Aisles <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Live Price Comparison Highlight Matrix -->
+<section class="w-full mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-md gap-space-sm">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary-fixed-dim"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Algorithmic Arbitrage</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-0.5">Live Price Comparison Matrix</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Forensically verified pantry staples cross-indexed across Nagapattinam outlets.</p>
+</div>
+<div class="flex items-center gap-2 bg-surface-container-low p-1 rounded-xl shrink-0">
+<button class="px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold shadow-sm">Popular Staples</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors">Cooking Oils</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant font-label-md text-label-md hover:text-on-surface transition-colors">Spices &amp; Masalas</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-space-md">
+<!-- Staple 1: Sambar Powder -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<!-- Header and badges -->
+<div class="flex items-start justify-between gap-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+              Save ₹10 (10%)
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              100% Genuine
+            </span>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+              Aachi Sambar Powder
+            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">500g Box • Packaged Feb 2025</span>
+</div>
+<!-- Price split detail -->
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Sri Murugan
+              </span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹95</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-body-sm font-body-sm">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                Annamalai Mart
+              </span>
+<span class="line-through text-outline">₹105</span>
+</div>
+<!-- Delta Bar -->
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 48%;"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 52%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lowest Local</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">₹95.00</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            Add to Cart
+          </button>
+</div>
+</div>
+<!-- Staple 2: Sunflower Oil -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+              Save ₹10
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              Lab Verified
+            </span>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+              Fortune Sunlite Sunflower Oil
+            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 Litre Pouch • Fortified Vit A &amp; D</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Kaveri Provisions
+              </span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹138</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-body-sm font-body-sm">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                Sri Murugan
+              </span>
+<span class="line-through text-outline">₹148</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 48%;"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 52%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lowest Local</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">₹138.00</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            Add to Cart
+          </button>
+</div>
+</div>
+<!-- Staple 3: Basmati Rice -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">auto_awesome</span>
+              Save ₹15
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              Purity Sealed
+            </span>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+              India Gate Basmati Rice Feast
+            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1kg Pack • Aged Grain Selection</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Sri Murugan
+              </span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹124</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-body-sm font-body-sm">
+<span class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant"></span>
+                GreenLeaf Fresh
+              </span>
+<span class="line-through text-outline">₹139</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden flex">
+<div class="bg-primary-container h-full" style="width: 47%;"></div>
+<div class="bg-tertiary-fixed-dim h-full" style="width: 53%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Lowest Local</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">₹124.00</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            Add to Cart
+          </button>
+</div>
+</div>
+<!-- Staple 4: Tata Salt -->
+<div class="rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="flex items-start justify-between gap-space-xs">
+<span class="px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-container font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">equalizer</span>
+              Uniform Best Price
+            </span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-primary font-semibold">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+              Verified Batch
+            </span>
+</div>
+<div class="my-space-md">
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">
+              Tata Salt Vacuum Evaporated
+            </h3>
+<span class="font-body-sm text-body-sm text-on-surface-variant">1kg Pack • Iodized • Lab Certified</span>
+</div>
+<div class="bg-surface-container-low rounded-lg p-space-sm space-y-2">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-semibold text-primary flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+                Across all 5 stores
+              </span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">₹26</span>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant text-body-sm font-body-sm">
+<span class="">Standard Retail MRP</span>
+<span class="">₹28</span>
+</div>
+<div class="w-full bg-surface-container-high h-1.5 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full" style="width: 100%;"></div>
+</div>
+</div>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-surface-container-high flex items-center justify-between gap-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Price Cap</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-extrabold">₹26.00</span>
+</div>
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm">
+<span class="material-symbols-outlined text-[16px]">add_shopping_cart</span>
+            Add to Cart
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- AI Recommendations & Smart District Reminders (Split View) -->
+<section class="w-full mb-space-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- Left: Smart Reorder Prompt (Col 6) -->
+<div class="lg:col-span-6 rounded-xl bg-surface-container-low p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-primary-container text-on-primary font-label-sm text-label-sm flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-tertiary-fixed">psychology</span>
+              AI Reorder Forecast
+            </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Predicted run-out: 48h</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Smart Reorder Prompt</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+            Your weekly essentials (<span class="text-on-surface font-semibold">Aavin Milk, Sambar Masala, Toor Dhal</span>) might run out in 2 days based on your household cadence. Compare &amp; restock now for maximum bundle savings.
+          </p>
+<!-- Bundled Mini Cards -->
+<div class="mt-space-md grid grid-cols-3 gap-space-sm">
+<div class="p-space-xs rounded-lg bg-surface-container-lowest shadow-xs text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[20px] text-primary">local_drink</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">Milk (1L)</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">Best: ₹27</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest shadow-xs text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[20px] text-primary">lunch_dining</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">Sambar Masala</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">Best: ₹42</span>
+</div>
+<div class="p-space-xs rounded-lg bg-surface-container-lowest shadow-xs text-center flex flex-col items-center">
+<span class="material-symbols-outlined text-[20px] text-primary">grain</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold mt-1">Toor Dhal 1kg</span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container">Best: ₹156</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-1 font-body-sm text-body-sm text-on-surface-variant">
+<span class="">Bundle discount saves</span>
+<span class="font-bold text-primary font-label-md text-label-md">₹34.00</span>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm flex items-center gap-1">
+<span class="">Compare &amp; Restock Bundle</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Right: District Demand Trending (Col 6) -->
+<div class="lg:col-span-6 rounded-xl bg-surface-container-lowest p-space-lg shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="px-2.5 py-1 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm flex items-center gap-1.5 font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+              Collective Purchasing Power
+            </span>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold">Nagapattinam Collective</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface">District Demand Trending</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+<span class="font-semibold text-on-surface">Quinoa Seeds &amp; Cold Pressed Sesame Oil</span> are trending in Nagapattinam — 127 community members have pooled request orders to trigger wholesale pricing!
+          </p>
+<!-- Demand Bar Gauge -->
+<div class="mt-space-md p-space-sm rounded-lg bg-surface-container-low space-y-2">
+<div class="flex justify-between items-center text-label-sm font-label-sm">
+<span class="font-semibold text-on-surface">Pool Threshold for Wholesale (150 requests)</span>
+<span class="font-bold text-primary">127 / 150 (85%)</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden">
+<div class="bg-primary-container h-full rounded-full transition-all duration-500" style="width: 85%;"></div>
+</div>
+<div class="flex justify-between text-body-sm font-body-sm text-on-surface-variant">
+<span class="">Current Estimate: ₹310/L</span>
+<span class="text-on-tertiary-container font-semibold">Target Price: ₹245/L</span>
+</div>
+</div>
+</div>
+<div class="mt-space-lg pt-space-sm border-t border-surface-container-high flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">23 spots left to unlock 21% off</span>
+<button class="px-4 py-2 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md hover:bg-primary-container hover:text-on-primary transition-colors shadow-sm flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">how_to_reg</span>
+<span class="">Join Demand Pool</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Authenticity & Verification Trust Bar -->
+<section class="w-full rounded-2xl bg-surface-container-lowest p-space-lg shadow-sm">
+<div class="max-w-3xl mb-space-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="material-symbols-outlined text-primary text-[20px]">verified_user</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-bold">Forensic Guarantee Framework</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">How VeriGrocery AI Guarantees Authenticity</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+        Zero tolerance for adulterated spices, repackaged expired staples, or counter-fitted FMCG batches in local shops.
+      </p>
+</div>
+<!-- 3 Steps Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg relative">
+<!-- Step 1 -->
+<div class="relative p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">1</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">qr_code_scanner</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">QR &amp; Barcode Scan</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Point phone camera or enter serial codes. Our lightweight AI engine scans security watermarks, EAN-13 identifiers, and micro-print seals in milliseconds.
+        </p>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-auto pt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> Mobile Optical Engine
+        </span>
+</div>
+<!-- Step 2 -->
+<div class="relative p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="w-9 h-9 rounded-lg bg-primary-container text-on-primary font-headline-sm text-headline-sm flex items-center justify-center font-bold">2</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">database</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Batch Certificate Validation</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Cross-matched against manufacturer manifests and FSSAI registry logs. Uncertified or duplicate lot numbers trigger automated consumer flags.
+        </p>
+<span class="font-label-sm text-label-sm text-primary font-semibold mt-auto pt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">check</span> FSSAI + Merchant Database
+        </span>
+</div>
+<!-- Step 3 -->
+<div class="relative p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-xs">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="w-9 h-9 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed font-headline-sm text-headline-sm flex items-center justify-center font-bold">3</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[24px]">shield</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">Tamper-Proof Assurance</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Cryptographically signed verification seal generated for your cart. Shop with 100% certainty that what feeds your family is unadulterated.
+        </p>
+<span class="font-label-sm text-label-sm text-on-tertiary-container font-semibold mt-auto pt-2 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified</span> Cryptographic Seal
+        </span>
+</div>
+</div>
+<!-- Bottom Metric Bar -->
+<div class="mt-space-lg pt-space-md border-t border-surface-container-high flex flex-wrap items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">health_and_safety</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">24,800+ Products Audited</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">thumb_up</span>
+<span class="font-label-md text-label-md text-on-surface font-semibold">0% Counterfeit Tolerance</span>
+</div>
+</div>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1">
+<span class="">Read District Forensic Standards</span>
+<span class="material-symbols-outlined text-[16px]">open_in_new</span>
+</button>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl"><div class="max-w-[1440px] mx-auto px-margin-mobile lg:px-margin py-space-xl flex flex-col md:flex-row justify-between items-center gap-space-lg"><div class="flex items-center gap-space-sm"><img alt="VeriGrocery AI Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_lWVWHJydh7pevK2SFzt7Y7KFC4r4_5Agb6oHTo47NgkhBUdB4dszO0mteENedpAWd9tvWLrVKX4WAlD0pzu6_CvlW77CUY0rJaNHm9DQgZxFsIukwzhZuu2NRS3kT-nVIl6WhDig4NMyCzXT-rqP0Z0O2hJDUnJ2mHAi_S5yELVsP8KhNC3J8n_PEwoOeDpmnGpfiiiIHLiwG45QSmdCybtkWlhYEXbwztHjvrE"><span class="font-headline-sm text-headline-sm text-on-surface">VeriGrocery AI</span><span class="font-body-sm text-body-sm text-on-surface-variant ml-space-sm">Algorithmic Price Tracking &amp; Forensic Authentication • Nagapattinam Hub</span></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md"><a class="hover:text-on-surface transition-colors" href="#">Privacy Policy</a><a class="hover:text-on-surface transition-colors" href="#">Audit Standards</a><a class="hover:text-on-surface transition-colors" href="#">Merchant Portal</a><a class="hover:text-on-surface transition-colors" href="#">API Feeds</a></div><div class="font-body-sm text-body-sm text-on-surface-variant">© 2025 VeriGrocery AI. All verification seals cryptographically verified.</div></div></footer>
+
+<div id="location-modal-backdrop" class="fixed inset-0 z-50 bg-inverse-surface/40 backdrop-blur-sm hidden items-start justify-center p-4 pt-16 sm:pt-20 overflow-y-auto" onclick="handleBackdropClick(event)"><div id="location-modal-container" class="relative w-full max-w-4xl bg-surface-container-lowest rounded-2xl shadow-xl border border-outline-variant/30 overflow-hidden flex flex-col max-h-[85vh] animate-in fade-in zoom-in duration-200"><div class="p-space-md border-b border-surface-container-high flex items-center justify-between bg-surface-container-low"><div class="flex items-center gap-2.5"><div class="w-9 h-9 rounded-xl bg-primary-container text-on-primary flex items-center justify-center"><span class="material-symbols-outlined text-[20px]">explore</span></div><div><div class="flex items-center gap-2"><h3 class="font-headline-sm text-headline-sm text-on-surface">Select Tamil Nadu District &amp; Store</h3><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold uppercase tracking-wider">38 Districts</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Switch hub to compare real-time prices &amp; tamper-proof forensics in your area</p></div></div><button onclick="closeLocationModal()" class="w-8 h-8 rounded-full flex items-center justify-center text-on-surface-variant hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-[20px]">close</span></button></div><div class="grid grid-cols-1 md:grid-cols-12 flex-1 overflow-hidden"><div class="md:col-span-5 border-r border-surface-container-high flex flex-col bg-surface-container-low/40"><div class="p-space-sm border-b border-surface-container-high"><div class="relative flex items-center bg-surface-container-lowest rounded-xl px-space-sm py-1.5 shadow-xs border border-outline-variant/40"><span class="material-symbols-outlined text-on-surface-variant mr-1.5 text-[18px]">search</span><input id="district-search-input" oninput="filterDistricts()" class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70" placeholder="Search 38 TN Districts (e.g. Chennai, Thanjavur)..." type="text"></div></div><div id="district-list" class="flex-1 overflow-y-auto divide-y divide-surface-container-high/60 max-h-[480px]"></div></div><div class="md:col-span-7 flex flex-col bg-surface-container-lowest"><div class="p-space-sm border-b border-surface-container-high flex flex-col gap-2 bg-surface-container-low/20"><div class="flex items-center justify-between"><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-primary text-[18px]">storefront</span><span id="active-district-title" class="font-headline-sm text-headline-sm text-on-surface font-semibold">Nagapattinam Stores</span></div><span id="active-district-badge" class="font-label-sm text-label-sm bg-primary-fixed text-on-primary-fixed px-2 py-0.5 rounded-full font-bold">5 Verified Stores</span></div><div class="relative flex items-center bg-surface-container-lowest rounded-xl px-space-sm py-1.5 shadow-xs border border-outline-variant/40"><span class="material-symbols-outlined text-on-surface-variant mr-1.5 text-[18px]">store</span><input id="store-search-input" oninput="filterStores()" class="w-full bg-transparent border-none outline-none font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant/70" placeholder="Search active stores in this district..." type="text"></div></div><div id="stores-list" class="flex-1 overflow-y-auto p-space-sm space-y-2.5 max-h-[440px]"></div><div class="p-space-sm border-t border-surface-container-high bg-surface-container-low flex items-center justify-between"><span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1"><span class="material-symbols-outlined text-primary text-[16px]">verified</span> 100% Cryptographically Audited Outlets</span><button id="select-entire-district-btn" onclick="applyDistrictSelection()" class="px-3 py-1.5 rounded-lg bg-primary-container text-on-primary font-label-md text-label-md hover:bg-primary transition-colors shadow-sm">Browse All District Stores</button></div></div></div></div></div><div id="location-toast" class="fixed bottom-6 right-6 z-50 hidden items-center gap-2.5 bg-inverse-surface text-inverse-on-surface px-4 py-3 rounded-xl shadow-lg border border-outline-variant/30 transform transition-all duration-300"><span class="material-symbols-outlined text-primary-fixed text-[20px]">check_circle</span><div class="flex flex-col"><span id="toast-title" class="font-label-md text-label-md font-semibold text-inverse-on-surface">District Updated</span><span id="toast-msg" class="font-body-sm text-body-sm opacity-90">Now browsing Nagapattinam</span></div><button onclick="hideToast()" class="ml-2 text-inverse-on-surface/70 hover:text-inverse-on-surface"><span class="material-symbols-outlined text-[16px]">close</span></button></div><script>(function(){const tnDistricts=[{name:"Nagapattinam",pincode:"611001",stores:5,activeStores:[{name:"Sri Murugan Supermarket",dist:"0.8 km",rating:"4.8 (420)",inStock:"98%",audit:"Tamper-Proof Gold",status:"Open"},{name:"Annamalai Organic Mart",dist:"1.4 km",rating:"4.9 (310)",inStock:"94%",audit:"FSSAI Lab Verified",status:"Open"},{name:"Kaveri Provisions & Spices",dist:"2.1 km",rating:"4.7 (195)",inStock:"91%",audit:"Batch Manifest Certified",status:"Open"},{name:"GreenLeaf Farm Fresh",dist:"2.6 km",rating:"4.6 (150)",inStock:"89%",audit:"Organic Chain Verified",status:"Open"},{name:"Nagai Wholesale Mart",dist:"3.2 km",rating:"4.5 (88)",inStock:"95%",audit:"Cryptographic Seal",status:"Open"}]},{name:"Chennai",pincode:"600001",stores:42,activeStores:[{name:"Amma Grocery Super Hub T. Nagar",dist:"1.1 km",rating:"4.9 (1.2k)",inStock:"99%",audit:"FSSAI Grade A+",status:"Open"},{name:"Mylapore Heritage Provisions",dist:"2.3 km",rating:"4.8 (850)",inStock:"97%",audit:"Tamper-Proof Gold",status:"Open"},{name:"Anna Nagar Organic Cooperative",dist:"3.5 km",rating:"4.7 (620)",inStock:"95%",audit:"Batch Certified",status:"Open"},{name:"Velachery Fresh Mart",dist:"4.2 km",rating:"4.8 (410)",inStock:"93%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Coimbatore",pincode:"641001",stores:28,activeStores:[{name:"Kongu Natural Groceries",dist:"0.9 km",rating:"4.9 (540)",inStock:"96%",audit:"Tamper-Proof Gold",status:"Open"},{name:"RS Puram Provision Store",dist:"1.8 km",rating:"4.7 (380)",inStock:"94%",audit:"Batch Certified",status:"Open"},{name:"Gandhipuram Wholesale Hub",dist:"2.4 km",rating:"4.6 (290)",inStock:"92%",audit:"FSSAI Verified",status:"Open"}]},{name:"Thanjavur",pincode:"613001",stores:14,activeStores:[{name:"Chola Delta Rice & Grains",dist:"1.0 km",rating:"4.9 (430)",inStock:"97%",audit:"GI Certified Delta",status:"Open"},{name:"Brihadeeswara Provisions",dist:"1.5 km",rating:"4.7 (280)",inStock:"93%",audit:"Tamper-Proof Gold",status:"Open"},{name:"Medical College Road Mart",dist:"2.8 km",rating:"4.6 (170)",inStock:"90%",audit:"Batch Certified",status:"Open"}]},{name:"Madurai",pincode:"625001",stores:21,activeStores:[{name:"Meenakshi Spices & Dry Fruits",dist:"0.7 km",rating:"4.9 (670)",inStock:"98%",audit:"Tamper-Proof Gold",status:"Open"},{name:"Simmakkal Wholesale Grocers",dist:"1.6 km",rating:"4.8 (510)",inStock:"95%",audit:"FSSAI Lab Verified",status:"Open"},{name:"KK Nagar Fresh Mart",dist:"2.9 km",rating:"4.6 (220)",inStock:"91%",audit:"Batch Certified",status:"Open"}]},{name:"Tiruchirappalli",pincode:"620001",stores:18,activeStores:[{name:"Rockfort Grocery Super Center",dist:"1.2 km",rating:"4.8 (390)",inStock:"96%",audit:"Tamper-Proof Gold",status:"Open"},{name:"Thillai Nagar Fresh Mart",dist:"2.1 km",rating:"4.7 (310)",inStock:"93%",audit:"FSSAI Lab Verified",status:"Open"}]},{name:"Salem",pincode:"636001",stores:16,activeStores:[{name:"Shevaroys Farm Fresh",dist:"1.0 km",rating:"4.8 (340)",inStock:"95%",audit:"Tamper-Proof Gold",status:"Open"},{name:"Salem Steel City Mart",dist:"2.0 km",rating:"4.7 (250)",inStock:"92%",audit:"FSSAI Verified",status:"Open"}]},{name:"Tirunelveli",pincode:"627001",stores:12,activeStores:[{name:"Nellai Halwa & Staple Supermart",dist:"0.9 km",rating:"4.9 (410)",inStock:"96%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Erode",pincode:"638001",stores:15,activeStores:[{name:"Turmeric City Groceries",dist:"1.1 km",rating:"4.8 (360)",inStock:"95%",audit:"Turmeric Board Certified",status:"Open"}]},{name:"Tiruppur",pincode:"641601",stores:14,activeStores:[{name:"Avinashi Road Provision Hub",dist:"1.3 km",rating:"4.7 (290)",inStock:"94%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Vellore",pincode:"632001",stores:11,activeStores:[{name:"Fort City Provisions",dist:"1.4 km",rating:"4.7 (240)",inStock:"93%",audit:"FSSAI Verified",status:"Open"}]},{name:"Dindigul",pincode:"624001",stores:10,activeStores:[{name:"Dindigul Natural Farm Hub",dist:"1.2 km",rating:"4.7 (210)",inStock:"92%",audit:"Batch Certified",status:"Open"}]},{name:"Kancheepuram",pincode:"631501",stores:9,activeStores:[{name:"Silk City Pantry Care",dist:"1.0 km",rating:"4.8 (190)",inStock:"94%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Cuddalore",pincode:"607001",stores:8,activeStores:[{name:"Silver Beach Mart",dist:"1.5 km",rating:"4.6 (170)",inStock:"91%",audit:"Batch Certified",status:"Open"}]},{name:"Tiruvallur",pincode:"602001",stores:13,activeStores:[{name:"Tiruvallur Express Mart",dist:"1.2 km",rating:"4.7 (220)",inStock:"92%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Tiruvannamalai",pincode:"606601",stores:8,activeStores:[{name:"Arunachala Groceries",dist:"0.8 km",rating:"4.8 (280)",inStock:"95%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Viluppuram",pincode:"605602",stores:9,activeStores:[{name:"Central TN Provisions",dist:"1.3 km",rating:"4.6 (160)",inStock:"91%",audit:"Batch Certified",status:"Open"}]},{name:"Ariyalur",pincode:"621704",stores:6,activeStores:[{name:"Ariyalur Fresh & Pure",dist:"1.1 km",rating:"4.6 (120)",inStock:"90%",audit:"FSSAI Lab Verified",status:"Open"}]},{name:"Chengalpattu",pincode:"603001",stores:15,activeStores:[{name:"Grand Southern Grocers",dist:"1.4 km",rating:"4.8 (310)",inStock:"95%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Dharmapuri",pincode:"636701",stores:7,activeStores:[{name:"Dharmapuri Mango & Spice Hub",dist:"1.2 km",rating:"4.6 (140)",inStock:"92%",audit:"Batch Certified",status:"Open"}]},{name:"Kallakurichi",pincode:"606202",stores:6,activeStores:[{name:"Kallakurichi Kisan Supermart",dist:"1.0 km",rating:"4.6 (110)",inStock:"91%",audit:"FSSAI Verified",status:"Open"}]},{name:"Kanyakumari",pincode:"629001",stores:11,activeStores:[{name:"Cape Comorin Fresh Basket",dist:"1.3 km",rating:"4.8 (230)",inStock:"94%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Karur",pincode:"639001",stores:8,activeStores:[{name:"Amaravathi Organic Groceries",dist:"1.1 km",rating:"4.7 (160)",inStock:"93%",audit:"Batch Certified",status:"Open"}]},{name:"Krishnagiri",pincode:"635001",stores:9,activeStores:[{name:"Krishnagiri Valley Mart",dist:"1.5 km",rating:"4.6 (150)",inStock:"91%",audit:"FSSAI Verified",status:"Open"}]},{name:"Mayiladuthurai",pincode:"609001",stores:7,activeStores:[{name:"Cauvery Delta Supermart",dist:"0.9 km",rating:"4.8 (190)",inStock:"95%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Namakkal",pincode:"637001",stores:8,activeStores:[{name:"Namakkal Egg & Farm Mart",dist:"1.2 km",rating:"4.7 (180)",inStock:"94%",audit:"Batch Certified",status:"Open"}]},{name:"Nilgiris",pincode:"643001",stores:6,activeStores:[{name:"Ooty Blue Mountain Produce",dist:"1.0 km",rating:"4.9 (240)",inStock:"96%",audit:"Organic High-Altitude Sealed",status:"Open"}]},{name:"Perambalur",pincode:"621212",stores:5,activeStores:[{name:"Perambalur Agro Mart",dist:"1.1 km",rating:"4.5 (100)",inStock:"89%",audit:"FSSAI Verified",status:"Open"}]},{name:"Pudukkottai",pincode:"622001",stores:7,activeStores:[{name:"Royal Pudukkottai Provisions",dist:"1.3 km",rating:"4.7 (140)",inStock:"92%",audit:"Batch Certified",status:"Open"}]},{name:"Ramanathapuram",pincode:"623501",stores:8,activeStores:[{name:"Sethupathi Coastal Mart",dist:"1.4 km",rating:"4.6 (130)",inStock:"91%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Ranipet",pincode:"632401",stores:7,activeStores:[{name:"Ranipet Industrial City Mart",dist:"1.2 km",rating:"4.6 (120)",inStock:"90%",audit:"FSSAI Verified",status:"Open"}]},{name:"Sivaganga",pincode:"630561",stores:6,activeStores:[{name:"Chettinad Heritage Spices & Mart",dist:"1.0 km",rating:"4.9 (210)",inStock:"96%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Tenkasi",pincode:"627811",stores:7,activeStores:[{name:"Courtallam Fresh Provisions",dist:"1.1 km",rating:"4.7 (150)",inStock:"93%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Theni",pincode:"625531",stores:7,activeStores:[{name:"Cardamom Hills Grocery Hub",dist:"1.2 km",rating:"4.8 (180)",inStock:"94%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Thoothukudi",pincode:"628001",stores:11,activeStores:[{name:"Pearl City Mart & Salts",dist:"1.0 km",rating:"4.7 (230)",inStock:"93%",audit:"Tamper-Proof Gold",status:"Open"}]},{name:"Tirupathur",pincode:"635601",stores:6,activeStores:[{name:"Yelagiri Hillside Provisions",dist:"1.3 km",rating:"4.6 (110)",inStock:"90%",audit:"Batch Certified",status:"Open"}]},{name:"Tiruvarur",pincode:"610001",stores:6,activeStores:[{name:"Tiruvarur Chariot Groceries",dist:"0.9 km",rating:"4.7 (160)",inStock:"93%",audit:"Batch Certified",status:"Open"}]},{name:"Virudhunagar",pincode:"626001",stores:8,activeStores:[{name:"Virudhunagar Trade Mart",dist:"1.1 km",rating:"4.8 (200)",inStock:"95%",audit:"Tamper-Proof Gold",status:"Open"}]}];let currentSelectedDistrict=tnDistricts[0];window.openLocationModal=function(){const modal=document.getElementById("location-modal-backdrop");if(modal){modal.classList.remove("hidden");modal.classList.add("flex");renderDistricts();renderStores();}};window.closeLocationModal=function(){const modal=document.getElementById("location-modal-backdrop");if(modal){modal.classList.add("hidden");modal.classList.remove("flex");}};window.handleBackdropClick=function(e){if(e.target.id==="location-modal-backdrop"){closeLocationModal();}};window.filterDistricts=function(){const q=(document.getElementById("district-search-input").value||"").toLowerCase().trim();renderDistricts(q);};window.filterStores=function(){const q=(document.getElementById("store-search-input").value||"").toLowerCase().trim();renderStores(q);};window.selectDistrict=function(name){const found=tnDistricts.find(d=>d.name===name);if(found){currentSelectedDistrict=found;document.getElementById("store-search-input").value="";renderDistricts();renderStores();}};window.applyDistrictSelection=function(storeName){const locName=document.getElementById("header-location-name");const storeCount=document.getElementById("header-stores-count");if(locName&&currentSelectedDistrict){if(storeName){locName.innerText=storeName+", "+currentSelectedDistrict.name+" ("+currentSelectedDistrict.pincode+")";storeCount.innerText="Active Partner";showToast("Store Selected",storeName+" ("+currentSelectedDistrict.name+") is now your primary hub");}else{locName.innerText=currentSelectedDistrict.name+", TN ("+currentSelectedDistrict.pincode+")";storeCount.innerText=currentSelectedDistrict.stores+" active stores";showToast("District Changed","Switched hub to "+currentSelectedDistrict.name+" ("+currentSelectedDistrict.stores+" stores online)");}}closeLocationModal();};window.showToast=function(title,msg){const toast=document.getElementById("location-toast");if(toast){document.getElementById("toast-title").innerText=title;document.getElementById("toast-msg").innerText=msg;toast.classList.remove("hidden");toast.classList.add("flex");setTimeout(()=>{hideToast();},4000);}};window.hideToast=function(){const toast=document.getElementById("location-toast");if(toast){toast.classList.add("hidden");toast.classList.remove("flex");}};function renderDistricts(query=""){const container=document.getElementById("district-list");if(!container)return;const filtered=tnDistricts.filter(d=>d.name.toLowerCase().includes(query)||d.pincode.includes(query));if(filtered.length===0){container.innerHTML='<div class="p-space-md text-center text-on-surface-variant font-body-sm">No Tamil Nadu district found matching "'+query+'"</div>';return;}container.innerHTML=filtered.map(d=>{const isSelected=currentSelectedDistrict&&currentSelectedDistrict.name===d.name;return'<div onclick="selectDistrict(\''+d.name+'\')" class="p-space-sm flex items-center justify-between cursor-pointer transition-colors '+(isSelected?'bg-surface-container font-semibold border-l-4 border-primary text-primary':'hover:bg-surface-container-high/60 text-on-surface')+'"><div><div class="flex items-center gap-1.5"><span class="font-label-md text-label-md">'+d.name+'</span><span class="font-label-sm text-label-sm text-on-surface-variant">('+d.pincode+')</span></div><span class="font-body-sm text-body-sm text-on-surface-variant">Tamil Nadu</span></div><div class="flex items-center gap-1"><span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full '+(isSelected?'bg-primary text-on-primary':'bg-surface-container-highest text-on-surface-variant')+'">'+d.stores+' stores</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant">chevron_right</span></div></div>';}).join("");}function renderStores(query=""){const container=document.getElementById("stores-list");const title=document.getElementById("active-district-title");const badge=document.getElementById("active-district-badge");if(!container||!currentSelectedDistrict)return;if(title)title.innerText=currentSelectedDistrict.name+" Stores";if(badge)badge.innerText=currentSelectedDistrict.stores+" Verified Stores";const stores=currentSelectedDistrict.activeStores||[];const filtered=stores.filter(s=>s.name.toLowerCase().includes(query)||s.audit.toLowerCase().includes(query));if(filtered.length===0){container.innerHTML='<div class="p-space-md text-center text-on-surface-variant font-body-sm">No stores found matching "'+query+'" in '+currentSelectedDistrict.name+'. Try browsing all stores or another district.</div>';return;}container.innerHTML=filtered.map(s=>'<div class="p-space-sm rounded-xl bg-surface-container-low hover:bg-surface-container transition-all border border-surface-container-high flex flex-col justify-between gap-2"><div class="flex items-start justify-between gap-2"><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-semibold">'+s.name+'</h4><div class="flex items-center gap-2 font-label-sm text-label-sm text-on-surface-variant mt-0.5"><span class="flex items-center gap-0.5 text-primary"><span class="material-symbols-outlined text-[14px]">near_me</span>'+s.dist+'</span><span>•</span><span class="flex items-center gap-0.5 text-on-tertiary-container"><span class="material-symbols-outlined text-[14px]" style="font-variation-settings: \'FILL\' 1;">star</span>'+s.rating+'</span><span>•</span><span class="text-primary font-medium">'+s.inStock+' in stock</span></div></div><span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold uppercase">'+s.status+'</span></div><div class="flex items-center justify-between pt-1 border-t border-surface-container-high/60"><span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-primary font-medium"><span class="material-symbols-outlined text-[14px]">verified</span>'+s.audit+'</span><button onclick="applyDistrictSelection(\''+s.name.replace(/'/g,"\\'")+'\')" class="px-2.5 py-1 rounded-md bg-primary-container text-on-primary font-label-sm text-label-sm hover:bg-primary transition-colors flex items-center gap-1">Select Store <span class="material-symbols-outlined text-[14px]">check</span></button></div></div>').join("");}})();</script></body></html>
